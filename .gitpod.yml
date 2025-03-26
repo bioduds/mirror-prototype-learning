@@ -3,7 +3,7 @@ image:
 
 tasks:
   - init: pip install -r requirements.txt
-    command: echo "All dependencies installed ✅"
+    command: echo "✅ All dependencies installed"
 
 vscode:
   extensions:
