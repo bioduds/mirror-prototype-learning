@@ -1,5 +1,5 @@
 image:
-  python: "3.10"
+  file: .gitpod.Dockerfile
 
 tasks:
   - init: pip install -r requirements.txt
