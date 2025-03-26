@@ -5,11 +5,6 @@ import torch
 from mirror import FootballVideoDataset, PerceptionNet, transform
 import os
 
-# Load data and model
-video_dir = 'data/videos'
-dataset = FootballVideoDataset(video_dir, transform=transform, max_frames=64)
-model = PerceptionNet()
-
 # Load PerceptionNet PCA outputs
 features_path = "pca_features.npy"
 coords_path = "pca_coords.npy"
@@ -20,6 +15,15 @@ mirror_latents = None
 mirror_latents_path = "mirrornet_latents.npy"
 if os.path.exists(mirror_latents_path):
     mirror_latents = np.load(mirror_latents_path)
+
+# Global dataset reference (lazy loaded)
+dataset = None
+video_dir = 'data/videos'
+
+def load_dataset():
+    global dataset
+    if dataset is None:
+        dataset = FootballVideoDataset(video_dir, transform=transform, max_frames=64)
 
 # --- Gradio UI Functions ---
 def show_pca_plot():
@@ -37,6 +41,7 @@ def show_pca_plot():
     return fig
 
 def show_chunk(index):
+    load_dataset()
     try:
         tensor, _ = dataset[int(index)]
         frames = tensor.squeeze().permute(1, 0, 2, 3)  # [D, C, H, W]
@@ -50,7 +55,7 @@ with gr.Blocks() as demo:
     gr.Markdown("## 🧠 Mirror Learning Dashboard")
     with gr.Row():
         plot = gr.Plot(label="PCA Plot")
-        slider = gr.Slider(0, len(dataset)-1, step=1, label="Select Chunk")
+        slider = gr.Slider(0, 238, step=1, label="Select Chunk")  # Default max index for now
     image = gr.Image(label="First Frame of Chunk")
 
     slider.change(fn=show_chunk, inputs=slider, outputs=image)
