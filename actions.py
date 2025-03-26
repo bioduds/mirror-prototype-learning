@@ -68,7 +68,7 @@ transform = transforms.Compose([
 ])
 
 # Load dataset
-video_dir = 'path_to_videos'  # Replace with your directory path
+video_dir = 'data/videos'  # Replace with your directory path
 football_dataset = FootballVideoDataset(video_dir, transform=transform)
 trainloader = DataLoader(football_dataset, batch_size=2, shuffle=True)
 
