@@ -41,7 +41,7 @@ model.train()
 for epoch in range(epochs):
     optimizer.zero_grad()
     pred, z_self = model(sequences)
-    loss = loss_fn(pred, targets[-1])  # Last target
+    loss = loss_fn(pred, targets[-1].unsqueeze(0))  # Last target
     loss.backward()
     optimizer.step()
     print(f"[EPOCH {epoch+1}] Loss: {loss.item():.6f}")
