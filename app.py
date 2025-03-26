@@ -2,7 +2,6 @@ import gradio as gr
 import matplotlib.pyplot as plt
 import numpy as np
 import torch
-from mirror import FootballVideoDataset, PerceptionNet, transform
 import os
 
 # Load PerceptionNet PCA outputs
@@ -15,15 +14,6 @@ mirror_latents = None
 mirror_latents_path = "mirrornet_latents.npy"
 if os.path.exists(mirror_latents_path):
     mirror_latents = np.load(mirror_latents_path)
-
-# Global dataset reference (lazy loaded)
-dataset = None
-video_dir = 'data/videos'
-
-def load_dataset():
-    global dataset
-    if dataset is None:
-        dataset = FootballVideoDataset(video_dir, transform=transform, max_frames=64)
 
 # --- Gradio UI Functions ---
 def show_pca_plot():
