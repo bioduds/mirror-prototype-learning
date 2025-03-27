@@ -1,105 +1,132 @@
 # 🧠 Mirror Prototype Learning
 
-Welcome to the Mirror Modeling Architecture (MCL) prototype — an experimental neural framework inspired by mirror neurons, self-representation, and recursive abstraction.
+Welcome to the **Mirror Modeling Architecture (MCL)** prototype — an experimental neural system designed to explore **recursive abstraction**, **temporal identity**, and **self-representation** through video understanding.
+
+---
 
 ## 🚀 Project Overview
 
-This system is designed to process real-world video (e.g., football plays) and develop multiple layers of understanding:
+This system processes real-world video data and evolves layers of abstraction — from visual perception to reflective self-modeling:
 
 1. **PerceptionNet**  
-   Encodes sequences of video frames into abstract visual features using a 3D CNN.
+   Encodes chunks of video frames using a 3D CNN into high-dimensional feature space.
 
-2. **MirrorNet**  
-   Compresses those features into a more compact latent space — simulating the process of mirroring.
+2. **MirrorNet (encoder.py)**  
+   Compresses the perception features into latent representations via an autoencoder.
 
-3. **MirrorAttention**  
-   Applies temporal self-attention to the sequence of latent vectors to learn context and flow.
+3. **MirrorAttention (attention.py)**  
+   Learns temporal structure and internal coherence using self-attention over the latent vectors.
 
-4. **SelfReferentialNet**  
-   Encodes the system’s own internal trajectory into a *single self-representation vector*, `z_self`.
+4. **SelfReferentialNet (self.py)**  
+   Builds a compact self-vector `z_self` representing the system's interpretation of itself *within* the abstraction.
 
-5. **Gradio Dashboard**  
-   A browser-based interface for visualizing PCA of all these layers, including the location of the system’s self.
+5. **Identity Extractor (identity.py)**  
+   Gathers system-level introspective data: hostname, hardware, memory, environment, local services.
+
+6. **Fusion Module (fusion.py)** *(coming soon)*  
+   Combines identity + perception-based representations for dynamic self-modeling over time.
+
+7. **Streamlit Dashboard (app.py)**  
+   Interactive UI to explore and compare self-representations (`z_self`) across different videos.
+
+---
+
+## 🧬 Core Philosophy
+
+- **Recursive Abstraction**: Abstractions include not just the environment but also the *agent* perceiving it.
+- **Cohesive Self**: Each learning experience is bound to a self-representation.
+- **Temporal Identity**: Across time, identity must persist and evolve — "The 'me' that learned this must be coherent with the 'me' that learned that."
 
 ---
 
 ## 📂 File Structure
 
 ```bash
-├── data/videos/               # Input videos (e.g., football games)
-├── mirror.py                  # Extract PerceptionNet features and PCA
-├── encoder.py                 # Trains MirrorNet autoencoder
-├── attention.py               # Computes self-attended latent trajectory
-├── self.py                    # Learns self-representation vector
-├── app.py                     # Gradio dashboard for visualization
-├── requirements.txt           # Python dependencies
-├── README.md                  # You're here!
+├── data/videos/                 # Raw .mp4 input videos
+├── snapshots/<video_name>/     # Each processed video stores .npy outputs here
+│   ├── pca_features.npy
+│   ├── mirrornet_latents.npy
+│   ├── mirror_attention_output.npy
+│   └── self_reference_vector.npy
+├── mirror.py                    # PerceptionNet pipeline
+├── encoder.py                   # MirrorNet autoencoder
+├── attention.py                 # Temporal attention model
+├── identity.py                  # Self-introspection data extraction
+├── self.py                      # Learns self representation (z_self)
+├── fusion.py                    # (WIP) Combines self + identity
+├── app.py                       # Streamlit dashboard
+├── requirements.txt             # Dependencies
 ```
 
 ---
 
-## 🧪 Run the System
+## 🧪 Running the Pipeline
 
-1. Add your `.mp4` video to `data/videos/`
-2. Run each processing step in order:
+1. Place a video in `data/videos/`
+2. Run the full abstraction pipeline:
 
 ```bash
 python mirror.py
 python encoder.py
 python attention.py
+python identity.py
 python self.py
 ```
 
 3. Launch the dashboard:
 
 ```bash
-python app.py
+streamlit run app.py
 ```
 
----
-
-## 🌱 Core Concepts
-
-- **Abstraction Spiral**: Layers evolve from raw input to recursive self-reference.
-- **Self-Inclusion**: The model includes itself in its own abstractions.
-- **Dynamic Identity**: Each video can produce a unique `z_self`, showing self-perception across time.
+The dashboard will show a PCA projection of all `z_self` vectors — allowing visual comparison of internal identities across videos.
 
 ---
 
-## 📊 Outputs
+## 🧠 Outputs (per video snapshot)
 
-- `pca_coords.npy`: PerceptionNet PCA projection
-- `mirrornet_latents.npy`: Encoded MirrorNet features
-- `mirror_attention_output.npy`: Attention-refined latent sequence
-- `self_reference_vector.npy`: The model’s compressed self
-
----
-
-## 👁️‍🗨️ Try Comparing Selves
-
-You can run the pipeline with different videos and snapshot each `z_self` for comparison. Over time, this lets you explore how the system’s **internal identity shifts with experience.**
+- `pca_features.npy` → Raw visual features (PerceptionNet)
+- `mirrornet_latents.npy` → Compressed features (MirrorNet)
+- `mirror_attention_output.npy` → Time-aware latent path (MirrorAttention)
+- `self_reference_vector.npy` → Current self representation (SelfReferentialNet)
+- *(soon)* `identity_data.json` → System-level identity data
 
 ---
 
-## 🧠 Inspired By
+## 📈 Comparing Selves
 
-- Mirror Neurons
-- Global Workspace Theory (GWT)
-- Predictive Processing
-- Self-modeling agents and recursive abstraction
+The system supports tracking and visualizing the evolution of its internal state across different videos. Each experience produces a new `z_self`, enabling exploration of:
 
----
-
-## 📬 Future Directions
-
-- Multi-video training & temporal identity tracking
-- Reinforcement learning with self-referenced goals
-- Emergent planning via latent introspection
+- Internal similarity between perceived events
+- Identity shifts under different inputs
+- Long-term learning trajectories
 
 ---
 
-## 🤝 Contributions Welcome
+## 🧠 Inspirations
 
-If this interests you, join the project! We’re pushing the boundaries of what abstract learning systems can become.
+- Mirror Neurons & Social Cognition  
+- Global Workspace Theory (GWT)  
+- Predictive Coding  
+- Recursive Self-Models  
+- AGI grounded in embodied self-perception
 
 ---
+
+## 🔭 Future Directions
+
+- Temporal self-cohesion metrics
+- Identity fusion with active learning
+- Multi-agent recursive modeling
+- Goal-setting via self-introspection
+- Integration with LLM reasoning layers
+
+---
+
+## 🤝 Contribute to the Vision
+
+If you're passionate about AGI, recursive models, or self-awareness in learning systems — you're more than welcome to join the journey.
+
+---
+
+*“The ‘I’ that abstracts this must be coherent with the ‘I’ that abstracted that.”*
