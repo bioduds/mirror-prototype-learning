@@ -4,6 +4,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.decomposition import PCA
 from PIL import Image
+import io
+import matplotlib
+matplotlib.use('Agg')  # Use a non-interactive backend
 
 st.set_page_config(page_title="Mirror Modeling Dashboard", layout="wide")
 st.title("🧠 Mirror Modeling Dashboard")
@@ -48,7 +51,7 @@ all_z = np.stack(z_data)
 pca = PCA(n_components=2)
 z_proj = pca.fit_transform(all_z)
 
-# Plot
+# Plot using PIL to avoid rendering issues
 fig, ax = plt.subplots(figsize=(6, 6))
 for i in range(len(z_proj)):
     ax.scatter(z_proj[i, 0], z_proj[i, 1], color=colors[i], label=labels[i], s=120, edgecolors='black')
@@ -59,7 +62,12 @@ ax.set_xlabel("PC1")
 ax.set_ylabel("PC2")
 ax.grid(True)
 ax.legend()
-st.pyplot(fig)
+
+buf = io.BytesIO()
+fig.savefig(buf, format='png')
+buf.seek(0)
+st.image(Image.open(buf), caption="PCA Comparison", use_container_width=True)
+buf.close()
 
 # --- Show basic info for selected video ---
 st.markdown(f"### 📽️ Details for: `{selected_video}`")
