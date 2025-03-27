@@ -1,88 +1,74 @@
-import gradio as gr
-import matplotlib.pyplot as plt
-import numpy as np
-import torch
+import streamlit as st
 import os
-import cv2
-from torch.utils.data import Dataset
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.decomposition import PCA
+from PIL import Image
 
-# Load PCA outputs
-features_path = "pca_features.npy"
-coords_path = "pca_coords.npy"
-X_pca = np.load(coords_path)
+st.set_page_config(page_title="Mirror Modeling Dashboard", layout="wide")
+st.title("🧠 Mirror Modeling Dashboard")
 
-# Optionally load MirrorNet latents
-mirror_latents = None
-mirror_latents_path = "mirrornet_latents.npy"
-if os.path.exists(mirror_latents_path):
-    mirror_latents = np.load(mirror_latents_path)
+# --- Sidebar ---
+st.sidebar.header("📂 Video Selection")
 
-# Optionally load MirrorAttention latents
-attention_latents = None
-attn_path = "mirror_attention_output.npy"
-if os.path.exists(attn_path):
-    attention_latents = np.load(attn_path)
+# Scan available video snapshots
+data_dir = "snapshots"
+available_videos = sorted([name for name in os.listdir(data_dir) if os.path.isdir(os.path.join(data_dir, name))])
+selected_video = st.sidebar.selectbox("Choose a processed video:", available_videos)
 
-# Optionally load Self vector
-z_self = None
-self_path = "self_reference_vector.npy"
-if os.path.exists(self_path):
-    z_self = np.load(self_path)
+# Input for new video URL
+st.sidebar.markdown("---")
+st.sidebar.subheader("📥 Add New Video")
+yt_url = st.sidebar.text_input("YouTube video URL")
+if st.sidebar.button("Download & Process Video"):
+    st.sidebar.warning("This feature will be implemented in the backend. 🚧")
+    # Here we'll call the pipeline script and update data
 
-# --- Gradio UI Functions ---
-def show_pca_plot():
-    fig, ax = plt.subplots()
-    ax.scatter(X_pca[:, 0], X_pca[:, 1], c='blue', alpha=0.6, label="PerceptionNet")
-    if mirror_latents is not None:
-        from sklearn.decomposition import PCA
-        pca = PCA(n_components=2)
-        latents_pca = pca.fit_transform(mirror_latents)
-        ax.scatter(latents_pca[:, 0], latents_pca[:, 1], c='red', alpha=0.4, label="MirrorNet")
-    if attention_latents is not None:
-        from sklearn.decomposition import PCA
-        pca = PCA(n_components=2)
-        attn_pca = pca.fit_transform(attention_latents)
-        ax.scatter(attn_pca[:, 0], attn_pca[:, 1], c='green', alpha=0.3, label="MirrorAttention")
-    if z_self is not None:
-        from sklearn.decomposition import PCA
-        all_data = []
-        if mirror_latents is not None:
-            all_data.append(mirror_latents)
-        if attention_latents is not None:
-            all_data.append(attention_latents)
-        all_data = np.vstack(all_data)
-        pca = PCA(n_components=2)
-        pca.fit(all_data)
-        self_proj = pca.transform(z_self.reshape(1, -1))
-        ax.scatter(self_proj[:, 0], self_proj[:, 1], c='lime', edgecolors='black', s=120, label="Self")
-    ax.set_title("PCA: PerceptionNet, MirrorNet, Attention, Self")
-    ax.set_xlabel("PC1")
-    ax.set_ylabel("PC2")
-    ax.legend()
-    return fig
+# --- Main Area ---
+col1, col2 = st.columns([2, 1])
 
-# Dataset access (if desired for chunk visual)
-dataset = None
-video_dir = 'data/videos'
+# --- Load and show PCA comparison ---
+st.subheader("🔍 Comparison of Self Representations")
 
-def show_chunk(index):
-    try:
-        tensor, _ = dataset[int(index)]
-        frames = tensor.squeeze().permute(1, 0, 2, 3)  # [D, C, H, W]
-        first_frame = frames[0].permute(1, 2, 0).numpy()
-        return (first_frame * 255).astype(np.uint8)
-    except Exception as e:
-        return f"Error loading chunk: {e}"
+z_self_paths = []
+labels = []
+colors = []
 
-# --- Gradio Interface ---
-with gr.Blocks() as demo:
-    gr.Markdown("## 🧠 Mirror Learning Dashboard")
-    with gr.Row():
-        plot = gr.Plot(label="PCA Plot")
-        slider = gr.Slider(0, 238, step=1, label="Select Chunk")
-    image = gr.Image(label="First Frame of Chunk")
+for i, video in enumerate(available_videos):
+    path = os.path.join(data_dir, video, "self_reference_vector.npy")
+    if os.path.exists(path):
+        z_self_paths.append(path)
+        labels.append(video)
+        colors.append("C" + str(i))  # C0, C1, ...
 
-    slider.change(fn=show_chunk, inputs=slider, outputs=image)
-    demo.load(fn=show_pca_plot, outputs=plot)
+z_data = [np.load(path).squeeze() for path in z_self_paths]
+all_z = np.stack(z_data)
 
-demo.launch(server_name="0.0.0.0", server_port=7860, share=True)
+# Apply PCA
+pca = PCA(n_components=2)
+z_proj = pca.fit_transform(all_z)
+
+# Plot
+fig, ax = plt.subplots(figsize=(6, 6))
+for i in range(len(z_proj)):
+    ax.scatter(z_proj[i, 0], z_proj[i, 1], color=colors[i], label=labels[i], s=120, edgecolors='black')
+    ax.text(z_proj[i, 0] + 0.2, z_proj[i, 1] + 0.2, labels[i], fontsize=9)
+
+ax.set_title("PCA of Self Vectors")
+ax.set_xlabel("PC1")
+ax.set_ylabel("PC2")
+ax.grid(True)
+ax.legend()
+st.pyplot(fig)
+
+# --- Show basic info for selected video ---
+st.markdown(f"### 📽️ Details for: `{selected_video}`")
+video_dir = os.path.join(data_dir, selected_video)
+
+# Try to show first frame
+try:
+    npy_path = os.path.join(video_dir, "mirror_attention_output.npy")
+    latent = np.load(npy_path)
+    st.write(f"Loaded latent shape: {latent.shape}")
+except Exception as e:
+    st.warning(f"Could not load data for {selected_video}: {e}")

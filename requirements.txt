@@ -8,3 +8,4 @@ scikit-learn
 tqdm
 gradio
 yt-dlp
+streamlit
