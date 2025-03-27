@@ -1,4 +1,4 @@
-# 🧠 Mirror Prototype Learning
+# 🤖 Mirror Prototype Learning
 
 Welcome to the **Mirror Modeling Architecture (MCL)** prototype — an experimental neural system designed to explore **recursive abstraction**, **temporal identity**, and **self-representation** through video understanding.
 
