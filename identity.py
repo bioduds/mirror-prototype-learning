@@ -38,10 +38,13 @@ class IdentityManager:
 
     def update_self(self, new_self_vector, context_label):
         self_description = self._self_inquiry()
+        abstraction_features = self._vectorize_self_description(self_description)
+        fused_self = np.concatenate([new_self_vector, abstraction_features])
+
         entry = {
             "timestamp": str(datetime.now()),
             "label": context_label,
-            "vector": new_self_vector.tolist(),
+            "vector": fused_self.tolist(),
             "self_description": self_description
         }
         self.self_history.append(entry)
@@ -81,6 +84,16 @@ class IdentityManager:
             return result.stdout.splitlines()
         except Exception as e:
             return [f"Failed to scan ports: {e}"]
+
+    def _vectorize_self_description(self, desc):
+        # Simple feature encoding for now — convert known fields to numeric representation
+        vector = []
+        for key in ["os", "release", "version", "machine", "processor"]:
+            val = desc.get(key, "unknown")
+            vector.append(hash(val) % 10000 / 10000.0)  # Normalize
+        vector.append(1.0 if desc.get("proxy") else 0.0)
+        vector.append(len(desc.get("services", [])) / 100.0)  # Normalize service count
+        return np.array(vector, dtype=np.float32)
 
     def get_last_self(self):
         if self.self_history:
