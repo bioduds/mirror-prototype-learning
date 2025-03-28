@@ -103,6 +103,34 @@ scripts = ["mirror.py", "encoder.py", "attention.py", "self.py", "fusion.py"]
 for script in scripts:
     if st.sidebar.button(f"▶️ Run {script}"):
         run_script_live(script)
+        
+        
+def hash_and_store_vectors(video_hash_name: str):
+    """
+    Move arquivos .npy e pca_visualization.png para vectors/v<hash>
+    """
+    folder_name = video_hash_name
+    target_dir = os.path.join("vectors", folder_name)
+    os.makedirs(target_dir, exist_ok=True)
+
+    files_to_move = [
+        "pca_features.npy",
+        "mirrornet_latents.npy",
+        "mirror_attention_output.npy",
+        "self_reference_vector.npy",
+        "fused_consciousness_vectors.npy",
+        "pca_visualization.png"
+    ]
+
+    moved = []
+    for fname in files_to_move:
+        if os.path.exists(fname):
+            shutil.move(fname, os.path.join(target_dir, fname))
+            moved.append(fname)
+
+    print(f"[INFO] Moved to vectors/{folder_name}: {moved}")
+    return folder_name
+
 
 if st.sidebar.button("🚀 Run Full Pipeline"):
     for script in scripts:
@@ -203,30 +231,5 @@ try:
 except Exception as e:
     st.warning(f"Could not generate comparison plot: {e}")
 
-def hash_and_store_vectors(video_hash_name: str):
-    """
-    Move arquivos .npy e pca_visualization.png para vectors/v<hash>
-    """
-    folder_name = video_hash_name
-    target_dir = os.path.join("vectors", folder_name)
-    os.makedirs(target_dir, exist_ok=True)
-
-    files_to_move = [
-        "pca_features.npy",
-        "mirrornet_latents.npy",
-        "mirror_attention_output.npy",
-        "self_reference_vector.npy",
-        "fused_consciousness_vectors.npy",
-        "pca_visualization.png"
-    ]
-
-    moved = []
-    for fname in files_to_move:
-        if os.path.exists(fname):
-            shutil.move(fname, os.path.join(target_dir, fname))
-            moved.append(fname)
-
-    print(f"[INFO] Moved to vectors/{folder_name}: {moved}")
-    return folder_name
 
 
