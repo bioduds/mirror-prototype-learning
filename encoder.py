@@ -4,14 +4,21 @@ import torch.optim as optim
 import numpy as np
 from tqdm import tqdm
 
-# Load perception features
+# --- Load extracted visual features from PerceptionNet ---
 features_path = "pca_features.npy"
 features = np.load(features_path)
 features = torch.tensor(features, dtype=torch.float32)
 
-# MirrorNet: basic autoencoder
 class MirrorNet(nn.Module):
-    def __init__(self, input_dim):
+    """
+    Autoencoder model for compressing high-dimensional perception features.
+
+    Args:
+        input_dim (int): Dimension of the input feature vector.
+    Returns:
+        Tuple[torch.Tensor, torch.Tensor]: Reconstructed input and latent code.
+    """
+    def __init__(self, input_dim: int):
         super(MirrorNet, self).__init__()
         self.encoder = nn.Sequential(
             nn.Linear(input_dim, 512),
@@ -25,20 +32,18 @@ class MirrorNet(nn.Module):
             nn.Linear(512, input_dim)
         )
 
-    def forward(self, x):
+    def forward(self, x: torch.Tensor) -> tuple[torch.Tensor, torch.Tensor]:
         latent = self.encoder(x)
         recon = self.decoder(latent)
         return recon, latent
 
-# Initialize model
+# --- Initialize model, optimizer, and loss function ---
 input_dim = features.shape[1]
 mirrornet = MirrorNet(input_dim)
-
-# Optimizer & loss
 optimizer = optim.Adam(mirrornet.parameters(), lr=0.001)
 criterion = nn.MSELoss()
 
-# Training loop
+# --- Training loop ---
 epochs = 20
 mirrornet.train()
 for epoch in range(epochs):
@@ -53,7 +58,7 @@ for epoch in range(epochs):
         epoch_loss += loss.item()
     print(f"[EPOCH {epoch+1}] Loss: {epoch_loss / len(features):.6f}")
 
-# Save reconstructed features and latents
+# --- Inference: Encode all features ---
 mirrornet.eval()
 with torch.no_grad():
     reconstructed = []
@@ -63,6 +68,7 @@ with torch.no_grad():
         reconstructed.append(out.squeeze(0).numpy())
         latents.append(z.squeeze(0).numpy())
 
+# --- Save outputs ---
 np.save("mirrornet_reconstructed.npy", np.array(reconstructed))
 np.save("mirrornet_latents.npy", np.array(latents))
 print("[INFO] Saved mirror network outputs: reconstructed + latents")

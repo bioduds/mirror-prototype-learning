@@ -22,6 +22,7 @@ pip-wheel-metadata/
 
 # Data and video files
 data/
+vectors/
 *.mp4
 *.avi
 *.mov
