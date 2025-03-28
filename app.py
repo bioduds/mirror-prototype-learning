@@ -12,7 +12,6 @@ import subprocess
 import sys
 import threading
 import queue
-import shutil
 import hashlib
 
 matplotlib.use('Agg')
@@ -28,40 +27,41 @@ yt_url = st.sidebar.text_input("YouTube video URL")
 if st.sidebar.button("Download Video"):
     try:
         video_output_dir = "data/videos"
-
-        # Limpa a pasta de vídeos antigos
         shutil.rmtree(video_output_dir, ignore_errors=True)
         os.makedirs(video_output_dir, exist_ok=True)
 
-        # Baixa o vídeo usando yt_dlp
+        # Etapa 1: obter o título do vídeo sem baixar ainda
+        with yt_dlp.YoutubeDL({'quiet': True}) as ydl:
+            info = ydl.extract_info(yt_url, download=False)
+            video_title = info['title']
+            hash_id = hashlib.sha256(video_title.encode("utf-8")).hexdigest()[:8]
+            video_hash_name = f"v{hash_id}"
+            video_filename = f"{video_hash_name}.mp4"
+
+        # Etapa 2: configurar saída forçada com o nome hash
         ydl_opts = {
-            'outtmpl': os.path.join(video_output_dir, '%(title)s.%(ext)s'),
+            'outtmpl': os.path.join(video_output_dir, video_filename),
             'format': 'mp4/bestaudio/best',
             'quiet': True
         }
 
+        # Etapa 3: baixar com o nome correto
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-            info = ydl.extract_info(yt_url, download=True)
-            video_title = info['title']
-            video_filename = f"{video_title}.mp4"
+            ydl.download([yt_url])
 
-        # Gera o hash único para nomear a pasta de vetores
-        hash_id = hashlib.sha256(video_title.encode("utf-8")).hexdigest()[:8]
-        video_hash_name = f"v{hash_id}"
-
-        # Cria diretório para os vetores
+        # Criar pasta para os vetores
         vector_path = os.path.join(VECTORS_DIR, video_hash_name)
         os.makedirs(vector_path, exist_ok=True)
 
-        # Salva nome atual na sessão (opcional)
+        # Guardar no session_state
         st.session_state["video_hash_name"] = video_hash_name
         st.session_state["video_title"] = video_title
 
-        st.sidebar.success(f"Video downloaded ✅ and prepared as {video_hash_name}")
+        st.sidebar.success(f"Video downloaded as {video_filename} ✅")
 
     except Exception as e:
         st.sidebar.error(f"Failed to download video: {e}")
-        
+
         
 # --- Run .py Scripts with live output ---
 def run_script_live(script_name: str):
@@ -110,8 +110,8 @@ if st.sidebar.button("🚀 Run Full Pipeline"):
 
     # Após o pipeline, mova os vetores
     try:
-        if "video_title" in st.session_state:
-            folder_id = hash_and_store_vectors(st.session_state["video_title"])
+        if "video_hash_name" in st.session_state:
+            folder_id = hash_and_store_vectors(st.session_state["video_hash_name"])
             st.sidebar.success(f"Vectors saved in vectors/{folder_id} ✅")
         else:
             st.sidebar.warning("No video title found in session. Please redownload the video.")
@@ -203,12 +203,11 @@ try:
 except Exception as e:
     st.warning(f"Could not generate comparison plot: {e}")
 
-def hash_and_store_vectors(video_filename: str):
+def hash_and_store_vectors(video_hash_name: str):
     """
-    Gera hash do nome do vídeo e move arquivos .npy e pca_visualization.png para vectors/v<hash>
+    Move arquivos .npy e pca_visualization.png para vectors/v<hash>
     """
-    hash_id = hashlib.sha256(video_filename.encode("utf-8")).hexdigest()[:8]
-    folder_name = f"v{hash_id}"
+    folder_name = video_hash_name
     target_dir = os.path.join("vectors", folder_name)
     os.makedirs(target_dir, exist_ok=True)
 
@@ -229,3 +228,5 @@ def hash_and_store_vectors(video_filename: str):
 
     print(f"[INFO] Moved to vectors/{folder_name}: {moved}")
     return folder_name
+
+

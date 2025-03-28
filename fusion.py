@@ -5,39 +5,32 @@ import torch
 import torch.nn as nn
 from tqdm import tqdm
 
-# --- Load inputs ---
-def load_vectors(snapshots_dir: str) -> tuple[torch.Tensor, torch.Tensor]:
+def load_vectors_from_base() -> tuple[torch.Tensor, torch.Tensor]:
     """
-    Load z_self vectors and average attended representations from video snapshots.
-
-    Args:
-        snapshots_dir (str): Directory containing processed video folders.
-
+    Loads the self and experience vectors from the base directory ("."),
+    where the latest .npy files are located after running the pipeline.
+    
     Returns:
         tuple: (self_vectors, experience_vectors) as stacked torch tensors.
     """
-    self_vectors = []
-    experience_vectors = []
+    self_path = "self_reference_vector.npy"
+    latent_path = "mirror_attention_output.npy"
 
-    available_videos = sorted([
-        name for name in os.listdir(snapshots_dir)
-        if os.path.isdir(os.path.join(snapshots_dir, name))
-    ])
+    if not os.path.exists(self_path) or not os.path.exists(latent_path):
+        raise FileNotFoundError("Required .npy files not found in the current directory.")
 
-    for video in available_videos:
-        video_path = os.path.join(snapshots_dir, video)
-        self_path = os.path.join(video_path, "self_reference_vector.npy")
-        latent_path = os.path.join(video_path, "mirror_attention_output.npy")
+    try:
+        z_self = np.load(self_path).squeeze()
+        experience = np.load(latent_path)
+        if experience.ndim == 2:
+            experience = experience.mean(axis=0)  # Temporal aggregation
+    except Exception as e:
+        raise RuntimeError(f"Failed to load input vectors: {e}")
 
-        if os.path.exists(self_path) and os.path.exists(latent_path):
-            z_self = np.load(self_path).squeeze()
-            experience = np.load(latent_path).mean(axis=0)  # Aggregate temporal info
-            self_vectors.append(z_self)
-            experience_vectors.append(experience)
-
+    # Return single-sample tensors with batch dimension
     return (
-        torch.tensor(np.stack(self_vectors), dtype=torch.float32),
-        torch.tensor(np.stack(experience_vectors), dtype=torch.float32)
+        torch.tensor(z_self[None, :], dtype=torch.float32),
+        torch.tensor(experience[None, :], dtype=torch.float32)
     )
 
 class FusionLayer(nn.Module):
@@ -53,47 +46,40 @@ class FusionLayer(nn.Module):
         )
 
     def forward(self, self_vec: torch.Tensor, exp_vec: torch.Tensor) -> torch.Tensor:
-        """
-        Concatenate and fuse self and experience into a single representation.
-
-        Args:
-            self_vec (torch.Tensor): [B, D] self vector
-            exp_vec (torch.Tensor): [B, D] experience vector
-
-        Returns:
-            torch.Tensor: [B, 128] fused consciousness vector
-        """
         combined = torch.cat([self_vec, exp_vec], dim=1)
         return self.fuse(combined)
 
-# --- Main execution ---
+# --- Main ---
 if __name__ == "__main__":
-    snapshots_dir = "snapshots"
-    self_vectors, experience_vectors = load_vectors(snapshots_dir)
+    try:
+        self_vectors, experience_vectors = load_vectors_from_base()
+    except Exception as e:
+        print(f"[ERROR] {e}")
+        exit(1)
 
-    # Initialize model
     input_dim = self_vectors.shape[1]
     fusion_model = FusionLayer(input_dim)
     optimizer = torch.optim.Adam(fusion_model.parameters(), lr=0.001)
     criterion = nn.MSELoss()
 
-    # Train to encourage temporal cohesion
+    # Train for temporal consistency (only applies if more than one sample)
     fusion_model.train()
-    for epoch in range(20):
-        total_loss = 0.0
-        for i in tqdm(range(len(self_vectors) - 1), desc=f"Epoch {epoch+1}/20"):
-            a_t = fusion_model(self_vectors[i].unsqueeze(0), experience_vectors[i].unsqueeze(0))
-            a_next = fusion_model(self_vectors[i+1].unsqueeze(0), experience_vectors[i+1].unsqueeze(0))
+    if self_vectors.shape[0] > 1:
+        for epoch in range(20):
+            total_loss = 0.0
+            for i in tqdm(range(len(self_vectors) - 1), desc=f"Epoch {epoch+1}/20"):
+                a_t = fusion_model(self_vectors[i].unsqueeze(0), experience_vectors[i].unsqueeze(0))
+                a_next = fusion_model(self_vectors[i+1].unsqueeze(0), experience_vectors[i+1].unsqueeze(0))
+                loss = criterion(a_t, a_next.detach())
+                optimizer.zero_grad()
+                loss.backward()
+                optimizer.step()
+                total_loss += loss.item()
+            print(f"[EPOCH {epoch+1}] Cohesion Loss: {total_loss / (len(self_vectors) - 1):.6f}")
+    else:
+        print("[INFO] Only one sample: skipping training loop.")
 
-            loss = criterion(a_t, a_next.detach())  # Temporal consistency
-            optimizer.zero_grad()
-            loss.backward()
-            optimizer.step()
-            total_loss += loss.item()
-
-        print(f"[EPOCH {epoch+1}] Cohesion Loss: {total_loss / (len(self_vectors) - 1):.6f}")
-
-    # Inference & Save
+    # Inference
     fusion_model.eval()
     fused_representations = []
     with torch.no_grad():
@@ -102,4 +88,4 @@ if __name__ == "__main__":
             fused_representations.append(fused.squeeze(0).numpy())
 
     np.save("fused_consciousness_vectors.npy", np.array(fused_representations))
-    print("[INFO] Saved fused consciousness representations.")
+    print("[INFO] Saved fused consciousness representations ✅")
