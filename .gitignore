@@ -26,6 +26,7 @@ vectors/
 *.mp4
 *.avi
 *.mov
+*.npy
 
 # Logs and temp files
 *.log
