@@ -1,3 +1,4 @@
+
 # 🤖 Mirror Prototype Learning
 
 Welcome to the **Mirror Modeling Architecture (MCL)** prototype — an experimental neural system designed to explore **recursive abstraction**, **temporal identity**, and **self-representation** through video understanding.
@@ -44,35 +45,36 @@ This system processes real-world video data and evolves layers of abstraction �
 
 ```bash
 ├── data/videos/                 # Raw .mp4 input videos
-├── snapshots/<video_name>/     # Each processed video stores .npy outputs here
+├── vectors/<video_hash_name>/   # Each processed video stores .npy outputs here
 │   ├── pca_features.npy
 │   ├── mirrornet_latents.npy
 │   ├── mirror_attention_output.npy
 │   ├── self_reference_vector.npy
-│   └── self_meta.json          # System-level introspection metadata
+│   ├── fused_consciousness_vectors.npy
+│   └── pca_visualization.png
 ├── mirror.py                    # PerceptionNet pipeline
 ├── encoder.py                   # MirrorNet autoencoder
 ├── attention.py                 # Temporal attention model
 ├── identity.py                  # Self-introspection data extraction
 ├── self.py                      # Learns self representation (z_self)
 ├── fusion.py                    # Combines self + identity
-├── engram.py                    # Visualizes fused memory spaces
+├── turnover.py                  # Implements organic memory decay and growth
 ├── app.py                       # Streamlit dashboard
 ├── requirements.txt             # Dependencies
+├── reports/                     # Generated statistical reports (PDF)
 ```
 
 ---
 
 ## 🧪 Running the Pipeline
 
-1. Place a video in `data/videos/`
+1. Place a video URL in the **Streamlit dashboard** or manually add `.mp4` files to `data/videos/`.
 2. Run the full abstraction pipeline:
 
 ```bash
 python mirror.py
 python encoder.py
 python attention.py
-python identity.py
 python self.py
 python fusion.py
 ```
@@ -80,7 +82,7 @@ python fusion.py
 3. Launch the dashboard:
 
 ```bash
-streamlit run app.py
+python3 -m streamlit run app.py
 ```
 
 The dashboard will show a PCA projection of all `z_self` vectors — allowing visual comparison of internal identities across videos.
@@ -93,8 +95,22 @@ The dashboard will show a PCA projection of all `z_self` vectors — allowing vi
 - `mirrornet_latents.npy` → Compressed features (MirrorNet)
 - `mirror_attention_output.npy` → Time-aware latent path (MirrorAttention)
 - `self_reference_vector.npy` → Current self representation (SelfReferentialNet)
-- `self_meta.json` → System-level identity & introspection metadata
 - `fused_consciousness_vectors.npy` → Combined self + experience vectors
+- `pca_visualization.png` → Visualization of PCA projection for each session
+
+---
+
+## 📊 Statistical Analysis & Reporting
+
+A complete statistical analysis is integrated into the **Streamlit dashboard**, including:
+
+- **Statistical Summary**: Descriptive statistics of all processed vectors.
+- **Correlation Analysis**: Pearson and Spearman correlation matrices.
+- **Clustering Analysis**: K-Means and DBSCAN clustering visualizations.
+- **Dimensionality Reduction**: PCA and t-SNE visualizations.
+- **Comparative Analysis**: Line plots comparing different vectors.
+
+The report is automatically generated and saved as a PDF in the `reports/` directory.
 
 ---
 
