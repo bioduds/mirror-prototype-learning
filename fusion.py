@@ -1,101 +1,111 @@
-# turnover.py
+# fusion.py
 import os
 import numpy as np
 import torch
 import torch.nn as nn
-import random
+from tqdm import tqdm
 
-class TurnoverMechanism:
+class FusionLayer(nn.Module):
     """
-    Implements an organic turnover mechanism inspired by hair growth and decay.
-    Works directly on fused_consciousness_vectors.npy.
+    Neural layer to fuse self and experience representations into a unified vector.
     """
+    def __init__(self, input_dim: int):
+        super().__init__()
+        self.fuse = nn.Sequential(
+            nn.Linear(input_dim * 2, 256),
+            nn.ReLU(),
+            nn.Linear(256, 128)
+        )
 
-    def __init__(self, max_capacity: int, decay_rate: float, regrowth_rate: float):
+    def forward(self, self_vec: torch.Tensor, exp_vec: torch.Tensor) -> torch.Tensor:
         """
-        Initializes the turnover mechanism.
+        Concatenate and fuse self and experience into a single representation.
 
         Args:
-            max_capacity (int): Maximum number of vectors the system can hold before applying turnover.
-            decay_rate (float): Probability of a vector decaying (being forgotten) at each iteration.
-            regrowth_rate (float): Probability of a vector being consolidated (strengthened) at each iteration.
-        """
-        self.max_capacity = max_capacity
-        self.decay_rate = decay_rate
-        self.regrowth_rate = regrowth_rate
-        self.vectors = []
+            self_vec (torch.Tensor): [B, D] self vector
+            exp_vec (torch.Tensor): [B, D] experience vector
 
-    def load_vectors(self, file_path: str):
+        Returns:
+            torch.Tensor: [B, 128] fused consciousness vector
         """
-        Loads fused consciousness vectors from a file.
+        combined = torch.cat([self_vec, exp_vec], dim=1)
+        return self.fuse(combined)
 
-        Args:
-            file_path (str): The path to load the vectors from.
-        """
-        self.vectors = np.load(file_path, allow_pickle=True).tolist()
-        print(f"[INFO] Loaded {len(self.vectors)} vectors from {file_path}")
 
-    def save_vectors(self, file_path: str):
-        """
-        Saves the modified vectors to a file.
+# --- Load inputs ---
+def load_vectors(vectors_dir: str) -> tuple[torch.Tensor, torch.Tensor]:
+    self_vectors = []
+    experience_vectors = []
 
-        Args:
-            file_path (str): The path to save the vectors.
-        """
-        np.save(file_path, np.array(self.vectors))
-        print(f"[INFO] Saved {len(self.vectors)} vectors to {file_path}")
+    available_videos = sorted([
+        name for name in os.listdir(vectors_dir)
+        if os.path.isdir(os.path.join(vectors_dir, name))
+    ])
 
-    def add_vector(self, vector: np.ndarray):
-        """
-        Adds a new vector to the system.
+    for video in available_videos:
+        video_path = os.path.join(vectors_dir, video)
+        self_path = os.path.join(video_path, "self_reference_vector.npy")
+        latent_path = os.path.join(video_path, "mirror_attention_output.npy")
 
-        Args:
-            vector (np.ndarray): The new vector to be added.
-        """
-        if len(self.vectors) >= self.max_capacity:
-            self.apply_turnover()
-        self.vectors.append(vector)
+        if os.path.exists(self_path) and os.path.exists(latent_path):
+            try:
+                z_self = np.load(self_path).squeeze()
+                experience = np.load(latent_path).mean(axis=0)  # Aggregate temporal info
+                self_vectors.append(z_self)
+                experience_vectors.append(experience)
+            except Exception as e:
+                print(f"[WARNING] Skipping {video} due to error: {e}")
 
-    def apply_turnover(self):
-        """
-        Applies turnover and consolidation mechanisms to the stored vectors.
-        """
-        # Decay mechanism: randomly forget vectors with probability `decay_rate`
-        self.vectors = [v for v in self.vectors if random.random() > self.decay_rate]
+    if not self_vectors or not experience_vectors:
+        raise RuntimeError("No valid vectors found in the 'vectors/' directory.")
 
-        # Regrowth mechanism: consolidate similar vectors
-        new_vectors = []
-        for i, vec in enumerate(self.vectors):
-            if random.random() < self.regrowth_rate:
-                # Find a random similar vector to merge with
-                similar_vec = random.choice(self.vectors)
-                similarity = np.dot(vec, similar_vec) / (np.linalg.norm(vec) * np.linalg.norm(similar_vec))
-                
-                if similarity > 0.8:  # Similarity threshold
-                    merged_vec = (vec + similar_vec) / 2
-                    new_vectors.append(merged_vec)
-                else:
-                    new_vectors.append(vec)
-            else:
-                new_vectors.append(vec)
-        
-        self.vectors = new_vectors
+    return (
+        torch.tensor(np.stack(self_vectors), dtype=torch.float32),
+        torch.tensor(np.stack(experience_vectors), dtype=torch.float32)
+    )
 
+
+# --- Main execution ---
 if __name__ == "__main__":
-    # Parameters for the turnover mechanism
-    max_capacity = 2000  # Maximum number of vectors before turnover applies
-    decay_rate = 0.05  # Probability of decay (forgetting)
-    regrowth_rate = 0.1  # Probability of consolidation (strengthening)
+    vectors_dir = "vectors"
+    try:
+        self_vectors, experience_vectors = load_vectors(vectors_dir)
+    except RuntimeError as e:
+        print(f"[ERROR] {e}")
+        exit(1)
 
-    turnover = TurnoverMechanism(max_capacity, decay_rate, regrowth_rate)
+    input_dim = self_vectors.shape[1]
+    fusion_model = FusionLayer(input_dim)
+    optimizer = torch.optim.Adam(fusion_model.parameters(), lr=0.001)
+    criterion = nn.MSELoss()
 
-    # Load existing vectors from fused_consciousness_vectors.npy
-    vectors_file = "fused_consciousness_vectors.npy"
-    if os.path.exists(vectors_file):
-        turnover.load_vectors(vectors_file)
-    
-    # Apply turnover mechanism
-    turnover.apply_turnover()
+    # Training loop for temporal cohesion
+    fusion_model.train()
+    for epoch in range(20):
+        total_loss = 0.0
+        for i in tqdm(range(len(self_vectors) - 1), desc=f"Epoch {epoch+1}/20"):
+            a_t = fusion_model(self_vectors[i].unsqueeze(0), experience_vectors[i].unsqueeze(0))
+            a_next = fusion_model(self_vectors[i+1].unsqueeze(0), experience_vectors[i+1].unsqueeze(0))
 
-    # Save the modified vectors
-    turnover.save_vectors(vectors_file)
+            loss = criterion(a_t, a_next.detach())
+            optimizer.zero_grad()
+            loss.backward()
+            optimizer.step()
+            total_loss += loss.item()
+
+        print(f"[EPOCH {epoch+1}] Cohesion Loss: {total_loss / (len(self_vectors) - 1):.6f}")
+
+    # Inference & Save
+    fusion_model.eval()
+    fused_representations = []
+    with torch.no_grad():
+        for i in range(len(self_vectors)):
+            fused = fusion_model(self_vectors[i].unsqueeze(0), experience_vectors[i].unsqueeze(0))
+            fused_representations.append(fused.squeeze(0).numpy())
+
+    # Save only if there are valid vectors
+    if len(fused_representations) > 0:
+        np.save("fused_consciousness_vectors.npy", np.array(fused_representations))
+        print(f"[INFO] Saved {len(fused_representations)} vectors to fused_consciousness_vectors.npy")
+    else:
+        print("[WARNING] No valid vectors to save. Skipping file save operation.")

@@ -42,3 +42,5 @@ runs/
 # Mac / OS / IDE system files
 .DS_Store
 Thumbs.db
+# Reports
+reports/

@@ -9,3 +9,6 @@ tqdm
 gradio
 yt-dlp
 streamlit
+seaborn
+plotly
+fpdf
