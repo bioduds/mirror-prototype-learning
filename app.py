@@ -111,7 +111,7 @@ def run_script_live(script_name: str):
 
 # --- Pipeline Buttons ---
 st.sidebar.subheader("🧪 Run Full Pipeline")
-scripts = ["mirror.py", "encoder.py", "attention.py", "self.py", "fusion.py"]
+scripts = ["mirror.py", "encoder.py", "attention.py", "self.py", "fusion.py", "extractor.py", "clustering.py"]
 for script in scripts:
     if st.sidebar.button(f"▶️ Run {script}"):
         run_script_live(script)

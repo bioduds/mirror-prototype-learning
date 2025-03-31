@@ -12,3 +12,6 @@ streamlit
 seaborn
 plotly
 fpdf
+transformers
+sentencepiece
+openai-clip
