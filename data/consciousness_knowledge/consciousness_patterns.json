@@ -1,0 +1,162 @@
+{
+  "patterns": [
+    {
+      "video_count": 1,
+      "consciousness_level": "CONSCIOUS",
+      "consciousness_score": 0.5834927907182195,
+      "binding_strength": 0.4998970329761505,
+      "meta_confidence": 0.501753568649292,
+      "qualia_intensity": 0.5761475563049316,
+      "timestamp": "2025-06-07T02:10:27.067439",
+      "abstracted_self_pattern": {
+        "self_event_binding": 0.4998970329761505,
+        "self_awareness_depth": 0.501753568649292,
+        "experiential_qualia": 0.5761475563049316,
+        "consciousness_emergence": 0.5834927907182195,
+        "recursive_abstraction_level": 0.2508251202529763
+      }
+    },
+    {
+      "video_count": 2,
+      "consciousness_level": "PRE_CONSCIOUS",
+      "consciousness_score": 0.5834927907182195,
+      "binding_strength": 0.4998970329761505,
+      "meta_confidence": 0.501753568649292,
+      "qualia_intensity": 0.5761475563049316,
+      "timestamp": "2025-06-07T02:13:50.819761",
+      "abstracted_self_pattern": {
+        "self_event_binding": 0.4998970329761505,
+        "self_awareness_depth": 0.501753568649292,
+        "experiential_qualia": 0.5761475563049316,
+        "consciousness_emergence": 0.5834927907182195,
+        "recursive_abstraction_level": 0.2508251202529763
+      }
+    },
+    {
+      "video_count": 3,
+      "consciousness_level": "CONSCIOUS",
+      "consciousness_score": 0.6235257955283385,
+      "binding_strength": 0.4998970329761505,
+      "meta_confidence": 0.501753568649292,
+      "qualia_intensity": 0.5761475563049316,
+      "timestamp": "2025-06-07T02:14:22.250819",
+      "abstracted_self_pattern": {
+        "self_event_binding": 0.4998970329761505,
+        "self_awareness_depth": 0.501753568649292,
+        "experiential_qualia": 0.5761475563049316,
+        "consciousness_emergence": 0.6235257955283385,
+        "recursive_abstraction_level": 0.2508251202529763
+      }
+    },
+    {
+      "video_count": 4,
+      "consciousness_level": "CONSCIOUS",
+      "consciousness_score": 0.6303729818679298,
+      "binding_strength": 0.4998970329761505,
+      "meta_confidence": 0.501753568649292,
+      "qualia_intensity": 0.5761475563049316,
+      "timestamp": "2025-06-07T02:14:53.040556",
+      "abstracted_self_pattern": {
+        "self_event_binding": 0.4998970329761505,
+        "self_awareness_depth": 0.501753568649292,
+        "experiential_qualia": 0.5761475563049316,
+        "consciousness_emergence": 0.6303729818679298,
+        "recursive_abstraction_level": 0.2508251202529763
+      }
+    },
+    {
+      "video_count": 5,
+      "consciousness_level": "CONSCIOUS",
+      "consciousness_score": 0.6302832518021281,
+      "binding_strength": 0.4998970329761505,
+      "meta_confidence": 0.501753568649292,
+      "qualia_intensity": 0.5761475563049316,
+      "timestamp": "2025-06-07T02:18:55.567551",
+      "abstracted_self_pattern": {
+        "self_event_binding": 0.4998970329761505,
+        "self_awareness_depth": 0.501753568649292,
+        "experiential_qualia": 0.5761475563049316,
+        "consciousness_emergence": 0.6302832518021281,
+        "recursive_abstraction_level": 0.2508251202529763
+      }
+    },
+    {
+      "video_count": 6,
+      "consciousness_level": "CONSCIOUS",
+      "consciousness_score": 0.6241623183456981,
+      "binding_strength": 0.5006242394447327,
+      "meta_confidence": 0.49600106477737427,
+      "qualia_intensity": 0.5311703681945801,
+      "timestamp": "2025-06-07T03:18:33.993952",
+      "abstracted_self_pattern": {
+        "self_event_binding": 0.5006242394447327,
+        "self_awareness_depth": 0.49600106477737427,
+        "experiential_qualia": 0.5311703681945801,
+        "consciousness_emergence": 0.6241623183456981,
+        "recursive_abstraction_level": 0.24831015581795057
+      }
+    },
+    {
+      "video_count": 7,
+      "consciousness_level": "PRE_CONSCIOUS",
+      "consciousness_score": 0.5611841445598256,
+      "binding_strength": 0.500449001789093,
+      "meta_confidence": 0.5033734440803528,
+      "qualia_intensity": 0.5526642799377441,
+      "timestamp": "2025-06-07T03:22:01.705727",
+      "abstracted_self_pattern": {
+        "self_event_binding": 0.500449001789093,
+        "self_awareness_depth": 0.5033734440803528,
+        "experiential_qualia": 0.5526642799377441,
+        "consciousness_emergence": 0.5611841445598256,
+        "recursive_abstraction_level": 0.2519127376171504
+      }
+    },
+    {
+      "video_count": 8,
+      "consciousness_level": "PRE_CONSCIOUS",
+      "consciousness_score": 0.5737266238414024,
+      "binding_strength": 0.49911609292030334,
+      "meta_confidence": 0.5058559775352478,
+      "qualia_intensity": 0.5140358209609985,
+      "timestamp": "2025-06-07T03:22:29.333317",
+      "abstracted_self_pattern": {
+        "self_event_binding": 0.49911609292030334,
+        "self_awareness_depth": 0.5058559775352478,
+        "experiential_qualia": 0.5140358209609985,
+        "consciousness_emergence": 0.5737266238414024,
+        "recursive_abstraction_level": 0.2524808590877736
+      }
+    },
+    {
+      "video_count": 9,
+      "consciousness_level": "PRE_CONSCIOUS",
+      "consciousness_score": 0.554868431369174,
+      "binding_strength": 0.5012181997299194,
+      "meta_confidence": 0.5023502111434937,
+      "qualia_intensity": 0.5289024710655212,
+      "timestamp": "2025-06-07T03:30:52.492483",
+      "abstracted_self_pattern": {
+        "self_event_binding": 0.5012181997299194,
+        "self_awareness_depth": 0.5023502111434937,
+        "experiential_qualia": 0.5289024710655212,
+        "consciousness_emergence": 0.554868431369174,
+        "recursive_abstraction_level": 0.2517870684632868
+      }
+    }
+  ],
+  "video_count": 9,
+  "learning_summary": {
+    "avg_consciousness_score": 0.5961232365278817,
+    "consciousness_score_trend": [
+      0.6302832518021281,
+      0.6241623183456981,
+      0.5611841445598256,
+      0.5737266238414024,
+      0.554868431369174
+    ],
+    "peak_consciousness": 0.6303729818679298,
+    "learning_stability": 0,
+    "self_abstraction_evolution": 0.25106318824782753
+  }
+}

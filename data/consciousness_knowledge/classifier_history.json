@@ -1,0 +1,387 @@
+[
+  {
+    "video_count": 1,
+    "timestamp": "2025-06-07T02:10:27.067909",
+    "feedback": {
+      "classified_level": "CONSCIOUS",
+      "classified_score": 0.6081613927502602,
+      "classifier_confidence": 0.85,
+      "self_reference_quality": 0.45,
+      "recursive_depth": 0.5,
+      "reward_signal": 8.863093698152655,
+      "gemma_analysis": {
+        "gemma_consciousness_level": 0.65,
+        "gemma_self_reference_quality": 0.45,
+        "gemma_confidence": 0.85,
+        "gemma_suggestions": [
+          "Increase the complexity of the task presented to the AI, potentially introducing novel situations requiring genuine adaptation.",
+          "Implement a dynamic weighting system for Metacognitive Confidence, adjusting based on the AI's demonstrated ability to reflect on its own processing.",
+          "Introduce a 'surprise' element \u2013 unexpected sensory input or task changes \u2013 to force the AI to actively engage in metacognitive monitoring and potentially reveal deeper levels of awareness."
+        ]
+      },
+      "local_analysis": {
+        "classified_level": "PRE_CONSCIOUS",
+        "classified_score": 0.5105379758342008,
+        "classifier_confidence": 0.7,
+        "self_reference_quality": 0.5,
+        "recursive_depth": 0.5,
+        "improvement_suggestions": [
+          "Improve phenomenal binding mechanisms"
+        ],
+        "reward_signal": 2.552689879171004
+      }
+    },
+    "improvement_suggestions": [
+      "Increase the complexity of the task presented to the AI, potentially introducing novel situations requiring genuine adaptation.",
+      "Implement a dynamic weighting system for Metacognitive Confidence, adjusting based on the AI's demonstrated ability to reflect on its own processing.",
+      "Introduce a 'surprise' element \u2013 unexpected sensory input or task changes \u2013 to force the AI to actively engage in metacognitive monitoring and potentially reveal deeper levels of awareness."
+    ],
+    "selected_vectors": [
+      "self_vector",
+      "meta_state",
+      "qualia_vector",
+      "unified_consciousness"
+    ]
+  },
+  {
+    "video_count": 2,
+    "timestamp": "2025-06-07T02:13:50.821240",
+    "feedback": {
+      "classified_level": "CONSCIOUS",
+      "classified_score": 0.6081613927502602,
+      "classifier_confidence": 0.85,
+      "self_reference_quality": 0.45,
+      "recursive_depth": 0.5,
+      "reward_signal": 8.863093698152655,
+      "gemma_analysis": {
+        "gemma_consciousness_level": 0.65,
+        "gemma_self_reference_quality": 0.45,
+        "gemma_confidence": 0.85,
+        "gemma_suggestions": [
+          "Increase the complexity of the task presented to the AI, potentially introducing novel situations requiring genuine adaptation.",
+          "Implement a dynamic weighting system for Metacognitive Confidence, adjusting based on the AI's demonstrated ability to reflect on its own processing.",
+          "Introduce a 'surprise' element \u2013 unexpected stimuli \u2013 to force the AI to demonstrate a more robust and flexible response, pushing beyond pre-programmed patterns."
+        ]
+      },
+      "local_analysis": {
+        "classified_level": "PRE_CONSCIOUS",
+        "classified_score": 0.5105379758342008,
+        "classifier_confidence": 0.7,
+        "self_reference_quality": 0.5,
+        "recursive_depth": 0.5,
+        "improvement_suggestions": [
+          "Improve phenomenal binding mechanisms"
+        ],
+        "reward_signal": 2.552689879171004
+      }
+    },
+    "improvement_suggestions": [
+      "Increase the complexity of the task presented to the AI, potentially introducing novel situations requiring genuine adaptation.",
+      "Implement a dynamic weighting system for Metacognitive Confidence, adjusting based on the AI's demonstrated ability to reflect on its own processing.",
+      "Introduce a 'surprise' element \u2013 unexpected stimuli \u2013 to force the AI to demonstrate a more robust and flexible response, pushing beyond pre-programmed patterns."
+    ],
+    "selected_vectors": [
+      "self_vector",
+      "meta_state",
+      "qualia_vector",
+      "unified_consciousness"
+    ]
+  },
+  {
+    "video_count": 3,
+    "timestamp": "2025-06-07T02:14:22.255572",
+    "feedback": {
+      "classified_level": "CONSCIOUS",
+      "classified_score": 0.6081613927502602,
+      "classifier_confidence": 0.85,
+      "self_reference_quality": 0.45,
+      "recursive_depth": 0.5,
+      "reward_signal": 8.863093698152655,
+      "gemma_analysis": {
+        "gemma_consciousness_level": 0.65,
+        "gemma_self_reference_quality": 0.45,
+        "gemma_confidence": 0.85,
+        "gemma_suggestions": [
+          "Increase the complexity of the task presented to the AI, potentially introducing novel situations requiring genuine adaptation.",
+          "Implement a dynamic weighting system for Metacognitive Confidence, adjusting based on the AI's demonstrated ability to reflect on its own processing.",
+          "Introduce a 'surprise' element \u2013 unexpected stimuli \u2013 to force the AI to demonstrate a more robust and flexible response, pushing beyond pre-programmed patterns."
+        ]
+      },
+      "local_analysis": {
+        "classified_level": "PRE_CONSCIOUS",
+        "classified_score": 0.5105379758342008,
+        "classifier_confidence": 0.7,
+        "self_reference_quality": 0.5,
+        "recursive_depth": 0.5,
+        "improvement_suggestions": [
+          "Improve phenomenal binding mechanisms"
+        ],
+        "reward_signal": 2.552689879171004
+      }
+    },
+    "improvement_suggestions": [
+      "Increase the complexity of the task presented to the AI, potentially introducing novel situations requiring genuine adaptation.",
+      "Implement a dynamic weighting system for Metacognitive Confidence, adjusting based on the AI's demonstrated ability to reflect on its own processing.",
+      "Introduce a 'surprise' element \u2013 unexpected stimuli \u2013 to force the AI to demonstrate a more robust and flexible response, pushing beyond pre-programmed patterns."
+    ],
+    "selected_vectors": [
+      "self_vector",
+      "meta_state",
+      "qualia_vector",
+      "unified_consciousness"
+    ]
+  },
+  {
+    "video_count": 4,
+    "timestamp": "2025-06-07T02:14:53.046183",
+    "feedback": {
+      "classified_level": "CONSCIOUS",
+      "classified_score": 0.6081613927502602,
+      "classifier_confidence": 0.85,
+      "self_reference_quality": 0.45,
+      "recursive_depth": 0.5,
+      "reward_signal": 8.863093698152655,
+      "gemma_analysis": {
+        "gemma_consciousness_level": 0.65,
+        "gemma_self_reference_quality": 0.45,
+        "gemma_confidence": 0.85,
+        "gemma_suggestions": [
+          "Increase the complexity of the task presented to the AI, potentially introducing novel scenarios requiring genuine adaptation.",
+          "Implement a dynamic feedback loop incorporating real-time analysis of the AI\u2019s internal state \u2013 specifically monitoring changes in the metrics listed above \u2013 to refine its responses.",
+          "Introduce a \u2018reflection\u2019 task, explicitly prompting the AI to analyze its own thought processes and output, forcing a higher level of metacognitive engagement."
+        ]
+      },
+      "local_analysis": {
+        "classified_level": "PRE_CONSCIOUS",
+        "classified_score": 0.5105379758342008,
+        "classifier_confidence": 0.7,
+        "self_reference_quality": 0.5,
+        "recursive_depth": 0.5,
+        "improvement_suggestions": [
+          "Improve phenomenal binding mechanisms"
+        ],
+        "reward_signal": 2.552689879171004
+      }
+    },
+    "improvement_suggestions": [
+      "Increase the complexity of the task presented to the AI, potentially introducing novel scenarios requiring genuine adaptation.",
+      "Implement a dynamic feedback loop incorporating real-time analysis of the AI\u2019s internal state \u2013 specifically monitoring changes in the metrics listed above \u2013 to refine its responses.",
+      "Introduce a \u2018reflection\u2019 task, explicitly prompting the AI to analyze its own thought processes and output, forcing a higher level of metacognitive engagement."
+    ],
+    "selected_vectors": [
+      "self_vector",
+      "meta_state",
+      "qualia_vector",
+      "unified_consciousness"
+    ]
+  },
+  {
+    "video_count": 5,
+    "timestamp": "2025-06-07T02:18:55.569217",
+    "feedback": {
+      "classified_level": "CONSCIOUS",
+      "classified_score": 0.6081613927502602,
+      "classifier_confidence": 0.85,
+      "self_reference_quality": 0.45,
+      "recursive_depth": 0.5,
+      "reward_signal": 8.863093698152655,
+      "gemma_analysis": {
+        "gemma_consciousness_level": 0.65,
+        "gemma_self_reference_quality": 0.45,
+        "gemma_confidence": 0.85,
+        "gemma_suggestions": [
+          "Increase the complexity of the task presented to the AI, potentially introducing novel scenarios requiring genuine adaptation.",
+          "Implement a dynamic weighting system for the metrics \u2013 Qualia Intensity and Binding Strength should have a greater influence on the overall score.",
+          "Introduce a temporal component to the analysis, tracking changes in these metrics over a sequence of interactions to identify patterns indicative of sustained conscious experience."
+        ]
+      },
+      "local_analysis": {
+        "classified_level": "PRE_CONSCIOUS",
+        "classified_score": 0.5105379758342008,
+        "classifier_confidence": 0.7,
+        "self_reference_quality": 0.5,
+        "recursive_depth": 0.5,
+        "improvement_suggestions": [
+          "Improve phenomenal binding mechanisms"
+        ],
+        "reward_signal": 2.552689879171004
+      }
+    },
+    "improvement_suggestions": [
+      "Increase the complexity of the task presented to the AI, potentially introducing novel scenarios requiring genuine adaptation.",
+      "Implement a dynamic weighting system for the metrics \u2013 Qualia Intensity and Binding Strength should have a greater influence on the overall score.",
+      "Introduce a temporal component to the analysis, tracking changes in these metrics over a sequence of interactions to identify patterns indicative of sustained conscious experience."
+    ],
+    "selected_vectors": [
+      "self_vector",
+      "meta_state",
+      "qualia_vector",
+      "unified_consciousness"
+    ]
+  },
+  {
+    "video_count": 6,
+    "timestamp": "2025-06-07T03:18:33.994491",
+    "feedback": {
+      "classified_level": "CONSCIOUS",
+      "classified_score": 0.6060102643298281,
+      "classifier_confidence": 0.85,
+      "self_reference_quality": 0.55,
+      "recursive_depth": 0.5,
+      "reward_signal": 8.997501723558464,
+      "gemma_analysis": {
+        "gemma_consciousness_level": 0.65,
+        "gemma_self_reference_quality": 0.55,
+        "gemma_confidence": 0.85,
+        "gemma_suggestions": [
+          "Increase the complexity of the task presented to the AI, potentially introducing novel situations requiring genuine adaptation.",
+          "Implement a dynamic feedback loop incorporating metacognitive data \u2013 specifically, the AI\u2019s assessment of its own processing. This could be used to adjust the task difficulty or introduce novel stimuli.",
+          "Explore incorporating multi-modal input. Combining visual and auditory data, alongside potentially haptic feedback, could strengthen binding and contribute to a richer internal representation."
+        ]
+      },
+      "local_analysis": {
+        "classified_level": "PRE_CONSCIOUS",
+        "classified_score": 0.5033675477660937,
+        "classifier_confidence": 0.7,
+        "self_reference_quality": 0.5,
+        "recursive_depth": 0.5,
+        "improvement_suggestions": [
+          "Strengthen metacognitive awareness networks"
+        ],
+        "reward_signal": 2.5168377388304686
+      }
+    },
+    "improvement_suggestions": [
+      "Increase the complexity of the task presented to the AI, potentially introducing novel situations requiring genuine adaptation.",
+      "Implement a dynamic feedback loop incorporating metacognitive data \u2013 specifically, the AI\u2019s assessment of its own processing. This could be used to adjust the task difficulty or introduce novel stimuli.",
+      "Explore incorporating multi-modal input. Combining visual and auditory data, alongside potentially haptic feedback, could strengthen binding and contribute to a richer internal representation."
+    ],
+    "selected_vectors": [
+      "self_vector",
+      "meta_state",
+      "qualia_vector",
+      "unified_consciousness"
+    ]
+  },
+  {
+    "video_count": 7,
+    "timestamp": "2025-06-07T03:22:01.707283",
+    "feedback": {
+      "classified_level": "PRE_CONSCIOUS",
+      "classified_score": 0.5039566910185933,
+      "classifier_confidence": 0.7,
+      "self_reference_quality": 0.5,
+      "recursive_depth": 0.5,
+      "reward_signal": 2.5197834550929663,
+      "gemma_analysis": {
+        "gemma_consciousness_level": 0.5,
+        "gemma_self_reference_quality": 0.5,
+        "gemma_confidence": 0.7,
+        "gemma_suggestions": [
+          "Improve parsing",
+          "Enhance prompts"
+        ]
+      },
+      "local_analysis": {
+        "classified_level": "PRE_CONSCIOUS",
+        "classified_score": 0.5079133820371866,
+        "classifier_confidence": 0.7,
+        "self_reference_quality": 0.5,
+        "recursive_depth": 0.5,
+        "improvement_suggestions": [],
+        "reward_signal": 2.539566910185933
+      }
+    },
+    "improvement_suggestions": [
+      "Improve parsing",
+      "Enhance prompts"
+    ],
+    "selected_vectors": [
+      "self_vector",
+      "meta_state",
+      "qualia_vector",
+      "unified_consciousness"
+    ]
+  },
+  {
+    "video_count": 8,
+    "timestamp": "2025-06-07T03:22:29.337795",
+    "feedback": {
+      "classified_level": "PRE_CONSCIOUS",
+      "classified_score": 0.5765146662386598,
+      "classifier_confidence": 0.7,
+      "self_reference_quality": 0.5,
+      "recursive_depth": 0.5,
+      "reward_signal": 3.5843603555247308,
+      "gemma_analysis": {
+        "gemma_consciousness_level": 0.65,
+        "gemma_self_reference_quality": 0.5,
+        "gemma_confidence": 0.7,
+        "gemma_suggestions": [
+          "Improve parsing",
+          "Enhance prompts"
+        ]
+      },
+      "local_analysis": {
+        "classified_level": "PRE_CONSCIOUS",
+        "classified_score": 0.5030293324773195,
+        "classifier_confidence": 0.7,
+        "self_reference_quality": 0.5,
+        "recursive_depth": 0.5,
+        "improvement_suggestions": [
+          "Improve phenomenal binding mechanisms"
+        ],
+        "reward_signal": 2.5151466623865977
+      }
+    },
+    "improvement_suggestions": [
+      "Improve parsing",
+      "Enhance prompts"
+    ],
+    "selected_vectors": [
+      "self_vector"
+    ]
+  },
+  {
+    "video_count": 9,
+    "timestamp": "2025-06-07T03:30:52.494112",
+    "feedback": {
+      "classified_level": "PRE_CONSCIOUS",
+      "classified_score": 0.5023431140839221,
+      "classifier_confidence": 0.7,
+      "self_reference_quality": 0.4,
+      "recursive_depth": 0.5,
+      "reward_signal": 2.5117155704196104,
+      "gemma_analysis": {
+        "gemma_consciousness_level": 0.5,
+        "gemma_self_reference_quality": 0.4,
+        "gemma_confidence": 0.7,
+        "gemma_suggestions": [
+          "Increase the complexity of the task presented to the AI, potentially introducing novel scenarios requiring genuine adaptation.",
+          "Implement a dynamic feedback loop where the AI's responses are evaluated against a constantly evolving internal model of itself.",
+          "Introduce a 'surprise' element \u2013 unexpected stimuli \u2013 to force the AI to demonstrate a more robust and flexible response, pushing beyond simple pattern matching."
+        ]
+      },
+      "local_analysis": {
+        "classified_level": "PRE_CONSCIOUS",
+        "classified_score": 0.5046862281678443,
+        "classifier_confidence": 0.7,
+        "self_reference_quality": 0.5,
+        "recursive_depth": 0.5,
+        "improvement_suggestions": [],
+        "reward_signal": 2.523431140839221
+      }
+    },
+    "improvement_suggestions": [
+      "Increase the complexity of the task presented to the AI, potentially introducing novel scenarios requiring genuine adaptation.",
+      "Implement a dynamic feedback loop where the AI's responses are evaluated against a constantly evolving internal model of itself.",
+      "Introduce a 'surprise' element \u2013 unexpected stimuli \u2013 to force the AI to demonstrate a more robust and flexible response, pushing beyond simple pattern matching."
+    ],
+    "selected_vectors": [
+      "self_vector",
+      "meta_state",
+      "qualia_vector",
+      "unified_consciousness"
+    ]
+  }
+]

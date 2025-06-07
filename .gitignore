@@ -1,46 +1,4 @@
-# Byte-compiled / optimized / DLL files
+.env
+*.pyc
 __pycache__/
-*.py[cod]
-*.so
-*.pyd
-
-# Virtual environments
-.venv/
-venv/
-env/
-*.egg-info/
-pip-wheel-metadata/
-
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints/
-
-# VSCode config
-.vscode/
-
-# Gitpod-specific files
-.gitpod.Dockerfile
-.gitpod.yml
-
-# Data and video files
-data/
-vectors/
-*.mp4
-*.avi
-*.mov
-*.npy
-
-# Logs and temp files
-*.log
-*.tmp
-
-# PyTorch / ML checkpoints
-*.pt
-*.pth
-checkpoints/
-runs/
-
-# Mac / OS / IDE system files
 .DS_Store
-Thumbs.db
-# Reports
-reports/

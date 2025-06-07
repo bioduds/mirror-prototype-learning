@@ -1,3 +1,5 @@
+"""Neural encoder for mirror learning."""
+import os
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -5,81 +7,123 @@ import numpy as np
 from tqdm import tqdm
 
 # --- Check for GPU ---
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 using_gpu = torch.cuda.is_available()
 print(f"[INFO] Using device: {'GPU' if using_gpu else 'CPU'}")
 
-# --- Load extracted visual features from PerceptionNet ---
-features_path = "pca_features.npy"
-features = np.load(features_path)
-features = torch.tensor(features, dtype=torch.float32).to(device)
+# Initialize dimensions
+DEFAULT_INPUT_DIM = 3 * 32 * 32  # Default for 32x32 RGB images
+DEFAULT_HIDDEN_DIM = 256
+DEFAULT_LATENT_DIM = 128
+
 
 class MirrorNet(nn.Module):
-    """
-    Autoencoder model for compressing high-dimensional perception features.
+    """Neural network for mirror learning."""
 
-    Args:
-        input_dim (int): Dimension of the input feature vector.
-    Returns:
-        Tuple[torch.Tensor, torch.Tensor]: Reconstructed input and latent code.
-    """
-    def __init__(self, input_dim: int):
+    def __init__(self, input_dim: int = DEFAULT_INPUT_DIM,
+                 hidden_dim: int = DEFAULT_HIDDEN_DIM,
+                 latent_dim: int = DEFAULT_LATENT_DIM):
         super(MirrorNet, self).__init__()
+
         self.encoder = nn.Sequential(
-            nn.Linear(input_dim, 512),
+            nn.Linear(input_dim, hidden_dim),
             nn.ReLU(),
-            nn.Linear(512, 128),
-            nn.ReLU()
+            nn.Linear(hidden_dim, latent_dim)
         )
+
         self.decoder = nn.Sequential(
-            nn.Linear(128, 512),
+            nn.Linear(latent_dim, hidden_dim),
             nn.ReLU(),
-            nn.Linear(512, input_dim)
+            nn.Linear(hidden_dim, input_dim)
         )
 
-    def forward(self, x: torch.Tensor) -> tuple[torch.Tensor, torch.Tensor]:
+    def forward(self, x: torch.Tensor) -> tuple:
+        """Forward pass through the network."""
         latent = self.encoder(x)
-        recon = self.decoder(latent)
-        return recon, latent
+        reconstructed = self.decoder(latent)
+        return reconstructed, latent
 
-# --- Initialize model, optimizer, and loss function ---
-input_dim = features.shape[1]
-mirrornet = MirrorNet(input_dim).to(device)
-optimizer = optim.Adam(mirrornet.parameters(), lr=0.001)
-criterion = nn.MSELoss()
 
-# --- Training loop ---
-epochs = 20
-mirrornet.train()
-print(f"[INFO] Training started on {'GPU' if using_gpu else 'CPU'}")
+def initialize_mirror_network():
+    """Initialize the mirror network with appropriate dimensions."""
+    if os.path.exists("pca_features.npy"):
+        try:
+            features = np.load("pca_features.npy")
+            if features.size == 0 or len(features.shape) < 2:
+                print(
+                    "[INFO] PCA features file exists but is empty or invalid. Using default dimensions.")
+                input_dim = DEFAULT_INPUT_DIM
+                features = None
+            else:
+                input_dim = features.shape[1]
+                features = torch.tensor(
+                    features, dtype=torch.float32).to(device)
+                print(
+                    f"[INFO] Loaded PCA features with shape: {features.shape}")
+        except Exception as e:
+            print(
+                f"[INFO] Error loading PCA features: {e}. Using default dimensions.")
+            input_dim = DEFAULT_INPUT_DIM
+            features = None
+    else:
+        input_dim = DEFAULT_INPUT_DIM
+        features = None
+        print(
+            "[INFO] No existing features found. Using default input dimension:", input_dim)
 
-for epoch in range(epochs):
-    epoch_loss = 0.0
-    for i in tqdm(range(len(features)), desc=f"Epoch {epoch+1}/{epochs}"):
-        input_vec = features[i].unsqueeze(0).to(device)
-        optimizer.zero_grad()
-        output, _ = mirrornet(input_vec)
-        loss = criterion(output, input_vec)
-        loss.backward()
-        optimizer.step()
-        epoch_loss += loss.item()
-    print(f"[EPOCH {epoch+1}] Loss: {epoch_loss / len(features):.6f}")
+    # Initialize model, optimizer, and loss function
+    mirrornet = MirrorNet(input_dim).to(device)
+    optimizer = optim.Adam(mirrornet.parameters(), lr=0.001)
+    criterion = nn.MSELoss()
 
-# --- Inference: Encode all features ---
-mirrornet.eval()
-reconstructed = []
-latents = []
+    # Train if features exist
+    if features is not None and features.size(0) > 0:
+        print("[INFO] Training started on", device)
+        n_epochs = 20
+        batch_size = 32
 
-print(f"[INFO] Inference running on {'GPU' if using_gpu else 'CPU'}")
+        for epoch in range(n_epochs):
+            running_loss = 0.0
 
-with torch.no_grad():
-    for i in range(len(features)):
-        input_vec = features[i].unsqueeze(0).to(device)
-        out, z = mirrornet(input_vec)
-        reconstructed.append(out.squeeze(0).cpu().numpy())
-        latents.append(z.squeeze(0).cpu().numpy())
+            # Create progress bar for batches
+            n_batches = len(features) // batch_size
+            if n_batches == 0:
+                n_batches = 1
+                batch_size = len(features)
 
-# --- Save outputs ---
-np.save("mirrornet_reconstructed.npy", np.array(reconstructed))
-np.save("mirrornet_latents.npy", np.array(latents))
-print("[INFO] Saved mirror network outputs: reconstructed + latents")
+            pbar = tqdm(range(n_batches), desc=f'Epoch {epoch+1}/{n_epochs}')
+
+            for i in pbar:
+                # Get batch
+                start_idx = i * batch_size
+                end_idx = min(start_idx + batch_size, len(features))
+                batch = features[start_idx:end_idx]
+
+                # Zero gradients
+                optimizer.zero_grad()
+
+                # Forward pass
+                reconstructed, _ = mirrornet(batch)
+
+                # Compute loss
+                loss = criterion(reconstructed, batch)
+
+                # Backward pass
+                loss.backward()
+                optimizer.step()
+
+                # Update statistics
+                running_loss += loss.item()
+                pbar.set_postfix({'loss': f'{running_loss/(i+1):.6f}'})
+
+            print(f'[EPOCH {epoch+1}] Loss: {running_loss/n_batches:.6f}')
+    else:
+        print(
+            "[INFO] No features available for training. Network initialized with random weights.")
+
+    print("[INFO] Mirror network ready for inference")
+    return mirrornet
+
+
+# Initialize the network
+mirrornet = initialize_mirror_network()

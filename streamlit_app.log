@@ -1,0 +1,1394 @@
+2025-06-07 03:34:30,053 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:34:30,069 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:34:32,279 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:34:32,279 - __main__ - INFO - 🔧 Initialized learning_active session state
+2025-06-07 03:34:32,279 - __main__ - INFO - 🔧 Initialized learner_thread session state
+2025-06-07 03:34:32,279 - __main__ - INFO - 🔧 Initialized stop_event session state
+2025-06-07 03:34:32,279 - __main__ - INFO - 🔧 Initialized progress_queue session state
+2025-06-07 03:34:32,279 - __main__ - INFO - 🔧 Initialized learning_stats session state
+2025-06-07 03:34:32,279 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:34:32,279 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:34:32,279 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:34:32,281 - __main__ - INFO - 📱 UI header displayed
+2025-06-07 03:34:32,281 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:34:32,281 - __main__ - INFO - ✅ YouTube API key is configured
+2025-06-07 03:34:32,282 - __main__ - INFO - 🔴 Status: Learning Inactive
+2025-06-07 03:34:32,282 - __main__ - INFO - ⚙️ Auto-refresh setting: True
+2025-06-07 03:34:32,282 - __main__ - INFO - 🔄 Auto-refresh active, sleeping for 5 seconds
+2025-06-07 03:34:37,389 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:34:37,390 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:34:37,390 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:34:37,390 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:34:37,390 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:34:37,390 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:34:37,390 - __main__ - INFO - 📱 UI header displayed
+2025-06-07 03:34:37,390 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:34:37,390 - __main__ - INFO - ✅ YouTube API key is configured
+2025-06-07 03:34:37,391 - __main__ - INFO - 🔴 Status: Learning Inactive
+2025-06-07 03:34:37,391 - __main__ - INFO - ⚙️ Auto-refresh setting: True
+2025-06-07 03:34:37,391 - __main__ - INFO - 🔄 Auto-refresh active, sleeping for 5 seconds
+2025-06-07 03:34:42,158 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:34:42,160 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:34:42,161 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:34:42,161 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:34:42,165 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:34:42,165 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:34:42,170 - __main__ - INFO - 📱 UI header displayed
+2025-06-07 03:34:42,171 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:34:42,172 - __main__ - INFO - ✅ YouTube API key is configured
+2025-06-07 03:34:42,173 - __main__ - INFO - 🔘 Start Learning button clicked
+2025-06-07 03:34:42,174 - __main__ - INFO - 🎬 start_learning_session called
+2025-06-07 03:34:42,174 - __main__ - INFO - ▶️ Starting new learning session
+2025-06-07 03:34:42,175 - __main__ - INFO - 🔧 Captured thread references, creating learner thread
+2025-06-07 03:34:42,176 - __main__ - INFO - 🧵 Learner thread started
+2025-06-07 03:34:42,177 - __main__ - INFO - ✅ Learning thread started: Thread-5 (run_learner)
+2025-06-07 03:34:42,178 - __main__ - INFO - 🧠 Initializing StreamlitContinuousLearner
+2025-06-07 03:34:42,286 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:34:42,287 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:34:42,287 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:34:42,287 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:34:42,287 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:34:42,287 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:34:42,287 - __main__ - INFO - 📱 UI header displayed
+2025-06-07 03:34:42,287 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:34:42,288 - __main__ - INFO - ✅ YouTube API key is configured
+2025-06-07 03:34:42,288 - __main__ - INFO - 🟢 Status: Learning Active
+2025-06-07 03:34:42,288 - __main__ - INFO - ⚙️ Auto-refresh setting: True
+2025-06-07 03:34:42,288 - __main__ - INFO - 🔄 Auto-refresh active, sleeping for 5 seconds
+2025-06-07 03:34:42,289 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-06-07 03:34:42,317 - __main__ - INFO - ✅ StreamlitContinuousLearner initialized successfully
+2025-06-07 03:34:42,317 - __main__ - INFO - 🚀 Starting continuous learning from thread
+2025-06-07 03:34:42,317 - __main__ - INFO - 🚀 Starting continuous learning: min_wait=60, max_wait=300, max_iterations=None
+2025-06-07 03:34:42,317 - __main__ - INFO - 📊 Progress: 🔄 Starting iteration 1
+2025-06-07 03:34:42,317 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 1/5
+2025-06-07 03:34:42,994 - __main__ - INFO - 📊 Progress: 🎬 Found video: A.I. Artificial Intelligence - Official® Trailer [HD]...
+2025-06-07 03:34:45,673 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:34:45,673 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:34:47,389 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:34:47,389 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:34:47,390 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:34:47,390 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:34:47,390 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:34:47,390 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:34:47,390 - __main__ - INFO - 📱 UI header displayed
+2025-06-07 03:34:47,390 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:34:47,390 - __main__ - INFO - ✅ YouTube API key is configured
+2025-06-07 03:34:47,391 - __main__ - INFO - 🟢 Status: Learning Active
+2025-06-07 03:34:47,391 - __main__ - INFO - ⚙️ Auto-refresh setting: True
+2025-06-07 03:34:47,391 - __main__ - INFO - 🔄 Auto-refresh active, sleeping for 5 seconds
+2025-06-07 03:34:47,678 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 2/5
+2025-06-07 03:34:48,198 - __main__ - INFO - 📊 Progress: 🎬 Found video: The Neuroscience of Learning...
+2025-06-07 03:34:50,577 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:34:50,578 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:34:52,511 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:34:52,511 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:34:52,511 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:34:52,511 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:34:52,511 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:34:52,511 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:34:52,512 - __main__ - INFO - 📱 UI header displayed
+2025-06-07 03:34:52,512 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:34:52,512 - __main__ - INFO - ✅ YouTube API key is configured
+2025-06-07 03:34:52,512 - __main__ - INFO - 🟢 Status: Learning Active
+2025-06-07 03:34:52,513 - __main__ - INFO - ⚙️ Auto-refresh setting: True
+2025-06-07 03:34:52,513 - __main__ - INFO - 🔄 Auto-refresh active, sleeping for 5 seconds
+2025-06-07 03:34:52,583 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 3/5
+2025-06-07 03:34:53,107 - __main__ - INFO - 📊 Progress: 🎬 Found video: Self Awareness...
+2025-06-07 03:34:57,393 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:34:57,394 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:34:57,606 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:34:57,607 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:34:57,607 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:34:57,607 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:34:57,607 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:34:57,607 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:34:57,607 - __main__ - INFO - 📱 UI header displayed
+2025-06-07 03:34:57,607 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:34:57,607 - __main__ - INFO - ✅ YouTube API key is configured
+2025-06-07 03:34:57,608 - __main__ - INFO - 🟢 Status: Learning Active
+2025-06-07 03:34:57,608 - __main__ - INFO - ⚙️ Auto-refresh setting: True
+2025-06-07 03:34:57,608 - __main__ - INFO - 🔄 Auto-refresh active, sleeping for 5 seconds
+2025-06-07 03:34:59,399 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 4/5
+2025-06-07 03:35:00,011 - __main__ - INFO - 📊 Progress: 🎬 Found video: AMAZING example of complex emergent behavior from a very sim...
+2025-06-07 03:35:02,764 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:35:02,766 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:35:02,767 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:35:02,767 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:35:02,767 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:35:02,767 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:35:02,768 - __main__ - INFO - 📱 UI header displayed
+2025-06-07 03:35:02,768 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:35:02,768 - __main__ - INFO - ✅ YouTube API key is configured
+2025-06-07 03:35:02,770 - __main__ - INFO - 🟢 Status: Learning Active
+2025-06-07 03:35:02,773 - __main__ - INFO - ⚙️ Auto-refresh setting: True
+2025-06-07 03:35:02,774 - __main__ - INFO - 🔄 Auto-refresh active, sleeping for 5 seconds
+2025-06-07 03:35:03,341 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:35:03,341 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:35:05,346 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 5/5
+2025-06-07 03:35:05,888 - __main__ - INFO - 📊 Progress: 🎬 Found video: Self Awareness...
+2025-06-07 03:35:07,884 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:35:07,884 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:35:07,884 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:35:07,884 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:35:07,884 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:35:07,884 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:35:07,885 - __main__ - INFO - 📱 UI header displayed
+2025-06-07 03:35:07,885 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:35:07,886 - __main__ - INFO - ✅ YouTube API key is configured
+2025-06-07 03:35:07,886 - __main__ - INFO - 🟢 Status: Learning Active
+2025-06-07 03:35:07,886 - __main__ - INFO - ⚙️ Auto-refresh setting: True
+2025-06-07 03:35:07,886 - __main__ - INFO - 🔄 Auto-refresh active, sleeping for 5 seconds
+2025-06-07 03:35:07,987 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:35:07,988 - __main__ - INFO - 📊 Progress: ❌ No suitable videos found after all attempts
+2025-06-07 03:35:07,988 - __main__ - INFO - 📊 Progress: ⏳ Waiting 1 minutes before next video...
+2025-06-07 03:35:13,018 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:35:13,018 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:35:13,018 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:35:13,018 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:35:13,018 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:35:13,018 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:35:13,018 - __main__ - INFO - 📱 UI header displayed
+2025-06-07 03:35:13,019 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:35:13,019 - __main__ - INFO - ✅ YouTube API key is configured
+2025-06-07 03:35:13,019 - __main__ - INFO - 🟢 Status: Learning Active
+2025-06-07 03:35:13,019 - __main__ - INFO - ⚙️ Auto-refresh setting: True
+2025-06-07 03:35:13,019 - __main__ - INFO - 🔄 Auto-refresh active, sleeping for 5 seconds
+2025-06-07 03:35:18,135 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:35:18,136 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:35:18,136 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:35:18,136 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:35:18,136 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:35:18,136 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:35:18,137 - __main__ - INFO - 📱 UI header displayed
+2025-06-07 03:35:18,137 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:35:18,137 - __main__ - INFO - ✅ YouTube API key is configured
+2025-06-07 03:35:18,137 - __main__ - INFO - 🟢 Status: Learning Active
+2025-06-07 03:35:18,137 - __main__ - INFO - ⚙️ Auto-refresh setting: True
+2025-06-07 03:35:18,137 - __main__ - INFO - 🔄 Auto-refresh active, sleeping for 5 seconds
+2025-06-07 03:35:23,260 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:35:23,260 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:35:23,260 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:35:23,260 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:35:23,260 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:35:23,260 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:35:23,261 - __main__ - INFO - 📱 UI header displayed
+2025-06-07 03:35:23,261 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:35:23,261 - __main__ - INFO - ✅ YouTube API key is configured
+2025-06-07 03:35:23,261 - __main__ - INFO - 🟢 Status: Learning Active
+2025-06-07 03:35:23,261 - __main__ - INFO - ⚙️ Auto-refresh setting: True
+2025-06-07 03:35:23,261 - __main__ - INFO - 🔄 Auto-refresh active, sleeping for 5 seconds
+2025-06-07 03:37:11,724 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:37:11,740 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:37:13,622 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:37:13,622 - __main__ - INFO - 🔧 Initialized learning_active session state
+2025-06-07 03:37:13,622 - __main__ - INFO - 🔧 Initialized learner_thread session state
+2025-06-07 03:37:13,622 - __main__ - INFO - 🔧 Initialized stop_event session state
+2025-06-07 03:37:13,622 - __main__ - INFO - 🔧 Initialized progress_queue session state
+2025-06-07 03:37:13,622 - __main__ - INFO - 🔧 Initialized app_logs session state
+2025-06-07 03:37:13,622 - __main__ - INFO - 🔧 Initialized learning_stats session state
+2025-06-07 03:37:13,622 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:37:13,623 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:37:13,623 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:37:13,624 - __main__ - INFO - 📱 UI header displayed
+2025-06-07 03:37:13,624 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:37:13,624 - __main__ - INFO - ✅ YouTube API key is configured
+2025-06-07 03:37:13,625 - __main__ - INFO - 🔴 Status: Learning Inactive
+2025-06-07 03:37:13,625 - __main__ - INFO - ⚙️ Auto-refresh setting: True
+2025-06-07 03:37:13,625 - __main__ - INFO - 🔄 Auto-refresh active, sleeping for 5 seconds
+2025-06-07 03:37:17,682 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:37:17,683 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:37:17,683 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:37:17,683 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:37:17,683 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:37:17,684 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:37:17,685 - __main__ - INFO - 📱 UI header displayed
+2025-06-07 03:37:17,686 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:37:17,686 - __main__ - INFO - ✅ YouTube API key is configured
+2025-06-07 03:37:17,687 - __main__ - INFO - 🔘 Start Learning button clicked
+2025-06-07 03:37:17,687 - __main__ - INFO - 🎬 start_learning_session called
+2025-06-07 03:37:17,688 - __main__ - INFO - ▶️ Starting new learning session
+2025-06-07 03:37:17,688 - __main__ - INFO - 🔧 Captured thread references, creating learner thread
+2025-06-07 03:37:17,689 - __main__ - INFO - 🧵 Learner thread started
+2025-06-07 03:37:17,690 - __main__ - INFO - ✅ Learning thread started: Thread-4 (run_learner)
+2025-06-07 03:37:17,690 - __main__ - INFO - 🧠 Initializing StreamlitContinuousLearner
+2025-06-07 03:37:17,799 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:37:17,799 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:37:17,799 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:37:17,799 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:37:17,799 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:37:17,799 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:37:17,800 - __main__ - INFO - 📱 UI header displayed
+2025-06-07 03:37:17,800 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:37:17,800 - __main__ - INFO - ✅ YouTube API key is configured
+2025-06-07 03:37:17,800 - __main__ - INFO - 🟢 Status: Learning Active
+2025-06-07 03:37:17,801 - __main__ - INFO - ⚙️ Auto-refresh setting: True
+2025-06-07 03:37:17,801 - __main__ - INFO - 🔄 Auto-refresh active, sleeping for 5 seconds
+2025-06-07 03:37:17,802 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-06-07 03:37:17,828 - __main__ - INFO - ✅ StreamlitContinuousLearner initialized successfully
+2025-06-07 03:37:17,828 - __main__ - INFO - 🚀 Starting continuous learning from thread
+2025-06-07 03:37:17,828 - __main__ - INFO - 🚀 Starting continuous learning: min_wait=60, max_wait=300, max_iterations=None
+2025-06-07 03:37:17,828 - __main__ - INFO - 🔄 Starting iteration 1
+2025-06-07 03:37:17,829 - __main__ - INFO - 📊 Progress: 🔄 Starting iteration 1
+2025-06-07 03:37:17,829 - __main__ - INFO - 🔍 Starting video search with 5 max attempts
+2025-06-07 03:37:17,829 - __main__ - INFO - 🔍 Search attempt 1/5
+2025-06-07 03:37:17,829 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 1/5
+2025-06-07 03:37:17,829 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:37:18,496 - __main__ - INFO - 🎬 Found video: How I Use Pattern Recognition To Read People #audhd #actuall...
+2025-06-07 03:37:18,497 - __main__ - INFO - 📊 Progress: 🎬 Found video: How I Use Pattern Recognition To Read People #audhd #actuall...
+2025-06-07 03:37:18,497 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=5nAF7Lzufnk
+2025-06-07 03:37:22,920 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:37:22,921 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:37:22,921 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:37:22,922 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:37:22,922 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:37:22,922 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:37:22,922 - __main__ - INFO - 📱 UI header displayed
+2025-06-07 03:37:22,922 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:37:22,922 - __main__ - INFO - ✅ YouTube API key is configured
+2025-06-07 03:37:22,923 - __main__ - INFO - 🟢 Status: Learning Active
+2025-06-07 03:37:22,923 - __main__ - INFO - ⚙️ Auto-refresh setting: True
+2025-06-07 03:37:22,924 - __main__ - INFO - 🔄 Auto-refresh active, sleeping for 5 seconds
+2025-06-07 03:37:23,676 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:37:23,676 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:37:23,677 - __main__ - INFO - 🔄 Trying different search terms...
+2025-06-07 03:37:23,677 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:37:25,678 - __main__ - INFO - 🔍 Search attempt 2/5
+2025-06-07 03:37:25,679 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 2/5
+2025-06-07 03:37:25,679 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:37:26,215 - __main__ - INFO - 🎬 Found video: A.I. Artificial Intelligence - Official® Trailer [HD]...
+2025-06-07 03:37:26,215 - __main__ - INFO - 📊 Progress: 🎬 Found video: A.I. Artificial Intelligence - Official® Trailer [HD]...
+2025-06-07 03:37:26,215 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=_19pRsZRiz4
+2025-06-07 03:37:28,044 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:37:28,070 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:37:28,082 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:37:28,094 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:37:28,107 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:37:28,114 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:37:28,127 - __main__ - INFO - 📱 UI header displayed
+2025-06-07 03:37:28,127 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:37:28,128 - __main__ - INFO - ✅ YouTube API key is configured
+2025-06-07 03:37:28,128 - __main__ - INFO - 🟢 Status: Learning Active
+2025-06-07 03:37:28,128 - __main__ - INFO - ⚙️ Auto-refresh setting: True
+2025-06-07 03:37:28,129 - __main__ - INFO - 🔄 Auto-refresh active, sleeping for 5 seconds
+2025-06-07 03:37:28,717 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:37:28,717 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:37:28,718 - __main__ - INFO - 🔄 Trying different search terms...
+2025-06-07 03:37:28,718 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:37:30,723 - __main__ - INFO - 🔍 Search attempt 3/5
+2025-06-07 03:37:30,724 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 3/5
+2025-06-07 03:37:30,725 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:37:31,282 - __main__ - INFO - 🎬 Found video: AMAZING example of complex emergent behavior from a very sim...
+2025-06-07 03:37:31,282 - __main__ - INFO - 📊 Progress: 🎬 Found video: AMAZING example of complex emergent behavior from a very sim...
+2025-06-07 03:37:31,282 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=ix66tQ93bdU
+2025-06-07 03:37:33,211 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:37:33,212 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:37:33,212 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:37:33,212 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:37:33,212 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:37:33,212 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:37:33,213 - __main__ - INFO - 📱 UI header displayed
+2025-06-07 03:37:33,213 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:37:33,213 - __main__ - INFO - ✅ YouTube API key is configured
+2025-06-07 03:37:33,214 - __main__ - INFO - 🟢 Status: Learning Active
+2025-06-07 03:37:33,214 - __main__ - INFO - ⚙️ Auto-refresh setting: True
+2025-06-07 03:37:33,214 - __main__ - INFO - 🔄 Auto-refresh active, sleeping for 5 seconds
+2025-06-07 03:37:34,441 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:37:34,442 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:37:34,442 - __main__ - INFO - 🔄 Trying different search terms...
+2025-06-07 03:37:34,442 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:37:36,447 - __main__ - INFO - 🔍 Search attempt 4/5
+2025-06-07 03:37:36,447 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 4/5
+2025-06-07 03:37:36,448 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:37:37,016 - __main__ - INFO - 🎬 Found video: How I Use Pattern Recognition To Read People #audhd #actuall...
+2025-06-07 03:37:37,016 - __main__ - INFO - 📊 Progress: 🎬 Found video: How I Use Pattern Recognition To Read People #audhd #actuall...
+2025-06-07 03:37:37,017 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=5nAF7Lzufnk
+2025-06-07 03:37:38,335 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:37:38,336 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:37:38,336 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:37:38,336 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:37:38,337 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:37:38,337 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:37:38,337 - __main__ - INFO - 📱 UI header displayed
+2025-06-07 03:37:38,337 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:37:38,340 - __main__ - INFO - ✅ YouTube API key is configured
+2025-06-07 03:37:38,340 - __main__ - INFO - 🟢 Status: Learning Active
+2025-06-07 03:37:38,341 - __main__ - INFO - ⚙️ Auto-refresh setting: True
+2025-06-07 03:37:38,341 - __main__ - INFO - 🔄 Auto-refresh active, sleeping for 5 seconds
+2025-06-07 03:37:39,763 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:37:39,763 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:37:39,763 - __main__ - INFO - 🔄 Trying different search terms...
+2025-06-07 03:37:39,763 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:37:41,769 - __main__ - INFO - 🔍 Search attempt 5/5
+2025-06-07 03:37:41,769 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 5/5
+2025-06-07 03:37:41,769 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:37:42,300 - __main__ - INFO - 🎬 Found video: A.I. Artificial Intelligence - Official® Trailer [HD]...
+2025-06-07 03:37:42,301 - __main__ - INFO - 📊 Progress: 🎬 Found video: A.I. Artificial Intelligence - Official® Trailer [HD]...
+2025-06-07 03:37:42,301 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=_19pRsZRiz4
+2025-06-07 03:37:43,447 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:37:43,448 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:37:43,448 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:37:43,448 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:37:43,449 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:37:43,449 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:37:43,468 - __main__ - INFO - 📱 UI header displayed
+2025-06-07 03:37:43,480 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:37:43,481 - __main__ - INFO - ✅ YouTube API key is configured
+2025-06-07 03:37:43,482 - __main__ - INFO - 🟢 Status: Learning Active
+2025-06-07 03:37:43,482 - __main__ - INFO - ⚙️ Auto-refresh setting: True
+2025-06-07 03:37:43,482 - __main__ - INFO - 🔄 Auto-refresh active, sleeping for 5 seconds
+2025-06-07 03:37:44,738 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:37:44,738 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:37:44,739 - __main__ - WARNING - ❌ No suitable videos found after all attempts
+2025-06-07 03:37:44,739 - __main__ - INFO - 📊 Progress: ❌ No suitable videos found after all attempts
+2025-06-07 03:37:44,739 - __main__ - INFO - ⏳ Waiting 4 minutes 35 seconds before next video...
+2025-06-07 03:37:44,739 - __main__ - INFO - 📊 Progress: ⏳ Waiting 4 minutes before next video...
+2025-06-07 03:37:48,582 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:37:48,583 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:37:48,583 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:37:48,583 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:37:48,584 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:37:48,584 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:37:48,584 - __main__ - INFO - 📱 UI header displayed
+2025-06-07 03:37:48,585 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:37:48,585 - __main__ - INFO - ✅ YouTube API key is configured
+2025-06-07 03:37:48,586 - __main__ - INFO - 🟢 Status: Learning Active
+2025-06-07 03:37:48,586 - __main__ - INFO - ⚙️ Auto-refresh setting: True
+2025-06-07 03:37:48,586 - __main__ - INFO - 🔄 Auto-refresh active, sleeping for 5 seconds
+2025-06-07 03:37:53,670 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:37:53,671 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:37:53,671 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:37:53,671 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:37:53,671 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:37:53,672 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:37:53,672 - __main__ - INFO - 📱 UI header displayed
+2025-06-07 03:37:53,672 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:37:53,673 - __main__ - INFO - ✅ YouTube API key is configured
+2025-06-07 03:37:53,673 - __main__ - INFO - 🟢 Status: Learning Active
+2025-06-07 03:37:53,674 - __main__ - INFO - ⚙️ Auto-refresh setting: True
+2025-06-07 03:37:53,674 - __main__ - INFO - 🔄 Auto-refresh active, sleeping for 5 seconds
+2025-06-07 03:37:58,797 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:37:58,797 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:37:58,797 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:37:58,798 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:37:58,798 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:37:58,798 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:37:58,799 - __main__ - INFO - 📱 UI header displayed
+2025-06-07 03:37:58,799 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:37:58,800 - __main__ - INFO - ✅ YouTube API key is configured
+2025-06-07 03:37:58,800 - __main__ - INFO - 🟢 Status: Learning Active
+2025-06-07 03:37:58,801 - __main__ - INFO - ⚙️ Auto-refresh setting: True
+2025-06-07 03:37:58,801 - __main__ - INFO - 🔄 Auto-refresh active, sleeping for 5 seconds
+2025-06-07 03:38:03,886 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:38:03,887 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:38:03,887 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:38:03,888 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:38:03,888 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:38:03,888 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:38:03,889 - __main__ - INFO - 📱 UI header displayed
+2025-06-07 03:38:03,889 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:38:03,889 - __main__ - INFO - ✅ YouTube API key is configured
+2025-06-07 03:38:03,890 - __main__ - INFO - 🟢 Status: Learning Active
+2025-06-07 03:38:03,890 - __main__ - INFO - ⚙️ Auto-refresh setting: True
+2025-06-07 03:38:03,891 - __main__ - INFO - 🔄 Auto-refresh active, sleeping for 5 seconds
+2025-06-07 03:40:09,033 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:40:09,049 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:40:11,081 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:40:11,082 - __main__ - INFO - 🔧 Initialized learning_active session state
+2025-06-07 03:40:11,082 - __main__ - INFO - 🔧 Initialized learner_thread session state
+2025-06-07 03:40:11,082 - __main__ - INFO - 🔧 Initialized stop_event session state
+2025-06-07 03:40:11,082 - __main__ - INFO - 🔧 Initialized progress_queue session state
+2025-06-07 03:40:11,082 - __main__ - INFO - 🔧 Initialized app_logs session state
+2025-06-07 03:40:11,082 - __main__ - INFO - 🔧 Initialized learning_stats session state
+2025-06-07 03:40:11,082 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:40:11,082 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:40:11,082 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:40:11,084 - __main__ - INFO - 📱 UI header displayed
+2025-06-07 03:40:11,084 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:40:11,084 - __main__ - INFO - ✅ YouTube API key is configured
+2025-06-07 03:40:11,085 - __main__ - INFO - 🔴 Status: Learning Inactive
+2025-06-07 03:40:11,085 - __main__ - INFO - ⚙️ Auto-refresh setting: True
+2025-06-07 03:40:11,085 - __main__ - INFO - 🔄 Auto-refresh active, sleeping for 5 seconds
+2025-06-07 03:40:16,205 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:40:16,205 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:40:16,205 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:40:16,206 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:40:16,206 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:40:16,206 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:40:16,206 - __main__ - INFO - 📱 UI header displayed
+2025-06-07 03:40:16,206 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:40:16,206 - __main__ - INFO - ✅ YouTube API key is configured
+2025-06-07 03:40:16,207 - __main__ - INFO - 🔴 Status: Learning Inactive
+2025-06-07 03:40:16,207 - __main__ - INFO - ⚙️ Auto-refresh setting: True
+2025-06-07 03:40:16,207 - __main__ - INFO - 🔄 Auto-refresh active, sleeping for 5 seconds
+2025-06-07 03:40:16,290 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:40:16,291 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:40:16,291 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:40:16,291 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:40:16,291 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:40:16,291 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:40:16,291 - __main__ - INFO - 📱 UI header displayed
+2025-06-07 03:40:16,291 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:40:16,291 - __main__ - INFO - ✅ YouTube API key is configured
+2025-06-07 03:40:16,292 - __main__ - INFO - 🔘 Start Learning button clicked
+2025-06-07 03:40:16,292 - __main__ - INFO - 🎬 start_learning_session called
+2025-06-07 03:40:16,292 - __main__ - INFO - ▶️ Starting new learning session
+2025-06-07 03:40:16,292 - __main__ - INFO - 🔧 Captured thread references, creating learner thread
+2025-06-07 03:40:16,292 - __main__ - INFO - 🧵 Learner thread started
+2025-06-07 03:40:16,292 - __main__ - INFO - ✅ Learning thread started: Thread-5 (run_learner)
+2025-06-07 03:40:16,293 - __main__ - INFO - 🧠 Initializing StreamlitContinuousLearner
+2025-06-07 03:40:16,365 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:40:16,365 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:40:16,365 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:40:16,365 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:40:16,365 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:40:16,365 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:40:16,366 - __main__ - INFO - 📱 UI header displayed
+2025-06-07 03:40:16,366 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:40:16,366 - __main__ - INFO - ✅ YouTube API key is configured
+2025-06-07 03:40:16,367 - __main__ - INFO - 🟢 Status: Learning Active
+2025-06-07 03:40:16,367 - __main__ - INFO - ⚙️ Auto-refresh setting: True
+2025-06-07 03:40:16,367 - __main__ - INFO - 🔄 Auto-refresh active, sleeping for 5 seconds
+2025-06-07 03:40:16,368 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-06-07 03:40:16,388 - __main__ - INFO - ✅ StreamlitContinuousLearner initialized successfully
+2025-06-07 03:40:16,389 - __main__ - INFO - 🚀 Starting continuous learning from thread
+2025-06-07 03:40:16,389 - __main__ - INFO - 🚀 Starting continuous learning: min_wait=60, max_wait=300, max_iterations=None
+2025-06-07 03:40:16,390 - __main__ - INFO - 🔄 Starting iteration 1
+2025-06-07 03:40:16,390 - __main__ - INFO - 📊 Progress: 🔄 Starting iteration 1
+2025-06-07 03:40:16,390 - __main__ - INFO - 🔍 Starting video search with 5 max attempts
+2025-06-07 03:40:16,390 - __main__ - INFO - 🔍 Search attempt 1/5
+2025-06-07 03:40:16,390 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 1/5
+2025-06-07 03:40:16,390 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:40:17,010 - __main__ - INFO - 🎬 Found video: Cognitive Science...
+2025-06-07 03:40:17,011 - __main__ - INFO - 📊 Progress: 🎬 Found video: Cognitive Science...
+2025-06-07 03:40:17,011 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=uNYdfJdcbAc
+2025-06-07 03:40:20,422 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:40:20,422 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:40:20,422 - __main__ - INFO - 🔄 Trying different search terms...
+2025-06-07 03:40:20,422 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:40:21,451 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:40:21,451 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:40:21,452 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:40:21,452 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:40:21,452 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:40:21,452 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:40:21,453 - __main__ - INFO - 📱 UI header displayed
+2025-06-07 03:40:21,453 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:40:21,453 - __main__ - INFO - ✅ YouTube API key is configured
+2025-06-07 03:40:21,454 - __main__ - INFO - 🟢 Status: Learning Active
+2025-06-07 03:40:21,455 - __main__ - INFO - ⚙️ Auto-refresh setting: True
+2025-06-07 03:40:21,455 - __main__ - INFO - 🔄 Auto-refresh active, sleeping for 5 seconds
+2025-06-07 03:40:22,427 - __main__ - INFO - 🔍 Search attempt 2/5
+2025-06-07 03:40:22,428 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 2/5
+2025-06-07 03:40:22,429 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:40:22,959 - __main__ - INFO - 🎬 Found video: A.I. Artificial Intelligence - Official® Trailer [HD]...
+2025-06-07 03:40:22,959 - __main__ - INFO - 📊 Progress: 🎬 Found video: A.I. Artificial Intelligence - Official® Trailer [HD]...
+2025-06-07 03:40:22,960 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=_19pRsZRiz4
+2025-06-07 03:40:25,347 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:40:25,348 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:40:25,348 - __main__ - INFO - 🔄 Trying different search terms...
+2025-06-07 03:40:25,348 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:40:26,579 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:40:26,580 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:40:26,580 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:40:26,581 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:40:26,581 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:40:26,581 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:40:26,582 - __main__ - INFO - 📱 UI header displayed
+2025-06-07 03:40:26,582 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:40:26,582 - __main__ - INFO - ✅ YouTube API key is configured
+2025-06-07 03:40:26,583 - __main__ - INFO - 🟢 Status: Learning Active
+2025-06-07 03:40:26,584 - __main__ - INFO - ⚙️ Auto-refresh setting: True
+2025-06-07 03:40:26,584 - __main__ - INFO - 🔄 Auto-refresh active, sleeping for 5 seconds
+2025-06-07 03:40:27,353 - __main__ - INFO - 🔍 Search attempt 3/5
+2025-06-07 03:40:27,354 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 3/5
+2025-06-07 03:40:27,354 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:40:27,883 - __main__ - INFO - 🎬 Found video: Social Interaction...
+2025-06-07 03:40:27,884 - __main__ - INFO - 📊 Progress: 🎬 Found video: Social Interaction...
+2025-06-07 03:40:27,884 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=6RBq_j5NMn4
+2025-06-07 03:40:30,976 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:40:30,976 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:40:30,976 - __main__ - INFO - 🔄 Trying different search terms...
+2025-06-07 03:40:30,976 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:40:31,261 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:40:31,262 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:40:31,263 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:40:31,263 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:40:31,264 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:40:31,265 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:40:31,268 - __main__ - INFO - 📱 UI header displayed
+2025-06-07 03:40:31,272 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:40:31,273 - __main__ - INFO - ✅ YouTube API key is configured
+2025-06-07 03:40:31,276 - __main__ - INFO - 🟢 Status: Learning Active
+2025-06-07 03:40:31,277 - __main__ - INFO - ⚙️ Auto-refresh setting: False
+2025-06-07 03:40:31,278 - __main__ - INFO - 📊 Updating progress from queue
+2025-06-07 03:40:31,279 - __main__ - INFO - 📈 Rendering main dashboard
+2025-06-07 03:40:31,291 - __main__ - INFO - 📋 Displayed 100 log entries
+2025-06-07 03:40:31,292 - __main__ - INFO - ✅ main() function completed successfully
+2025-06-07 03:40:31,293 - __main__ - INFO - ✅ Streamlit app main() completed
+2025-06-07 03:40:32,982 - __main__ - INFO - 🔍 Search attempt 4/5
+2025-06-07 03:40:32,982 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 4/5
+2025-06-07 03:40:32,983 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:40:33,556 - __main__ - INFO - 🎬 Found video: Social Interaction...
+2025-06-07 03:40:33,557 - __main__ - INFO - 📊 Progress: 🎬 Found video: Social Interaction...
+2025-06-07 03:40:33,557 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=6RBq_j5NMn4
+2025-06-07 03:40:35,943 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:40:35,943 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:40:35,943 - __main__ - INFO - 🔄 Trying different search terms...
+2025-06-07 03:40:35,943 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:40:37,944 - __main__ - INFO - 🔍 Search attempt 5/5
+2025-06-07 03:40:37,945 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 5/5
+2025-06-07 03:40:37,945 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:40:38,466 - __main__ - INFO - 🎬 Found video: V3 HSR Pattern Recognition...
+2025-06-07 03:40:38,466 - __main__ - INFO - 📊 Progress: 🎬 Found video: V3 HSR Pattern Recognition...
+2025-06-07 03:40:38,466 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=z8pLgpWyfH0
+2025-06-07 03:40:40,952 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:40:40,953 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:40:40,953 - __main__ - WARNING - ❌ No suitable videos found after all attempts
+2025-06-07 03:40:40,953 - __main__ - INFO - 📊 Progress: ❌ No suitable videos found after all attempts
+2025-06-07 03:40:40,954 - __main__ - INFO - ⏳ Waiting 3 minutes 10 seconds before next video...
+2025-06-07 03:40:40,954 - __main__ - INFO - 📊 Progress: ⏳ Waiting 3 minutes before next video...
+2025-06-07 03:40:50,077 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:40:50,079 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:40:50,080 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:40:50,081 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:40:50,081 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:40:50,082 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:40:50,083 - __main__ - INFO - 📱 UI header displayed
+2025-06-07 03:40:50,084 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:40:50,085 - __main__ - INFO - ✅ YouTube API key is configured
+2025-06-07 03:40:50,087 - __main__ - INFO - 🟢 Status: Learning Active
+2025-06-07 03:40:50,087 - __main__ - INFO - ⚙️ Auto-refresh setting: True
+2025-06-07 03:40:50,088 - __main__ - INFO - 🔄 Auto-refresh active, sleeping for 5 seconds
+2025-06-07 03:40:51,587 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:40:51,588 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:40:51,589 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:40:51,589 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:40:51,590 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:40:51,591 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:40:51,592 - __main__ - INFO - 📱 UI header displayed
+2025-06-07 03:40:51,593 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:40:51,594 - __main__ - INFO - ✅ YouTube API key is configured
+2025-06-07 03:40:51,596 - __main__ - INFO - 🟢 Status: Learning Active
+2025-06-07 03:40:51,597 - __main__ - INFO - ⚙️ Auto-refresh setting: False
+2025-06-07 03:40:51,598 - __main__ - INFO - 📊 Updating progress from queue
+2025-06-07 03:40:51,599 - __main__ - INFO - 📈 Rendering main dashboard
+2025-06-07 03:40:51,607 - __main__ - INFO - 📋 Displayed 100 log entries
+2025-06-07 03:40:51,609 - __main__ - INFO - ✅ main() function completed successfully
+2025-06-07 03:40:51,610 - __main__ - INFO - ✅ Streamlit app main() completed
+2025-06-07 03:42:42,399 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:42:42,414 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:42:44,352 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:42:44,352 - __main__ - INFO - 🔧 Initialized learning_active session state
+2025-06-07 03:42:44,352 - __main__ - INFO - 🔧 Initialized learner_thread session state
+2025-06-07 03:42:44,352 - __main__ - INFO - 🔧 Initialized stop_event session state
+2025-06-07 03:42:44,352 - __main__ - INFO - 🔧 Initialized progress_queue session state
+2025-06-07 03:42:44,352 - __main__ - INFO - 🔧 Initialized app_logs session state
+2025-06-07 03:42:44,352 - __main__ - INFO - 🔧 Initialized learning_stats session state
+2025-06-07 03:42:44,353 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:42:44,353 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:42:44,353 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:42:44,354 - __main__ - INFO - 📱 UI header displayed
+2025-06-07 03:42:44,354 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:42:44,354 - __main__ - INFO - ✅ YouTube API key is configured
+2025-06-07 03:42:44,355 - __main__ - INFO - 🔴 Status: Learning Inactive
+2025-06-07 03:42:44,355 - __main__ - INFO - ⚙️ Auto-refresh setting: False
+2025-06-07 03:42:44,355 - __main__ - INFO - 📊 Updating progress from queue
+2025-06-07 03:42:44,355 - __main__ - INFO - 📈 Rendering main dashboard
+2025-06-07 03:42:44,357 - __main__ - INFO - 📋 Displayed 12 log entries
+2025-06-07 03:42:44,357 - __main__ - INFO - ✅ main() function completed successfully
+2025-06-07 03:42:44,357 - __main__ - INFO - ✅ Streamlit app main() completed
+2025-06-07 03:42:47,657 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:42:47,658 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:42:47,659 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:42:47,659 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:42:47,659 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:42:47,659 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:42:47,661 - __main__ - INFO - 📱 UI header displayed
+2025-06-07 03:42:47,661 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:42:47,662 - __main__ - INFO - ✅ YouTube API key is configured
+2025-06-07 03:42:47,663 - __main__ - INFO - 🔘 Start Learning button clicked
+2025-06-07 03:42:47,663 - __main__ - INFO - 🎬 start_learning_session called
+2025-06-07 03:42:47,663 - __main__ - INFO - ▶️ Starting new learning session
+2025-06-07 03:42:47,663 - __main__ - INFO - 🔧 Captured thread references, creating learner thread
+2025-06-07 03:42:47,664 - __main__ - INFO - 🧵 Learner thread started
+2025-06-07 03:42:47,665 - __main__ - INFO - ✅ Learning thread started: Thread-5 (run_learner)
+2025-06-07 03:42:47,665 - __main__ - INFO - 🧠 Initializing StreamlitContinuousLearner
+2025-06-07 03:42:47,769 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:42:47,769 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:42:47,769 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:42:47,769 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:42:47,770 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:42:47,770 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:42:47,770 - __main__ - INFO - 📱 UI header displayed
+2025-06-07 03:42:47,770 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:42:47,770 - __main__ - INFO - ✅ YouTube API key is configured
+2025-06-07 03:42:47,771 - __main__ - INFO - 🟢 Status: Learning Active
+2025-06-07 03:42:47,771 - __main__ - INFO - ⚙️ Auto-refresh setting: False
+2025-06-07 03:42:47,771 - __main__ - INFO - 📊 Updating progress from queue
+2025-06-07 03:42:47,771 - __main__ - INFO - 📈 Rendering main dashboard
+2025-06-07 03:42:47,776 - __main__ - INFO - 📋 Displayed 82 log entries
+2025-06-07 03:42:47,776 - __main__ - INFO - ✅ main() function completed successfully
+2025-06-07 03:42:47,777 - __main__ - INFO - ✅ Streamlit app main() completed
+2025-06-07 03:42:47,855 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-06-07 03:42:47,884 - __main__ - INFO - ✅ StreamlitContinuousLearner initialized successfully
+2025-06-07 03:42:47,885 - __main__ - INFO - 🚀 Starting continuous learning from thread
+2025-06-07 03:42:47,885 - __main__ - INFO - 🚀 Starting continuous learning: min_wait=60, max_wait=300, max_iterations=None
+2025-06-07 03:42:47,885 - __main__ - INFO - 🔄 Starting iteration 1
+2025-06-07 03:42:47,885 - __main__ - INFO - 📊 Progress: 🔄 Starting iteration 1
+2025-06-07 03:42:47,885 - __main__ - INFO - 🔍 Starting video search with 5 max attempts
+2025-06-07 03:42:47,885 - __main__ - INFO - 🔍 Search attempt 1/5
+2025-06-07 03:42:47,885 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 1/5
+2025-06-07 03:42:47,885 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:42:48,521 - __main__ - INFO - 🎬 Found video: Cognitive Science...
+2025-06-07 03:42:48,521 - __main__ - INFO - 📊 Progress: 🎬 Found video: Cognitive Science...
+2025-06-07 03:42:48,521 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=uNYdfJdcbAc
+2025-06-07 03:42:51,824 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:42:51,824 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:42:51,824 - __main__ - INFO - 🔄 Trying different search terms...
+2025-06-07 03:42:51,824 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:42:53,829 - __main__ - INFO - 🔍 Search attempt 2/5
+2025-06-07 03:42:53,830 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 2/5
+2025-06-07 03:42:53,830 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:42:54,361 - __main__ - INFO - 🎬 Found video: Social Interaction...
+2025-06-07 03:42:54,361 - __main__ - INFO - 📊 Progress: 🎬 Found video: Social Interaction...
+2025-06-07 03:42:54,362 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=6RBq_j5NMn4
+2025-06-07 03:42:57,322 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:42:57,322 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:42:57,323 - __main__ - INFO - 🔄 Trying different search terms...
+2025-06-07 03:42:57,323 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:42:59,328 - __main__ - INFO - 🔍 Search attempt 3/5
+2025-06-07 03:42:59,328 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 3/5
+2025-06-07 03:42:59,329 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:42:59,871 - __main__ - INFO - 🎬 Found video: Artificial intelligence explained in 2 minutes: What exactly...
+2025-06-07 03:42:59,871 - __main__ - INFO - 📊 Progress: 🎬 Found video: Artificial intelligence explained in 2 minutes: What exactly...
+2025-06-07 03:42:59,872 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=UdE-W30oOXo
+2025-06-07 03:43:00,978 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:43:00,979 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:43:00,979 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:43:00,979 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:43:00,980 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:43:00,980 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:43:00,980 - __main__ - INFO - 📱 UI header displayed
+2025-06-07 03:43:00,981 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:43:00,981 - __main__ - INFO - ✅ YouTube API key is configured
+2025-06-07 03:43:00,982 - __main__ - INFO - 🟢 Status: Learning Active
+2025-06-07 03:43:00,982 - __main__ - INFO - ⚙️ Auto-refresh setting: True
+2025-06-07 03:43:00,982 - __main__ - INFO - 🔄 Auto-refresh active, sleeping for 15 seconds
+2025-06-07 03:43:02,576 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:43:02,576 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:43:02,577 - __main__ - INFO - 🔄 Trying different search terms...
+2025-06-07 03:43:02,577 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:43:04,581 - __main__ - INFO - 🔍 Search attempt 4/5
+2025-06-07 03:43:04,582 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 4/5
+2025-06-07 03:43:04,582 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:43:05,108 - __main__ - INFO - 🎬 Found video: The Neuroscience of Learning...
+2025-06-07 03:43:05,108 - __main__ - INFO - 📊 Progress: 🎬 Found video: The Neuroscience of Learning...
+2025-06-07 03:43:05,108 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=_nWMP68DqHE
+2025-06-07 03:43:07,658 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:43:07,658 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:43:07,658 - __main__ - INFO - 🔄 Trying different search terms...
+2025-06-07 03:43:07,658 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:43:09,663 - __main__ - INFO - 🔍 Search attempt 5/5
+2025-06-07 03:43:09,664 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 5/5
+2025-06-07 03:43:09,664 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:43:10,190 - __main__ - INFO - 🎬 Found video: AMAZING example of complex emergent behavior from a very sim...
+2025-06-07 03:43:10,190 - __main__ - INFO - 📊 Progress: 🎬 Found video: AMAZING example of complex emergent behavior from a very sim...
+2025-06-07 03:43:10,191 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=ix66tQ93bdU
+2025-06-07 03:43:12,148 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:43:12,167 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:43:12,183 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:43:12,196 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:43:12,209 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:43:12,209 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:43:12,235 - __main__ - INFO - 📱 UI header displayed
+2025-06-07 03:43:12,253 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:43:12,262 - __main__ - INFO - ✅ YouTube API key is configured
+2025-06-07 03:43:12,264 - __main__ - INFO - 🟢 Status: Learning Active
+2025-06-07 03:43:12,264 - __main__ - INFO - ⚙️ Auto-refresh setting: False
+2025-06-07 03:43:12,265 - __main__ - INFO - 📊 Updating progress from queue
+2025-06-07 03:43:12,265 - __main__ - INFO - 📈 Rendering main dashboard
+2025-06-07 03:43:12,269 - __main__ - INFO - 📋 Displayed 100 log entries
+2025-06-07 03:43:12,269 - __main__ - INFO - ✅ main() function completed successfully
+2025-06-07 03:43:12,269 - __main__ - INFO - ✅ Streamlit app main() completed
+2025-06-07 03:43:13,667 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:43:13,667 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:43:13,667 - __main__ - WARNING - ❌ No suitable videos found after all attempts
+2025-06-07 03:43:13,667 - __main__ - INFO - 📊 Progress: ❌ No suitable videos found after all attempts
+2025-06-07 03:43:13,668 - __main__ - INFO - ⏳ Waiting 4 minutes 18 seconds before next video...
+2025-06-07 03:43:13,668 - __main__ - INFO - 📊 Progress: ⏳ Waiting 4 minutes before next video...
+2025-06-07 03:43:13,881 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:43:13,881 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:43:13,882 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:43:13,883 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:43:13,883 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:43:13,884 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:43:13,884 - __main__ - INFO - 📱 UI header displayed
+2025-06-07 03:43:13,885 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:43:13,885 - __main__ - INFO - ✅ YouTube API key is configured
+2025-06-07 03:43:13,887 - __main__ - INFO - 🟢 Status: Learning Active
+2025-06-07 03:43:13,887 - __main__ - INFO - ⚙️ Auto-refresh setting: True
+2025-06-07 03:43:13,888 - __main__ - INFO - 🔄 Auto-refresh active, sleeping for 15 seconds
+2025-06-07 03:43:25,421 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:43:25,422 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:43:25,423 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:43:25,425 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:43:25,426 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:43:25,426 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:43:25,427 - __main__ - INFO - 📱 UI header displayed
+2025-06-07 03:43:25,428 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:43:25,429 - __main__ - INFO - ✅ YouTube API key is configured
+2025-06-07 03:43:25,431 - __main__ - INFO - 🟢 Status: Learning Active
+2025-06-07 03:43:25,432 - __main__ - INFO - ⚙️ Auto-refresh setting: False
+2025-06-07 03:43:25,432 - __main__ - INFO - 📊 Updating progress from queue
+2025-06-07 03:43:25,433 - __main__ - INFO - 📈 Rendering main dashboard
+2025-06-07 03:43:25,440 - __main__ - INFO - 📋 Displayed 100 log entries
+2025-06-07 03:43:25,441 - __main__ - INFO - ✅ main() function completed successfully
+2025-06-07 03:43:25,442 - __main__ - INFO - ✅ Streamlit app main() completed
+2025-06-07 03:43:26,810 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:43:26,812 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:43:26,813 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:43:26,814 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:43:26,815 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:43:26,815 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:43:26,817 - __main__ - INFO - 📱 UI header displayed
+2025-06-07 03:43:26,818 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:43:26,819 - __main__ - INFO - ✅ YouTube API key is configured
+2025-06-07 03:43:26,820 - __main__ - INFO - 🟢 Status: Learning Active
+2025-06-07 03:43:26,821 - __main__ - INFO - ⚙️ Auto-refresh setting: True
+2025-06-07 03:43:26,822 - __main__ - INFO - 🔄 Auto-refresh active, sleeping for 15 seconds
+2025-06-07 03:43:29,170 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:43:29,171 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:43:29,172 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:43:29,173 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:43:29,173 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:43:29,174 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:43:29,174 - __main__ - INFO - 📱 UI header displayed
+2025-06-07 03:43:29,175 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:43:29,176 - __main__ - INFO - ✅ YouTube API key is configured
+2025-06-07 03:43:29,177 - __main__ - INFO - 🟢 Status: Learning Active
+2025-06-07 03:43:29,178 - __main__ - INFO - ⚙️ Auto-refresh setting: False
+2025-06-07 03:43:29,178 - __main__ - INFO - 📊 Updating progress from queue
+2025-06-07 03:43:29,179 - __main__ - INFO - 📈 Rendering main dashboard
+2025-06-07 03:43:29,185 - __main__ - INFO - 📋 Displayed 100 log entries
+2025-06-07 03:43:29,185 - __main__ - INFO - ✅ main() function completed successfully
+2025-06-07 03:43:29,185 - __main__ - INFO - ✅ Streamlit app main() completed
+2025-06-07 03:43:30,260 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:43:30,261 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:43:30,263 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:43:30,263 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:43:30,264 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:43:30,265 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:43:30,266 - __main__ - INFO - 📱 UI header displayed
+2025-06-07 03:43:30,267 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:43:30,268 - __main__ - INFO - ✅ YouTube API key is configured
+2025-06-07 03:43:30,270 - __main__ - INFO - 🟢 Status: Learning Active
+2025-06-07 03:43:30,271 - __main__ - INFO - ⚙️ Auto-refresh setting: True
+2025-06-07 03:43:30,272 - __main__ - INFO - 🔄 Auto-refresh active, sleeping for 15 seconds
+2025-06-07 03:43:32,010 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:43:32,012 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:43:32,013 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:43:32,014 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:43:32,015 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:43:32,015 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:43:32,017 - __main__ - INFO - 📱 UI header displayed
+2025-06-07 03:43:32,018 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:43:32,018 - __main__ - INFO - ✅ YouTube API key is configured
+2025-06-07 03:43:32,020 - __main__ - INFO - 🟢 Status: Learning Active
+2025-06-07 03:43:32,022 - __main__ - INFO - ⚙️ Auto-refresh setting: False
+2025-06-07 03:43:32,023 - __main__ - INFO - 📊 Updating progress from queue
+2025-06-07 03:43:32,026 - __main__ - INFO - 📈 Rendering main dashboard
+2025-06-07 03:43:32,035 - __main__ - INFO - 📋 Displayed 100 log entries
+2025-06-07 03:43:32,036 - __main__ - INFO - ✅ main() function completed successfully
+2025-06-07 03:43:32,037 - __main__ - INFO - ✅ Streamlit app main() completed
+2025-06-07 03:45:35,559 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:45:35,574 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:45:37,625 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:45:37,625 - __main__ - INFO - 🔧 Initialized learning_active session state
+2025-06-07 03:45:37,625 - __main__ - INFO - 🔧 Initialized learner_thread session state
+2025-06-07 03:45:37,625 - __main__ - INFO - 🔧 Initialized stop_event session state
+2025-06-07 03:45:37,626 - __main__ - INFO - 🔧 Initialized progress_queue session state
+2025-06-07 03:45:37,626 - __main__ - INFO - 🔧 Initialized app_logs session state
+2025-06-07 03:45:37,626 - __main__ - INFO - 🔧 Initialized learning_stats session state
+2025-06-07 03:45:37,626 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:45:37,626 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:45:37,626 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:45:37,628 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:45:37,630 - __main__ - INFO - ✅ Dynamic dashboard rendered successfully
+2025-06-07 03:45:37,630 - __main__ - INFO - ✅ Streamlit app main() completed
+2025-06-07 03:45:42,800 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:45:42,800 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:45:42,800 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:45:42,801 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:45:42,801 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:45:42,801 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:45:42,802 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:45:42,803 - __main__ - INFO - 🔘 Start Learning button clicked
+2025-06-07 03:45:42,803 - __main__ - INFO - 🎬 start_learning_session called
+2025-06-07 03:45:42,804 - __main__ - INFO - ▶️ Starting new learning session
+2025-06-07 03:45:42,804 - __main__ - INFO - 🔧 Captured thread references, creating learner thread
+2025-06-07 03:45:42,804 - __main__ - INFO - 🧵 Learner thread started
+2025-06-07 03:45:42,805 - __main__ - INFO - ✅ Learning thread started: Thread-5 (run_learner)
+2025-06-07 03:45:42,805 - __main__ - INFO - 🧠 Initializing StreamlitContinuousLearner
+2025-06-07 03:45:42,905 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:45:42,905 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:45:42,906 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:45:42,906 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:45:42,906 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:45:42,906 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:45:42,906 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:45:42,908 - __main__ - INFO - ✅ Dynamic dashboard rendered successfully
+2025-06-07 03:45:42,908 - __main__ - INFO - ✅ Streamlit app main() completed
+2025-06-07 03:45:42,994 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-06-07 03:45:43,021 - __main__ - INFO - ✅ StreamlitContinuousLearner initialized successfully
+2025-06-07 03:45:43,022 - __main__ - INFO - 🚀 Starting continuous learning from thread
+2025-06-07 03:45:43,022 - __main__ - INFO - 🚀 Starting continuous learning: min_wait=60, max_wait=300, max_iterations=None
+2025-06-07 03:45:43,022 - __main__ - INFO - 🔄 Starting iteration 1
+2025-06-07 03:45:43,022 - __main__ - INFO - 📊 Progress: 🔄 Starting iteration 1
+2025-06-07 03:45:43,022 - __main__ - INFO - 🔍 Starting video search with 5 max attempts
+2025-06-07 03:45:43,022 - __main__ - INFO - 🔍 Search attempt 1/5
+2025-06-07 03:45:43,022 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 1/5
+2025-06-07 03:45:43,022 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:45:43,658 - __main__ - INFO - 🎬 Found video: Self Awareness...
+2025-06-07 03:45:43,659 - __main__ - INFO - 📊 Progress: 🎬 Found video: Self Awareness...
+2025-06-07 03:45:43,659 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=HIhEMk7CZ-A
+2025-06-07 03:45:47,182 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:45:47,182 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:45:47,182 - __main__ - INFO - 🔄 Trying different search terms...
+2025-06-07 03:45:47,182 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:45:49,187 - __main__ - INFO - 🔍 Search attempt 2/5
+2025-06-07 03:45:49,188 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 2/5
+2025-06-07 03:45:49,188 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:45:49,723 - __main__ - INFO - 🎬 Found video: Social Interaction...
+2025-06-07 03:45:49,723 - __main__ - INFO - 📊 Progress: 🎬 Found video: Social Interaction...
+2025-06-07 03:45:49,724 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=6RBq_j5NMn4
+2025-06-07 03:45:52,659 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:45:52,659 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:45:52,659 - __main__ - INFO - 🔄 Trying different search terms...
+2025-06-07 03:45:52,659 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:45:54,661 - __main__ - INFO - 🔍 Search attempt 3/5
+2025-06-07 03:45:54,662 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 3/5
+2025-06-07 03:45:54,662 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:45:55,198 - __main__ - INFO - 🎬 Found video: The confusing behavior of animals All animals are created eq...
+2025-06-07 03:45:55,198 - __main__ - INFO - 📊 Progress: 🎬 Found video: The confusing behavior of animals All animals are created eq...
+2025-06-07 03:45:55,199 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=NlbuILT-UrY
+2025-06-07 03:45:58,080 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:45:58,080 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:45:58,080 - __main__ - INFO - 🔄 Trying different search terms...
+2025-06-07 03:45:58,080 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:46:00,082 - __main__ - INFO - 🔍 Search attempt 4/5
+2025-06-07 03:46:00,082 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 4/5
+2025-06-07 03:46:00,082 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:46:00,630 - __main__ - INFO - 🎬 Found video: Self Awareness...
+2025-06-07 03:46:00,630 - __main__ - INFO - 📊 Progress: 🎬 Found video: Self Awareness...
+2025-06-07 03:46:00,630 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=HIhEMk7CZ-A
+2025-06-07 03:46:03,087 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:46:03,087 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:46:03,087 - __main__ - INFO - 🔄 Trying different search terms...
+2025-06-07 03:46:03,087 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:46:05,092 - __main__ - INFO - 🔍 Search attempt 5/5
+2025-06-07 03:46:05,093 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 5/5
+2025-06-07 03:46:05,093 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:46:05,620 - __main__ - INFO - 🎬 Found video: Bro gained consciousness 💀....
+2025-06-07 03:46:05,621 - __main__ - INFO - 📊 Progress: 🎬 Found video: Bro gained consciousness 💀....
+2025-06-07 03:46:05,621 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=jwCCUQFR2Ds
+2025-06-07 03:46:08,188 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:46:08,188 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:46:08,189 - __main__ - WARNING - ❌ No suitable videos found after all attempts
+2025-06-07 03:46:08,189 - __main__ - INFO - 📊 Progress: ❌ No suitable videos found after all attempts
+2025-06-07 03:46:08,190 - __main__ - INFO - ⏳ Waiting 3 minutes 25 seconds before next video...
+2025-06-07 03:46:08,190 - __main__ - INFO - 📊 Progress: ⏳ Waiting 3 minutes before next video...
+2025-06-07 03:46:24,138 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:46:24,139 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:46:24,140 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:46:24,140 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:46:24,140 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:46:24,140 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:46:24,141 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:46:34,276 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:46:34,276 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:46:34,276 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:46:34,276 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:46:34,276 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:46:34,277 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:46:34,277 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:46:37,089 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:46:37,090 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:46:37,090 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:46:37,091 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:46:37,092 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:46:37,093 - __main__ - INFO - 🎯 main() function called
+2025-06-07 03:46:37,096 - __main__ - INFO - 🎛️ Rendering sidebar controls
+2025-06-07 03:46:37,103 - __main__ - INFO - ✅ Dynamic dashboard rendered successfully
+2025-06-07 03:46:37,104 - __main__ - INFO - ✅ Streamlit app main() completed
+2025-06-07 03:48:24,353 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:48:24,369 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:48:26,274 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:48:26,274 - __main__ - INFO - 🔧 Initialized learning_active session state
+2025-06-07 03:48:26,274 - __main__ - INFO - 🔧 Initialized learner_thread session state
+2025-06-07 03:48:26,274 - __main__ - INFO - 🔧 Initialized stop_event session state
+2025-06-07 03:48:26,274 - __main__ - INFO - 🔧 Initialized progress_queue session state
+2025-06-07 03:48:26,274 - __main__ - INFO - 🔧 Initialized app_logs session state
+2025-06-07 03:48:26,274 - __main__ - INFO - 🔧 Initialized learning_stats session state
+2025-06-07 03:48:26,274 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:48:26,275 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:48:26,275 - __main__ - INFO - 🎯 Starting real-time consciousness learning dashboard
+2025-06-07 03:48:30,576 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:48:30,577 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:48:30,578 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:48:30,578 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:48:30,579 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:48:30,579 - __main__ - INFO - 🎯 Starting real-time consciousness learning dashboard
+2025-06-07 03:48:30,581 - __main__ - INFO - 🚀 Starting real-time learning session
+2025-06-07 03:48:30,581 - __main__ - INFO - 🧠 Initializing StreamlitContinuousLearner
+2025-06-07 03:48:30,596 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-06-07 03:48:30,638 - __main__ - INFO - ✅ StreamlitContinuousLearner initialized successfully
+2025-06-07 03:48:30,638 - __main__ - INFO - 🚀 Starting continuous learning: min_wait=60, max_wait=300, max_iterations=None
+2025-06-07 03:48:30,638 - __main__ - INFO - 🔄 Starting iteration 1
+2025-06-07 03:48:30,638 - __main__ - INFO - 📊 Progress: 🔄 Starting iteration 1
+2025-06-07 03:48:30,639 - __main__ - INFO - 🔍 Starting video search with 5 max attempts
+2025-06-07 03:48:30,639 - __main__ - INFO - 🔍 Search attempt 1/5
+2025-06-07 03:48:30,639 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 1/5
+2025-06-07 03:48:30,639 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:48:31,357 - __main__ - INFO - 🎬 Found video: How I Use Pattern Recognition To Read People #audhd #actuall...
+2025-06-07 03:48:31,357 - __main__ - INFO - 📊 Progress: 🎬 Found video: How I Use Pattern Recognition To Read People #audhd #actuall...
+2025-06-07 03:48:31,357 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=5nAF7Lzufnk
+2025-06-07 03:48:35,295 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:48:35,295 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:48:35,295 - __main__ - INFO - 🔄 Trying different search terms...
+2025-06-07 03:48:35,296 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:48:37,301 - __main__ - INFO - 🔍 Search attempt 2/5
+2025-06-07 03:48:37,301 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 2/5
+2025-06-07 03:48:37,302 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:48:37,913 - __main__ - INFO - 🎬 Found video: Cognitive Science...
+2025-06-07 03:48:37,913 - __main__ - INFO - 📊 Progress: 🎬 Found video: Cognitive Science...
+2025-06-07 03:48:37,914 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=uNYdfJdcbAc
+2025-06-07 03:48:41,179 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:48:41,179 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:48:41,179 - __main__ - INFO - 🔄 Trying different search terms...
+2025-06-07 03:48:41,179 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:48:43,184 - __main__ - INFO - 🔍 Search attempt 3/5
+2025-06-07 03:48:43,184 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 3/5
+2025-06-07 03:48:43,184 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:48:43,740 - __main__ - INFO - 🎬 Found video: A.I. Artificial Intelligence - Official® Trailer [HD]...
+2025-06-07 03:48:43,741 - __main__ - INFO - 📊 Progress: 🎬 Found video: A.I. Artificial Intelligence - Official® Trailer [HD]...
+2025-06-07 03:48:43,741 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=_19pRsZRiz4
+2025-06-07 03:48:46,327 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:48:46,327 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:48:46,327 - __main__ - INFO - 🔄 Trying different search terms...
+2025-06-07 03:48:46,327 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:48:48,333 - __main__ - INFO - 🔍 Search attempt 4/5
+2025-06-07 03:48:48,333 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 4/5
+2025-06-07 03:48:48,334 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:48:48,859 - __main__ - INFO - 🎬 Found video: How I Use Pattern Recognition To Read People #audhd #actuall...
+2025-06-07 03:48:48,860 - __main__ - INFO - 📊 Progress: 🎬 Found video: How I Use Pattern Recognition To Read People #audhd #actuall...
+2025-06-07 03:48:48,860 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=5nAF7Lzufnk
+2025-06-07 03:48:51,434 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:48:51,434 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:48:51,434 - __main__ - INFO - 🔄 Trying different search terms...
+2025-06-07 03:48:51,434 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:48:53,440 - __main__ - INFO - 🔍 Search attempt 5/5
+2025-06-07 03:48:53,440 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 5/5
+2025-06-07 03:48:53,440 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:48:53,987 - __main__ - INFO - 🎬 Found video: Bro gained consciousness 💀....
+2025-06-07 03:48:53,988 - __main__ - INFO - 📊 Progress: 🎬 Found video: Bro gained consciousness 💀....
+2025-06-07 03:48:53,988 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=jwCCUQFR2Ds
+2025-06-07 03:48:56,858 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:48:56,858 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:48:56,858 - __main__ - WARNING - ❌ No suitable videos found after all attempts
+2025-06-07 03:48:56,858 - __main__ - INFO - 📊 Progress: ❌ No suitable videos found after all attempts
+2025-06-07 03:48:56,860 - __main__ - INFO - ⏳ Waiting 3 minutes 20 seconds before next video...
+2025-06-07 03:48:56,860 - __main__ - INFO - 📊 Progress: ⏳ Waiting 3 minutes before next video...
+2025-06-07 03:53:27,043 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:53:27,059 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:53:29,136 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:53:29,136 - __main__ - INFO - 🔧 Initialized learning_active session state
+2025-06-07 03:53:29,136 - __main__ - INFO - 🔧 Initialized learner_thread session state
+2025-06-07 03:53:29,136 - __main__ - INFO - 🔧 Initialized stop_event session state
+2025-06-07 03:53:29,136 - __main__ - INFO - 🔧 Initialized progress_queue session state
+2025-06-07 03:53:29,136 - __main__ - INFO - 🔧 Initialized app_logs session state
+2025-06-07 03:53:29,136 - __main__ - INFO - 🔧 Initialized learning_stats session state
+2025-06-07 03:53:29,136 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:53:29,137 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:53:29,137 - __main__ - INFO - 🎯 Starting enhanced consciousness learning dashboard
+2025-06-07 03:53:29,141 - __main__ - INFO - ✅ Enhanced dashboard rendered successfully
+2025-06-07 03:53:29,141 - __main__ - INFO - ✅ Streamlit app main() completed
+2025-06-07 03:53:40,590 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:53:40,591 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:53:40,592 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:53:40,592 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:53:40,593 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:53:40,593 - __main__ - INFO - 🎯 Starting enhanced consciousness learning dashboard
+2025-06-07 03:53:40,596 - __main__ - INFO - 🚀 Starting real-time learning session
+2025-06-07 03:53:40,597 - __main__ - INFO - 🧠 Initializing StreamlitContinuousLearner
+2025-06-07 03:53:40,606 - __main__ - INFO - ✅ Enhanced dashboard rendered successfully
+2025-06-07 03:53:40,607 - __main__ - INFO - ✅ Streamlit app main() completed
+2025-06-07 03:53:40,701 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-06-07 03:53:40,724 - __main__ - INFO - ✅ StreamlitContinuousLearner initialized successfully
+2025-06-07 03:53:40,724 - __main__ - INFO - 🚀 Starting continuous learning: min_wait=10, max_wait=30, max_iterations=None
+2025-06-07 03:53:40,724 - __main__ - INFO - 🔄 Starting iteration 1
+2025-06-07 03:53:40,724 - __main__ - INFO - 📊 Progress: 🔄 Starting iteration 1
+2025-06-07 03:53:40,724 - __main__ - INFO - 🔍 Starting video search with 5 max attempts
+2025-06-07 03:53:40,724 - __main__ - INFO - 🔍 Search attempt 1/5
+2025-06-07 03:53:40,724 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 1/5
+2025-06-07 03:53:40,724 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:53:41,352 - __main__ - INFO - 🎬 Found video: Artificial intelligence explained in 2 minutes: What exactly...
+2025-06-07 03:53:41,352 - __main__ - INFO - 📊 Progress: 🎬 Found video: Artificial intelligence explained in 2 minutes: What exactly...
+2025-06-07 03:53:41,353 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=UdE-W30oOXo
+2025-06-07 03:53:44,228 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:53:44,228 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:53:44,228 - __main__ - INFO - 🔄 Trying different search terms...
+2025-06-07 03:53:44,228 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:53:46,234 - __main__ - INFO - 🔍 Search attempt 2/5
+2025-06-07 03:53:46,234 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 2/5
+2025-06-07 03:53:46,235 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:53:46,759 - __main__ - INFO - 🎬 Found video: AMAZING example of complex emergent behavior from a very sim...
+2025-06-07 03:53:46,759 - __main__ - INFO - 📊 Progress: 🎬 Found video: AMAZING example of complex emergent behavior from a very sim...
+2025-06-07 03:53:46,759 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=ix66tQ93bdU
+2025-06-07 03:53:49,833 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:53:49,833 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:53:49,834 - __main__ - INFO - 🔄 Trying different search terms...
+2025-06-07 03:53:49,834 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:53:51,839 - __main__ - INFO - 🔍 Search attempt 3/5
+2025-06-07 03:53:51,840 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 3/5
+2025-06-07 03:53:51,840 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:53:52,367 - __main__ - INFO - 🎬 Found video: Bro gained consciousness 💀....
+2025-06-07 03:53:52,367 - __main__ - INFO - 📊 Progress: 🎬 Found video: Bro gained consciousness 💀....
+2025-06-07 03:53:52,367 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=jwCCUQFR2Ds
+2025-06-07 03:53:54,770 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:53:54,770 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:53:54,770 - __main__ - INFO - 🔄 Trying different search terms...
+2025-06-07 03:53:54,770 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:53:56,775 - __main__ - INFO - 🔍 Search attempt 4/5
+2025-06-07 03:53:56,775 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 4/5
+2025-06-07 03:53:56,776 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:53:57,311 - __main__ - INFO - 🎬 Found video: The confusing behavior of animals All animals are created eq...
+2025-06-07 03:53:57,312 - __main__ - INFO - 📊 Progress: 🎬 Found video: The confusing behavior of animals All animals are created eq...
+2025-06-07 03:53:57,312 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=NlbuILT-UrY
+2025-06-07 03:53:59,711 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:53:59,711 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:53:59,711 - __main__ - INFO - 🔄 Trying different search terms...
+2025-06-07 03:53:59,711 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:54:01,711 - __main__ - INFO - 🔍 Search attempt 5/5
+2025-06-07 03:54:01,711 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 5/5
+2025-06-07 03:54:01,712 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:54:02,252 - __main__ - INFO - 🎬 Found video: AMAZING example of complex emergent behavior from a very sim...
+2025-06-07 03:54:02,252 - __main__ - INFO - 📊 Progress: 🎬 Found video: AMAZING example of complex emergent behavior from a very sim...
+2025-06-07 03:54:02,252 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=ix66tQ93bdU
+2025-06-07 03:54:04,515 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:54:04,515 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:54:04,515 - __main__ - WARNING - ❌ No suitable videos found after all attempts
+2025-06-07 03:54:04,515 - __main__ - INFO - 📊 Progress: ❌ No suitable videos found after all attempts
+2025-06-07 03:54:04,516 - __main__ - INFO - ⏳ Waiting 0 minutes 22 seconds before next video...
+2025-06-07 03:54:04,516 - __main__ - INFO - 📊 Progress: ⏳ Waiting 0 minutes before next video...
+2025-06-07 03:54:26,593 - __main__ - INFO - 🔄 Completed iteration 1, starting next cycle...
+2025-06-07 03:54:26,594 - __main__ - INFO - 🔄 Starting iteration 2
+2025-06-07 03:54:26,594 - __main__ - INFO - 📊 Progress: 🔄 Starting iteration 2
+2025-06-07 03:54:26,594 - __main__ - INFO - 🔍 Starting video search with 5 max attempts
+2025-06-07 03:54:26,594 - __main__ - INFO - 🔍 Search attempt 1/5
+2025-06-07 03:54:26,594 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 1/5
+2025-06-07 03:54:26,595 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:54:27,113 - __main__ - INFO - 🎬 Found video: Social Interaction...
+2025-06-07 03:54:27,114 - __main__ - INFO - 📊 Progress: 🎬 Found video: Social Interaction...
+2025-06-07 03:54:27,114 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=6RBq_j5NMn4
+2025-06-07 03:54:30,082 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:54:30,082 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:54:30,082 - __main__ - INFO - 🔄 Trying different search terms...
+2025-06-07 03:54:30,082 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:54:32,087 - __main__ - INFO - 🔍 Search attempt 2/5
+2025-06-07 03:54:32,087 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 2/5
+2025-06-07 03:54:32,087 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:54:32,594 - __main__ - INFO - 🎬 Found video: Clarifying the &#39;5 Whys&#39; Problem-Solving Method...
+2025-06-07 03:54:32,594 - __main__ - INFO - 📊 Progress: 🎬 Found video: Clarifying the &#39;5 Whys&#39; Problem-Solving Method...
+2025-06-07 03:54:32,594 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=SrlYkx41wEE
+2025-06-07 03:54:35,207 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:54:35,208 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:54:35,208 - __main__ - INFO - 🔄 Trying different search terms...
+2025-06-07 03:54:35,208 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:54:37,213 - __main__ - INFO - 🔍 Search attempt 3/5
+2025-06-07 03:54:37,213 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 3/5
+2025-06-07 03:54:37,214 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:54:37,717 - __main__ - INFO - 🎬 Found video: How I Use Pattern Recognition To Read People #audhd #actuall...
+2025-06-07 03:54:37,717 - __main__ - INFO - 📊 Progress: 🎬 Found video: How I Use Pattern Recognition To Read People #audhd #actuall...
+2025-06-07 03:54:37,718 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=5nAF7Lzufnk
+2025-06-07 03:54:41,158 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:54:41,158 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:54:41,158 - __main__ - INFO - 🔄 Trying different search terms...
+2025-06-07 03:54:41,158 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:54:43,163 - __main__ - INFO - 🔍 Search attempt 4/5
+2025-06-07 03:54:43,164 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 4/5
+2025-06-07 03:54:43,164 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:54:43,665 - __main__ - INFO - 🎬 Found video: How I Use Pattern Recognition To Read People #audhd #actuall...
+2025-06-07 03:54:43,665 - __main__ - INFO - 📊 Progress: 🎬 Found video: How I Use Pattern Recognition To Read People #audhd #actuall...
+2025-06-07 03:54:43,665 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=5nAF7Lzufnk
+2025-06-07 03:54:46,150 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:54:46,150 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:54:46,150 - __main__ - INFO - 🔄 Trying different search terms...
+2025-06-07 03:54:46,150 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:54:48,156 - __main__ - INFO - 🔍 Search attempt 5/5
+2025-06-07 03:54:48,156 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 5/5
+2025-06-07 03:54:48,156 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:54:48,655 - __main__ - INFO - 🎬 Found video: Social Interaction...
+2025-06-07 03:54:48,656 - __main__ - INFO - 📊 Progress: 🎬 Found video: Social Interaction...
+2025-06-07 03:54:48,656 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=6RBq_j5NMn4
+2025-06-07 03:54:51,150 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:54:51,150 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:54:51,150 - __main__ - WARNING - ❌ No suitable videos found after all attempts
+2025-06-07 03:54:51,150 - __main__ - INFO - 📊 Progress: ❌ No suitable videos found after all attempts
+2025-06-07 03:54:51,150 - __main__ - INFO - ⏳ Waiting 0 minutes 20 seconds before next video...
+2025-06-07 03:54:51,150 - __main__ - INFO - 📊 Progress: ⏳ Waiting 0 minutes before next video...
+2025-06-07 03:56:35,808 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:56:35,823 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:56:37,866 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:56:37,866 - __main__ - INFO - 🔧 Initialized learning_active session state
+2025-06-07 03:56:37,866 - __main__ - INFO - 🔧 Initialized learner_thread session state
+2025-06-07 03:56:37,866 - __main__ - INFO - 🔧 Initialized stop_event session state
+2025-06-07 03:56:37,866 - __main__ - INFO - 🔧 Initialized progress_queue session state
+2025-06-07 03:56:37,866 - __main__ - INFO - 🔧 Initialized app_logs session state
+2025-06-07 03:56:37,866 - __main__ - INFO - 🔧 Initialized learning_stats session state
+2025-06-07 03:56:37,866 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:56:37,866 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:56:37,866 - __main__ - INFO - 🎯 Starting enhanced consciousness learning dashboard
+2025-06-07 03:56:40,245 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:56:40,246 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:56:40,246 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:56:40,246 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:56:40,246 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:56:40,246 - __main__ - INFO - 🎯 Starting enhanced consciousness learning dashboard
+2025-06-07 03:56:40,248 - __main__ - INFO - 🚀 Starting real-time learning session
+2025-06-07 03:56:40,248 - __main__ - INFO - 🧠 Initializing StreamlitContinuousLearner
+2025-06-07 03:56:40,257 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-06-07 03:56:40,289 - __main__ - INFO - ✅ StreamlitContinuousLearner initialized successfully
+2025-06-07 03:56:40,290 - __main__ - INFO - 🚀 Starting continuous learning: min_wait=10, max_wait=30, max_iterations=None
+2025-06-07 03:56:40,290 - __main__ - INFO - 🔄 Starting iteration 1
+2025-06-07 03:56:40,290 - __main__ - INFO - 📊 Progress: 🔄 Starting iteration 1
+2025-06-07 03:56:40,290 - __main__ - INFO - 🔍 Starting video search with 5 max attempts
+2025-06-07 03:56:40,290 - __main__ - INFO - 🔍 Search attempt 1/5
+2025-06-07 03:56:40,290 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 1/5
+2025-06-07 03:56:40,290 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:56:40,933 - __main__ - INFO - 🎬 Found video: Self Awareness...
+2025-06-07 03:56:40,934 - __main__ - INFO - 📊 Progress: 🎬 Found video: Self Awareness...
+2025-06-07 03:56:40,934 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=HIhEMk7CZ-A
+2025-06-07 03:56:44,711 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:56:44,711 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:56:44,711 - __main__ - INFO - 🔄 Trying different search terms...
+2025-06-07 03:56:44,711 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:56:46,717 - __main__ - INFO - 🔍 Search attempt 2/5
+2025-06-07 03:56:46,717 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 2/5
+2025-06-07 03:56:46,718 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:56:47,276 - __main__ - INFO - 🎬 Found video: The confusing behavior of animals All animals are created eq...
+2025-06-07 03:56:47,276 - __main__ - INFO - 📊 Progress: 🎬 Found video: The confusing behavior of animals All animals are created eq...
+2025-06-07 03:56:47,276 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=NlbuILT-UrY
+2025-06-07 03:56:49,726 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:56:49,726 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:56:49,726 - __main__ - INFO - 🔄 Trying different search terms...
+2025-06-07 03:56:49,726 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:56:51,731 - __main__ - INFO - 🔍 Search attempt 3/5
+2025-06-07 03:56:51,732 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 3/5
+2025-06-07 03:56:51,732 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:56:52,260 - __main__ - INFO - 🎬 Found video: The confusing behavior of animals All animals are created eq...
+2025-06-07 03:56:52,260 - __main__ - INFO - 📊 Progress: 🎬 Found video: The confusing behavior of animals All animals are created eq...
+2025-06-07 03:56:52,260 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=NlbuILT-UrY
+2025-06-07 03:56:54,444 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:56:54,444 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:56:54,444 - __main__ - INFO - 🔄 Trying different search terms...
+2025-06-07 03:56:54,444 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:56:56,449 - __main__ - INFO - 🔍 Search attempt 4/5
+2025-06-07 03:56:56,450 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 4/5
+2025-06-07 03:56:56,450 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:56:56,976 - __main__ - INFO - 🎬 Found video: Clarifying the &#39;5 Whys&#39; Problem-Solving Method...
+2025-06-07 03:56:56,976 - __main__ - INFO - 📊 Progress: 🎬 Found video: Clarifying the &#39;5 Whys&#39; Problem-Solving Method...
+2025-06-07 03:56:56,976 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=SrlYkx41wEE
+2025-06-07 03:56:59,819 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:56:59,819 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:56:59,819 - __main__ - INFO - 🔄 Trying different search terms...
+2025-06-07 03:56:59,820 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:57:01,822 - __main__ - INFO - 🔍 Search attempt 5/5
+2025-06-07 03:57:01,822 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 5/5
+2025-06-07 03:57:01,822 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:57:02,339 - __main__ - INFO - 🎬 Found video: Animal Behavior | The Fascinating World of Our Fellow Creatu...
+2025-06-07 03:57:02,339 - __main__ - INFO - 📊 Progress: 🎬 Found video: Animal Behavior | The Fascinating World of Our Fellow Creatu...
+2025-06-07 03:57:02,340 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=t8rTNywNetI
+2025-06-07 03:57:06,215 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:57:06,215 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:57:06,215 - __main__ - WARNING - ❌ No suitable videos found after all attempts
+2025-06-07 03:57:06,215 - __main__ - INFO - 📊 Progress: ❌ No suitable videos found after all attempts
+2025-06-07 03:57:06,216 - __main__ - INFO - ⏳ Waiting 0 minutes 26 seconds before next video...
+2025-06-07 03:57:06,216 - __main__ - INFO - 📊 Progress: ⏳ Waiting 0 minutes before next video...
+2025-06-07 03:57:32,307 - __main__ - INFO - 🔄 Completed iteration 1, starting next cycle...
+2025-06-07 03:57:32,307 - __main__ - INFO - 🔄 Starting iteration 2
+2025-06-07 03:57:32,307 - __main__ - INFO - 📊 Progress: 🔄 Starting iteration 2
+2025-06-07 03:57:32,307 - __main__ - INFO - 🔍 Starting video search with 5 max attempts
+2025-06-07 03:57:32,307 - __main__ - INFO - 🔍 Search attempt 1/5
+2025-06-07 03:57:32,308 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 1/5
+2025-06-07 03:57:32,308 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:57:32,817 - __main__ - INFO - 🎬 Found video: AMAZING example of complex emergent behavior from a very sim...
+2025-06-07 03:57:32,817 - __main__ - INFO - 📊 Progress: 🎬 Found video: AMAZING example of complex emergent behavior from a very sim...
+2025-06-07 03:57:32,817 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=ix66tQ93bdU
+2025-06-07 03:57:35,830 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:57:35,830 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:57:35,830 - __main__ - INFO - 🔄 Trying different search terms...
+2025-06-07 03:57:35,830 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:57:37,835 - __main__ - INFO - 🔍 Search attempt 2/5
+2025-06-07 03:57:37,836 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 2/5
+2025-06-07 03:57:37,836 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:57:38,344 - __main__ - INFO - 🎬 Found video: AMAZING example of complex emergent behavior from a very sim...
+2025-06-07 03:57:38,344 - __main__ - INFO - 📊 Progress: 🎬 Found video: AMAZING example of complex emergent behavior from a very sim...
+2025-06-07 03:57:38,344 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=ix66tQ93bdU
+2025-06-07 03:57:40,747 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:57:40,747 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:57:40,747 - __main__ - INFO - 🔄 Trying different search terms...
+2025-06-07 03:57:40,747 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:57:42,752 - __main__ - INFO - 🔍 Search attempt 3/5
+2025-06-07 03:57:42,753 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 3/5
+2025-06-07 03:57:42,753 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:57:43,265 - __main__ - INFO - 🎬 Found video: The Neuroscience of Learning...
+2025-06-07 03:57:43,265 - __main__ - INFO - 📊 Progress: 🎬 Found video: The Neuroscience of Learning...
+2025-06-07 03:57:43,266 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=_nWMP68DqHE
+2025-06-07 03:57:45,568 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:57:45,568 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:57:45,568 - __main__ - INFO - 🔄 Trying different search terms...
+2025-06-07 03:57:45,568 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:57:47,573 - __main__ - INFO - 🔍 Search attempt 4/5
+2025-06-07 03:57:47,574 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 4/5
+2025-06-07 03:57:47,574 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:57:48,127 - __main__ - INFO - 🎬 Found video: How I Use Pattern Recognition To Read People #audhd #actuall...
+2025-06-07 03:57:48,128 - __main__ - INFO - 📊 Progress: 🎬 Found video: How I Use Pattern Recognition To Read People #audhd #actuall...
+2025-06-07 03:57:48,128 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=5nAF7Lzufnk
+2025-06-07 03:57:51,676 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:57:51,677 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:57:51,677 - __main__ - INFO - 🔄 Trying different search terms...
+2025-06-07 03:57:51,677 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:57:53,682 - __main__ - INFO - 🔍 Search attempt 5/5
+2025-06-07 03:57:53,682 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 5/5
+2025-06-07 03:57:53,683 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:57:54,272 - __main__ - INFO - 🎬 Found video: Clarifying the &#39;5 Whys&#39; Problem-Solving Method...
+2025-06-07 03:57:54,272 - __main__ - INFO - 📊 Progress: 🎬 Found video: Clarifying the &#39;5 Whys&#39; Problem-Solving Method...
+2025-06-07 03:57:54,272 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=SrlYkx41wEE
+2025-06-07 03:57:56,813 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:57:56,813 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:57:56,813 - __main__ - WARNING - ❌ No suitable videos found after all attempts
+2025-06-07 03:57:56,813 - __main__ - INFO - 📊 Progress: ❌ No suitable videos found after all attempts
+2025-06-07 03:57:56,814 - __main__ - INFO - ⏳ Waiting 0 minutes 14 seconds before next video...
+2025-06-07 03:57:56,814 - __main__ - INFO - 📊 Progress: ⏳ Waiting 0 minutes before next video...
+2025-06-07 03:58:10,857 - __main__ - INFO - 🔄 Completed iteration 2, starting next cycle...
+2025-06-07 03:58:10,858 - __main__ - INFO - 🔄 Starting iteration 3
+2025-06-07 03:58:10,858 - __main__ - INFO - 📊 Progress: 🔄 Starting iteration 3
+2025-06-07 03:58:10,858 - __main__ - INFO - 🔍 Starting video search with 5 max attempts
+2025-06-07 03:58:10,858 - __main__ - INFO - 🔍 Search attempt 1/5
+2025-06-07 03:58:10,858 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 1/5
+2025-06-07 03:58:10,858 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:58:11,405 - __main__ - INFO - 🎬 Found video: Social Interaction...
+2025-06-07 03:58:11,405 - __main__ - INFO - 📊 Progress: 🎬 Found video: Social Interaction...
+2025-06-07 03:58:11,405 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=6RBq_j5NMn4
+2025-06-07 03:58:14,202 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:58:14,203 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:58:14,203 - __main__ - INFO - 🔄 Trying different search terms...
+2025-06-07 03:58:14,203 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:58:16,208 - __main__ - INFO - 🔍 Search attempt 2/5
+2025-06-07 03:58:16,209 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 2/5
+2025-06-07 03:58:16,209 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:58:16,728 - __main__ - INFO - 🎬 Found video: Bro gained consciousness 💀....
+2025-06-07 03:58:16,728 - __main__ - INFO - 📊 Progress: 🎬 Found video: Bro gained consciousness 💀....
+2025-06-07 03:58:16,728 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=jwCCUQFR2Ds
+2025-06-07 03:58:19,092 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:58:19,092 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:58:19,092 - __main__ - INFO - 🔄 Trying different search terms...
+2025-06-07 03:58:19,092 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:58:21,098 - __main__ - INFO - 🔍 Search attempt 3/5
+2025-06-07 03:58:21,098 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 3/5
+2025-06-07 03:58:21,099 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:58:21,616 - __main__ - INFO - 🎬 Found video: How I Use Pattern Recognition To Read People #audhd #actuall...
+2025-06-07 03:58:21,616 - __main__ - INFO - 📊 Progress: 🎬 Found video: How I Use Pattern Recognition To Read People #audhd #actuall...
+2025-06-07 03:58:21,617 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=5nAF7Lzufnk
+2025-06-07 03:58:25,366 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:58:25,366 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:58:25,366 - __main__ - INFO - 🔄 Trying different search terms...
+2025-06-07 03:58:25,366 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:58:27,371 - __main__ - INFO - 🔍 Search attempt 4/5
+2025-06-07 03:58:27,372 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 4/5
+2025-06-07 03:58:27,372 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:58:27,963 - __main__ - INFO - 🎬 Found video: Cognitive Science...
+2025-06-07 03:58:27,963 - __main__ - INFO - 📊 Progress: 🎬 Found video: Cognitive Science...
+2025-06-07 03:58:27,963 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=uNYdfJdcbAc
+2025-06-07 03:58:31,240 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:58:31,240 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:58:31,240 - __main__ - INFO - 🔄 Trying different search terms...
+2025-06-07 03:58:31,240 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:58:33,246 - __main__ - INFO - 🔍 Search attempt 5/5
+2025-06-07 03:58:33,246 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 5/5
+2025-06-07 03:58:33,246 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:58:33,797 - __main__ - INFO - 🎬 Found video: Self Awareness...
+2025-06-07 03:58:33,798 - __main__ - INFO - 📊 Progress: 🎬 Found video: Self Awareness...
+2025-06-07 03:58:33,798 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=HIhEMk7CZ-A
+2025-06-07 03:58:37,025 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:58:37,026 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:58:37,026 - __main__ - WARNING - ❌ No suitable videos found after all attempts
+2025-06-07 03:58:37,026 - __main__ - INFO - 📊 Progress: ❌ No suitable videos found after all attempts
+2025-06-07 03:58:37,026 - __main__ - INFO - ⏳ Waiting 0 minutes 13 seconds before next video...
+2025-06-07 03:58:37,026 - __main__ - INFO - 📊 Progress: ⏳ Waiting 0 minutes before next video...
+2025-06-07 03:58:50,069 - __main__ - INFO - 🔄 Completed iteration 3, starting next cycle...
+2025-06-07 03:58:50,070 - __main__ - INFO - 🔄 Starting iteration 4
+2025-06-07 03:58:50,070 - __main__ - INFO - 📊 Progress: 🔄 Starting iteration 4
+2025-06-07 03:58:50,070 - __main__ - INFO - 🔍 Starting video search with 5 max attempts
+2025-06-07 03:58:50,071 - __main__ - INFO - 🔍 Search attempt 1/5
+2025-06-07 03:58:50,071 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 1/5
+2025-06-07 03:58:50,071 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:58:50,625 - __main__ - INFO - 🎬 Found video: Bro gained consciousness 💀....
+2025-06-07 03:58:50,625 - __main__ - INFO - 📊 Progress: 🎬 Found video: Bro gained consciousness 💀....
+2025-06-07 03:58:50,626 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=jwCCUQFR2Ds
+2025-06-07 03:58:52,936 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:58:52,936 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:58:52,936 - __main__ - INFO - 🔄 Trying different search terms...
+2025-06-07 03:58:52,936 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:58:54,941 - __main__ - INFO - 🔍 Search attempt 2/5
+2025-06-07 03:58:54,942 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 2/5
+2025-06-07 03:58:54,942 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:58:55,511 - __main__ - INFO - 🎬 Found video: AMAZING example of complex emergent behavior from a very sim...
+2025-06-07 03:58:55,511 - __main__ - INFO - 📊 Progress: 🎬 Found video: AMAZING example of complex emergent behavior from a very sim...
+2025-06-07 03:58:55,511 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=ix66tQ93bdU
+2025-06-07 03:58:58,569 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:58:58,569 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:58:58,569 - __main__ - INFO - 🔄 Trying different search terms...
+2025-06-07 03:58:58,569 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:59:00,574 - __main__ - INFO - 🔍 Search attempt 3/5
+2025-06-07 03:59:00,575 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 3/5
+2025-06-07 03:59:00,575 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:59:01,138 - __main__ - INFO - 🎬 Found video: The confusing behavior of animals All animals are created eq...
+2025-06-07 03:59:01,138 - __main__ - INFO - 📊 Progress: 🎬 Found video: The confusing behavior of animals All animals are created eq...
+2025-06-07 03:59:01,139 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=NlbuILT-UrY
+2025-06-07 03:59:03,693 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:59:03,694 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:59:03,694 - __main__ - INFO - 🔄 Trying different search terms...
+2025-06-07 03:59:03,694 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:59:05,699 - __main__ - INFO - 🔍 Search attempt 4/5
+2025-06-07 03:59:05,699 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 4/5
+2025-06-07 03:59:05,700 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:59:06,263 - __main__ - INFO - 🎬 Found video: Clarifying the &#39;5 Whys&#39; Problem-Solving Method...
+2025-06-07 03:59:06,263 - __main__ - INFO - 📊 Progress: 🎬 Found video: Clarifying the &#39;5 Whys&#39; Problem-Solving Method...
+2025-06-07 03:59:06,263 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=SrlYkx41wEE
+2025-06-07 03:59:08,635 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:59:08,635 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:59:08,635 - __main__ - INFO - 🔄 Trying different search terms...
+2025-06-07 03:59:08,635 - __main__ - INFO - 📊 Progress: 🔄 Trying different search terms...
+2025-06-07 03:59:10,640 - __main__ - INFO - 🔍 Search attempt 5/5
+2025-06-07 03:59:10,641 - __main__ - INFO - 📊 Progress: 🔍 Search attempt 5/5
+2025-06-07 03:59:10,641 - __main__ - INFO - 📡 Calling YouTube API for random videos...
+2025-06-07 03:59:11,156 - __main__ - INFO - 🎬 Found video: Bro gained consciousness 💀....
+2025-06-07 03:59:11,156 - __main__ - INFO - 📊 Progress: 🎬 Found video: Bro gained consciousness 💀....
+2025-06-07 03:59:11,156 - __main__ - INFO - ⬇️ Starting download for video: https://www.youtube.com/watch?v=jwCCUQFR2Ds
+2025-06-07 03:59:13,435 - __main__ - ERROR - ❌ Failed to download video
+2025-06-07 03:59:13,435 - __main__ - INFO - 📊 Progress: ❌ Failed to download video
+2025-06-07 03:59:13,435 - __main__ - WARNING - ❌ No suitable videos found after all attempts
+2025-06-07 03:59:13,435 - __main__ - INFO - 📊 Progress: ❌ No suitable videos found after all attempts
+2025-06-07 03:59:13,436 - __main__ - INFO - ⏳ Waiting 0 minutes 18 seconds before next video...
+2025-06-07 03:59:13,436 - __main__ - INFO - 📊 Progress: ⏳ Waiting 0 minutes before next video...
+2025-06-07 03:59:21,844 - __main__ - INFO - 🚀 Starting Streamlit Consciousness Learning System
+2025-06-07 03:59:21,844 - __main__ - INFO - 📱 Streamlit page configured
+2025-06-07 03:59:21,845 - __main__ - INFO - ✅ Successfully imported learning system modules
+2025-06-07 03:59:21,845 - __main__ - INFO - ✅ All session states initialized successfully
+2025-06-07 03:59:21,845 - __main__ - INFO - 🎬 Starting Streamlit app from __main__
+2025-06-07 03:59:21,846 - __main__ - INFO - 🎯 Starting enhanced consciousness learning dashboard
+2025-06-07 03:59:22,471 - __main__ - INFO - 🛑 Stop event detected, ending learning session
+2025-06-07 03:59:22,472 - __main__ - INFO - 📊 Progress: 🛑 Learning session stopped
+2025-06-07 03:59:22,473 - __main__ - INFO - 🏁 Learning session ended
+2025-06-07 03:59:22,473 - __main__ - INFO - 📊 Progress: 🏁 Learning session ended

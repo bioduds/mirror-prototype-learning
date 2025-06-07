@@ -1,0 +1,31 @@
+{
+  "batch_name": "test_batch",
+  "timestamp": "2025-06-07T02:18:51.372365",
+  "total_videos": 1,
+  "processed_videos": 1,
+  "successful_videos": 1,
+  "failed_videos": 0,
+  "results": [
+    {
+      "video_path": "data/videos/v4d3594c4.mp4",
+      "consciousness_level": "CONSCIOUS",
+      "consciousness_score": 0.6302832518021281,
+      "is_conscious": false,
+      "processing_time": "2025-06-07 02:18:55.569807",
+      "learning_progress": {
+        "learning_active": true,
+        "videos_learned_from": 4,
+        "consciousness_trend": "improving",
+        "avg_recent_consciousness": 0.6280606763994654,
+        "learning_stability": 0.9967931457513983
+      }
+    }
+  ],
+  "statistics": {
+    "avg_consciousness_score": 0.6302832518021281,
+    "consciousness_levels": {
+      "CONSCIOUS": 1
+    },
+    "conscious_videos": 0
+  }
+}
