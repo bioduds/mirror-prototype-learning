@@ -1,6 +1,5 @@
 torch
 torchvision
-torchaudio
 opencv-python
 yt-dlp
 numpy

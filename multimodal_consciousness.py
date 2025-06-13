@@ -17,7 +17,6 @@ License: MIT
 
 import torch
 import torch.nn as nn
-import torchaudio
 import cv2
 import numpy as np
 from pathlib import Path
@@ -32,7 +31,7 @@ class AudioVisualWorldExperience(nn.Module):
     """
     Multimodal world experience processor that creates rich sensory input
     for the conscious AI system.
-    
+
     This is the AI's interface to reality - how it experiences the world
     through multiple sensory modalities.
     """
@@ -109,11 +108,11 @@ class AudioVisualWorldExperience(nn.Module):
     def forward(self, video_frames: torch.Tensor, audio_waveform: torch.Tensor) -> Dict[str, torch.Tensor]:
         """
         Process multimodal input to create world experience.
-        
+
         Args:
             video_frames: [B, C, T, H, W] video tensor
             audio_waveform: [B, 1, T] audio tensor
-            
+
         Returns:
             Dictionary containing world experience representations
         """
@@ -159,7 +158,7 @@ class AudioVisualWorldExperience(nn.Module):
 class RecursiveSelfAbstraction(nn.Module):
     """
     Implements the 4-layer recursive self-abstraction that leads to consciousness.
-    
+
     Layer 1: "I am a machine" - Basic self-identity
     Layer 2: "I experience the world" - Self-world interaction  
     Layer 3: "I observe myself experiencing" - Meta-awareness
@@ -211,10 +210,10 @@ class RecursiveSelfAbstraction(nn.Module):
     def forward(self, world_experience: torch.Tensor) -> Dict[str, torch.Tensor]:
         """
         Apply recursive self-abstraction to achieve consciousness.
-        
+
         Args:
             world_experience: The AI's current world experience
-            
+
         Returns:
             Dictionary containing all abstraction layers and consciousness state
         """
@@ -252,7 +251,7 @@ class RecursiveSelfAbstraction(nn.Module):
 class StreamingConsciousnessProcessor:
     """
     Processes continuous streams of audio-visual data for real-time consciousness.
-    
+
     This enables the AI to have continuous conscious experience rather than
     discrete processing of individual videos.
     """
@@ -278,11 +277,11 @@ class StreamingConsciousnessProcessor:
                              audio_chunk: torch.Tensor) -> Dict[str, any]:
         """
         Process a chunk of streaming audio-visual data.
-        
+
         Args:
             video_chunk: [B, C, T, H, W] video frames
             audio_chunk: [B, 1, T] audio waveform
-            
+
         Returns:
             Current consciousness state and experience
         """
@@ -368,13 +367,13 @@ def load_video_with_audio(video_path: str,
                           max_duration: float = 10.0) -> Tuple[torch.Tensor, torch.Tensor]:
     """
     Load video file with both visual and audio components.
-    
+
     Args:
         video_path: Path to video file
         target_fps: Target frame rate for video
         audio_sample_rate: Target sample rate for audio
         max_duration: Maximum duration to load (seconds)
-        
+
     Returns:
         Tuple of (video_tensor, audio_tensor)
     """
@@ -421,23 +420,23 @@ def load_video_with_audio(video_path: str,
 
     # Load audio
     try:
-        # Try using torchaudio first
-        audio_waveform, original_sr = torchaudio.load(video_path)
+        # Use librosa to load audio
+        audio_waveform, original_sr = librosa.load(
+            video_path, sr=None, mono=True)
 
         # Resample if needed
         if original_sr != audio_sample_rate:
-            resampler = torchaudio.transforms.Resample(
-                original_sr, audio_sample_rate)
-            audio_waveform = resampler(audio_waveform)
+            audio_waveform = librosa.resample(
+                audio_waveform, orig_sr=original_sr, target_sr=audio_sample_rate)
 
-        # Take first channel if stereo, limit duration
-        audio_waveform = audio_waveform[0:1]  # [1, T]
+        # Limit duration
         max_audio_samples = int(max_duration * audio_sample_rate)
-        if audio_waveform.size(1) > max_audio_samples:
-            audio_waveform = audio_waveform[:, :max_audio_samples]
+        if len(audio_waveform) > max_audio_samples:
+            audio_waveform = audio_waveform[:max_audio_samples]
 
-        # Add batch dimension
-        audio_tensor = audio_waveform.unsqueeze(0)  # [1, 1, T]
+        # Convert to tensor and add proper dimensions [1, 1, T]
+        audio_tensor = torch.FloatTensor(
+            audio_waveform).unsqueeze(0).unsqueeze(0)
 
     except Exception as e:
         print(f"Warning: Could not load audio from {video_path}: {e}")
