@@ -1,5 +1,6 @@
 torch
 torchvision
+torchaudio
 opencv-python
 yt-dlp
 numpy
@@ -22,3 +23,5 @@ rich
 loguru
 dataclasses-json
 einops
+librosa
+soundfile
