@@ -132,71 +132,40 @@ class ContinuousConsciousnessTrainer:
             "mirror test animals"
         ]
 
-        for attempt in range(3):  # Try 3 different approaches
-            try:
-                # Create temporary filename
-                temp_filename = f"consciousness_training_{self.training_step}_{int(time.time())}"
-                output_path = self.video_dir / f"{temp_filename}.mp4"
+        # Skip YouTube downloads for now - go straight to synthetic video
+        st.info(
+            "📥 YouTube downloads experiencing issues - creating synthetic consciousness video...")
 
-                if attempt < 2:
-                    # Try search-based download
-                    query = random.choice(search_queries)
-                    st.info(
-                        f"📥 Searching for consciousness training video: '{query}'...")
+        # Create temporary filename
+        temp_filename = f"consciousness_training_{self.training_step}_{int(time.time())}"
+        output_path = self.video_dir / f"{temp_filename}.mp4"
 
-                    ydl_opts = {
-                        'format': 'worst[ext=mp4]/worst',
-                        'outtmpl': str(output_path),
-                        'max_filesize': '10M',
-                        'quiet': True,
-                        'no_warnings': True,
-                        'extract_flat': False,
-                        'merge_output_format': 'mp4',
-                        'fragment_retries': 1,
-                        'ignoreerrors': True,
-                        'socket_timeout': 5,
-                        'retries': 0,
-                        'no_check_certificate': True
-                    }
+        # Try one simple YouTube download attempt, then fallback immediately
+        try:
+            video_url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"  # Simple known video
 
-                    with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-                        search_url = f"ytsearch1:{query}"
-                        ydl.download([search_url])
+            ydl_opts = {
+                'format': 'worst',
+                'outtmpl': str(output_path),
+                'max_filesize': '5M',
+                'quiet': True,
+                'no_warnings': True,
+                'ignoreerrors': True,
+                'socket_timeout': 3,
+                'retries': 0
+            }
 
-                else:
-                    # Fallback to known working video
-                    video_url = random.choice(backup_videos)
-                    st.info(
-                        f"📥 Downloading backup video for consciousness training...")
+            with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+                ydl.download([video_url])
 
-                    ydl_opts = {
-                        'format': 'worst[ext=mp4]/worst',
-                        'outtmpl': str(output_path),
-                        'max_filesize': '10M',
-                        'quiet': True,
-                        'no_warnings': True,
-                        'extract_flat': False,
-                        'merge_output_format': 'mp4',
-                        'fragment_retries': 1,
-                        'ignoreerrors': True,
-                        'socket_timeout': 5,
-                        'retries': 0,
-                        'no_check_certificate': True
-                    }
+            # Check if download worked
+            if output_path.exists() and output_path.stat().st_size > 1024:
+                st.success(f"✅ Downloaded: {output_path.name}")
+                return output_path
 
-                    with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-                        ydl.download([video_url])
-
-                # Check if file was downloaded successfully
-                if output_path.exists() and output_path.stat().st_size > 1024:  # At least 1KB
-                    st.success(
-                        f"✅ Downloaded: {output_path.name} ({output_path.stat().st_size // 1024}KB)")
-                    return output_path
-
-            except Exception as e:
-                st.warning(
-                    f"⚠️ Download attempt {attempt + 1} failed: {str(e)[:100]}...")
-                continue
+        except Exception as e:
+            st.info(f"YouTube download failed, creating synthetic video...")
+            pass
 
         # If all attempts failed, create a synthetic video
         return self._create_synthetic_video()
@@ -209,32 +178,47 @@ class ContinuousConsciousnessTrainer:
             temp_filename = f"synthetic_consciousness_{self.training_step}_{int(time.time())}.mp4"
             output_path = self.video_dir / temp_filename
 
-            # Create synthetic video with random patterns
+            # Create synthetic video with consciousness-inspired patterns
             fourcc = cv2.VideoWriter_fourcc(*'mp4v')
             video_writer = cv2.VideoWriter(
-                str(output_path), fourcc, 10.0, (64, 64))
+                str(output_path), fourcc, 15.0, (64, 64))
 
-            # Generate 30 frames of random patterns for consciousness training
-            for frame_idx in range(30):
-                # Create random pattern that changes over time
-                frame = np.random.randint(0, 255, (64, 64, 3), dtype=np.uint8)
+            # Generate 60 frames of consciousness-inspired patterns
+            for frame_idx in range(60):
+                # Create base frame with gradient
+                frame = np.zeros((64, 64, 3), dtype=np.uint8)
 
-                # Add some structure - spiral pattern for consciousness metaphor
+                # Add gradient background
+                for y in range(64):
+                    for x in range(64):
+                        frame[y, x] = [
+                            int(128 + 127 * np.sin(frame_idx * 0.1 + x * 0.1)),
+                            int(128 + 127 * np.cos(frame_idx * 0.1 + y * 0.1)),
+                            int(128 + 127 * np.sin(frame_idx * 0.1 + (x+y) * 0.05))
+                        ]
+
+                # Add consciousness spiral pattern
                 center = (32, 32)
-                for angle in range(0, 360, 10):
-                    x = int(center[0] + (frame_idx + angle)
-                            * 0.1 * np.cos(np.radians(angle)))
-                    y = int(center[1] + (frame_idx + angle)
-                            * 0.1 * np.sin(np.radians(angle)))
+                for angle in range(0, 360, 5):
+                    radius = (frame_idx % 30) + angle * 0.05
+                    x = int(center[0] + radius *
+                            np.cos(np.radians(angle + frame_idx * 2)))
+                    y = int(center[1] + radius *
+                            np.sin(np.radians(angle + frame_idx * 2)))
                     if 0 <= x < 64 and 0 <= y < 64:
                         frame[y, x] = [255, 255, 255]  # White spiral
+
+                # Add mirror-like reflections for self-awareness metaphor
+                if frame_idx % 10 < 5:  # Pulsing mirror effect
+                    frame[:32, :] = np.flip(frame[32:, :], axis=0)
 
                 video_writer.write(frame)
 
             video_writer.release()
 
             if output_path.exists() and output_path.stat().st_size > 1024:
-                st.success(f"✅ Created synthetic video: {output_path.name}")
+                st.success(
+                    f"✅ Created synthetic consciousness video: {output_path.name} ({output_path.stat().st_size // 1024}KB)")
                 return output_path
             else:
                 st.error("❌ Failed to create synthetic video")
