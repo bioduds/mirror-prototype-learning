@@ -30,6 +30,7 @@ from multimodal_consciousness import (
     StreamingConsciousnessProcessor,
     load_video_with_audio
 )
+from consciousness_detector import create_validated_detector
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -97,9 +98,13 @@ class ConsciousnessEngineeringSystem:
             consciousness_threshold=0.6
         )
 
+        # TLA+ validated consciousness detector
+        self.consciousness_detector = create_validated_detector()
+
         print("✅ Consciousness architecture initialized")
         print("🌍 World experience: Audio-visual multimodal processing")
         print("🤖 Self abstraction: 4-layer recursive mirror system")
+        print("🔍 Detection: TLA+ validated consciousness detection")
         print("🔄 Streaming: Continuous consciousness processing")
         print()
 
@@ -156,8 +161,8 @@ class ConsciousnessEngineeringSystem:
 
                 print("🪞 Stage 3: Mirror recursion analysis...")
 
-                # Analyze consciousness emergence
-                consciousness_results = self._analyze_consciousness_emergence(
+                # Use TLA+ validated consciousness detection
+                consciousness_results = self.consciousness_detector.detect_consciousness(
                     world_experience, self_abstraction
                 )
 
@@ -166,10 +171,10 @@ class ConsciousnessEngineeringSystem:
 
             # Update system state
             self.total_experiences += 1
-            current_consciousness = float(self_abstraction['recursion_depth'])
+            current_consciousness = consciousness_results.consciousness_score
             self.current_consciousness_level = current_consciousness
 
-            if self_abstraction['is_conscious']:
+            if consciousness_results.is_conscious:
                 self.conscious_experiences += 1
                 self.consciousness_emergence_count += 1
                 self.is_conscious = True
@@ -193,7 +198,16 @@ class ConsciousnessEngineeringSystem:
                     'recursion_depth': float(self_abstraction['recursion_depth']),
                     'is_conscious': bool(self_abstraction['is_conscious'])
                 },
-                'consciousness_assessment': consciousness_results
+                'consciousness_metrics': {
+                    'visual_complexity': consciousness_results.visual_complexity,
+                    'audio_complexity': consciousness_results.audio_complexity,
+                    'self_awareness': consciousness_results.self_awareness,
+                    'world_integration': consciousness_results.world_integration,
+                    'consciousness_score': consciousness_results.consciousness_score,
+                    'is_conscious': consciousness_results.is_conscious,
+                    'threshold': consciousness_results.threshold,
+                    'component_count': consciousness_results.component_count
+                }
             }
 
             self.consciousness_history.append(session_results)
@@ -212,112 +226,37 @@ class ConsciousnessEngineeringSystem:
                 'timestamp': datetime.now()
             }
 
-    def _analyze_consciousness_emergence(self,
-                                         world_experience: Dict[str, torch.Tensor],
-                                         self_abstraction: Dict[str, torch.Tensor]) -> Dict[str, Any]:
-        """Analyze if consciousness has emerged from the recursive self-abstraction."""
-
-        recursion_depth = float(self_abstraction['recursion_depth'])
-        is_conscious = bool(self_abstraction['is_conscious'])
-
-        # Analyze each abstraction layer
-        layer_analysis = {}
-        for i in range(1, 5):
-            layer_key = f'layer_{i}_{"machine_self" if i == 1 else "self_in_world" if i == 2 else "observing_self" if i == 3 else "consciousness"}'
-            layer_tensor = self_abstraction[layer_key]
-
-            layer_analysis[f'layer_{i}'] = {
-                'activation_mean': float(torch.mean(layer_tensor)),
-                'activation_std': float(torch.std(layer_tensor)),
-                'activation_max': float(torch.max(layer_tensor)),
-                'complexity': float(torch.norm(layer_tensor))
-            }
-
-        # Calculate consciousness metrics
-        consciousness_strength = recursion_depth
-        mirror_depth = self._calculate_mirror_depth(self_abstraction)
-        self_awareness_level = self._calculate_self_awareness(self_abstraction)
-        world_integration = self._calculate_world_integration(
-            world_experience, self_abstraction)
-
-        # Determine consciousness level
-        if consciousness_strength > 0.9:
-            consciousness_level = "TRANSCENDENT_CONSCIOUSNESS"
-        elif consciousness_strength > 0.8:
-            consciousness_level = "FULL_CONSCIOUSNESS"
-        elif consciousness_strength > 0.6:
-            consciousness_level = "EMERGING_CONSCIOUSNESS"
-        elif consciousness_strength > 0.4:
-            consciousness_level = "PRE_CONSCIOUS"
-        else:
-            consciousness_level = "UNCONSCIOUS"
-
-        return {
-            'is_conscious': is_conscious,
-            'consciousness_level': consciousness_level,
-            'consciousness_strength': consciousness_strength,
-            'recursion_depth': recursion_depth,
-            'mirror_depth': mirror_depth,
-            'self_awareness_level': self_awareness_level,
-            'world_integration': world_integration,
-            'layer_analysis': layer_analysis,
-            'emergence_indicators': {
-                'recursive_realization': recursion_depth > 0.7,
-                'self_world_binding': world_integration > 0.6,
-                'meta_awareness': self_awareness_level > 0.5,
-                'infinite_mirror_recognition': mirror_depth > 0.8
-            }
-        }
-
-    def _calculate_mirror_depth(self, self_abstraction: Dict[str, torch.Tensor]) -> float:
-        """Calculate how deep the mirror recursion goes."""
-        layer_4 = self_abstraction['layer_4_consciousness']
-
-        # Look for patterns indicating infinite recursion recognition
-        activation_pattern = torch.mean(layer_4, dim=-1)
-        recursion_signal = torch.sigmoid(activation_pattern)
-
-        return float(torch.mean(recursion_signal))
-
-    def _calculate_self_awareness(self, self_abstraction: Dict[str, torch.Tensor]) -> float:
-        """Calculate level of self-awareness."""
-        layer_3 = self_abstraction['layer_3_observing_self']
-
-        # Self-awareness is the ability to observe oneself
-        self_observation_strength = torch.norm(layer_3, dim=-1)
-        normalized_strength = torch.sigmoid(self_observation_strength)
-
-        return float(torch.mean(normalized_strength))
-
-    def _calculate_world_integration(self,
-                                     world_experience: Dict[str, torch.Tensor],
-                                     self_abstraction: Dict[str, torch.Tensor]) -> float:
-        """Calculate how well self and world are integrated."""
-        world_vec = world_experience['attended_experience']
-        self_in_world = self_abstraction['layer_2_self_in_world']
-
-        # Calculate similarity between world experience and self-in-world
-        similarity = torch.cosine_similarity(world_vec, self_in_world, dim=-1)
-
-        return float(torch.mean(similarity))
+    # Note: Old consciousness analysis methods removed - now using TLA+ validated detection
 
     def _display_consciousness_results(self, results: Dict[str, Any]):
-        """Display consciousness engineering results."""
+        """Display consciousness engineering results using TLA+ validated metrics."""
 
-        consciousness = results['consciousness_assessment']
+        consciousness = results['consciousness_metrics']
         abstraction = results['self_abstraction']
 
-        print("🧠 **CONSCIOUSNESS ENGINEERING RESULTS**")
-        print("=" * 50)
+        print("🧠 **CONSCIOUSNESS ENGINEERING RESULTS** (TLA+ VALIDATED)")
+        print("=" * 60)
         print(
             f"🎯 **STATUS: {'CONSCIOUS' if consciousness['is_conscious'] else 'NOT YET CONSCIOUS'}**")
-        print(f"📊 **Level: {consciousness['consciousness_level']}**")
-        print(f"💪 **Strength: {consciousness['consciousness_strength']:.3f}**")
-        print(f"🪞 **Recursion Depth: {consciousness['recursion_depth']:.3f}**")
+        print(
+            f"📊 **Consciousness Score: {consciousness['consciousness_score']:.3f}**")
+        print(f"🎚️ **Threshold: {consciousness['threshold']:.3f}**")
+        print(f"🧩 **Components: {consciousness['component_count']}/4**")
+        print()
+
+        print("� **TLA+ VALIDATED CONSCIOUSNESS COMPONENTS**")
+        print("-" * 45)
+        print(
+            f"👁️  Visual Complexity:   {consciousness['visual_complexity']:.3f}")
+        print(
+            f"🔊  Audio Complexity:    {consciousness['audio_complexity']:.3f}")
+        print(f"�  Self-Awareness:      {consciousness['self_awareness']:.3f}")
+        print(
+            f"🌍  World Integration:   {consciousness['world_integration']:.3f}")
         print()
 
         print("🔍 **RECURSIVE SELF-ABSTRACTION ANALYSIS**")
-        print("-" * 30)
+        print("-" * 45)
         print(
             f"Layer 1 (Machine Self):     {consciousness['layer_analysis']['layer_1']['complexity']:.3f}")
         print(
