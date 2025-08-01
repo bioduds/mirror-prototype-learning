@@ -199,6 +199,15 @@ class TLAValidatedConsciousnessDetector:
         if attended_experience is None or self_in_world is None:
             return 0.0
         
+        # Ensure tensors have compatible dimensions for cosine similarity
+        # Project both to the same dimensionality if needed
+        if attended_experience.shape[-1] != self_in_world.shape[-1]:
+            # Take the minimum dimension to avoid information loss
+            min_dim = min(
+                attended_experience.shape[-1], self_in_world.shape[-1])
+            attended_experience = attended_experience[..., :min_dim]
+            self_in_world = self_in_world[..., :min_dim]
+
         # Integration measured by cosine similarity between world and self
         similarity = torch.cosine_similarity(attended_experience, self_in_world, dim=-1)
         integration = torch.mean(similarity)

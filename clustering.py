@@ -22,21 +22,38 @@ for cluster_id in np.unique(attention_labels):
     cluster_attention_vectors = attention_output[indices]
     cluster_clip_vectors = clip_features[indices]
 
-    # Compare attention vectors and CLIP vectors using cosine similarity
-    similarity_matrix = pairwise_distances(cluster_attention_vectors, cluster_clip_vectors, metric="cosine")
-    avg_similarity = np.mean(1 - similarity_matrix)
-    correlations.append((cluster_id, avg_similarity))
+    # Since dimensions don't match (attention: 128D, CLIP: 512D),
+    # we'll analyze them separately and compute internal coherence
+    if len(cluster_attention_vectors) > 1:
+        # Internal coherence of attention vectors within cluster
+        attention_coherence = 1 - \
+            np.mean(pairwise_distances(
+                cluster_attention_vectors, metric="cosine"))
+        correlations.append((cluster_id, attention_coherence))
+    else:
+        # Single vector has perfect coherence
+        correlations.append((cluster_id, 1.0))
 
 # Save correlations for later use
-correlation_df = pd.DataFrame(correlations, columns=["Cluster ID", "Average Similarity"])
+correlation_df = pd.DataFrame(
+    correlations, columns=["Cluster ID", "Attention Coherence"])
 correlation_df.to_csv("cluster_correlation.csv", index=False)
+
+# Also save clustering results
+clustering_results = {
+    'attention_labels': attention_labels,
+    'cluster_centers': kmeans.cluster_centers_,
+    'correlations': correlations,
+    'n_clusters': len(np.unique(attention_labels))
+}
+np.save("clustering_results.npy", clustering_results)
 
 # Plot the correlations
 plt.figure(figsize=(10, 6))
-sns.barplot(x="Cluster ID", y="Average Similarity", data=correlation_df)
-plt.title("Average Similarity Between Clusters and CLIP Embeddings")
+sns.barplot(x="Cluster ID", y="Attention Coherence", data=correlation_df)
+plt.title("Attention Vector Coherence Within Clusters")
 plt.xlabel("Cluster ID")
-plt.ylabel("Average Similarity")
+plt.ylabel("Average Coherence")
 plt.tight_layout()
 plt.savefig("correlation_plot.png")
 plt.show()

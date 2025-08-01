@@ -1,0 +1,716 @@
+[2025-08-01 00:39:37] 🧠 Starting Mirror Prototype Learning Pipeline
+[2025-08-01 00:39:37] 🔍 Checking prerequisites...
+[2025-08-01 00:39:37] ✅ Found 1 video file(s)
+[2025-08-01 00:39:37] ✅ All pipeline scripts found
+[2025-08-01 00:39:37] 🆔 Pipeline Run ID: 20250801_003937
+[2025-08-01 00:39:37] 📊 Stage 1/7: mirror.py
+[2025-08-01 00:39:37] 🚀 Running mirror.py: Perception & Feature Extraction
+[2025-08-01 00:39:42] ✅ mirror.py completed successfully in 5.0s
+[2025-08-01 00:39:42] ✅ All expected outputs generated
+[2025-08-01 00:39:42] ✅ Stage 1 completed successfully
+[2025-08-01 00:39:42] 📊 Stage 2/7: encoder.py
+[2025-08-01 00:39:42] 🚀 Running encoder.py: MirrorNet Autoencoder
+[2025-08-01 00:39:44] ✅ encoder.py completed successfully in 1.7s
+[2025-08-01 00:39:44] ✅ All expected outputs generated
+[2025-08-01 00:39:44] ✅ Stage 2 completed successfully
+[2025-08-01 00:39:44] 📊 Stage 3/7: attention.py
+[2025-08-01 00:39:44] 🚀 Running attention.py: Temporal Attention
+[2025-08-01 00:39:44] ✅ attention.py completed successfully in 0.5s
+[2025-08-01 00:39:44] ✅ All expected outputs generated
+[2025-08-01 00:39:44] ✅ Stage 3 completed successfully
+[2025-08-01 00:39:44] 📊 Stage 4/7: self.py
+[2025-08-01 00:39:44] 🚀 Running self.py: Self-Reference Learning
+[2025-08-01 00:39:45] ✅ self.py completed successfully in 0.9s
+[2025-08-01 00:39:45] ✅ All expected outputs generated
+[2025-08-01 00:39:45] ✅ Stage 4 completed successfully
+[2025-08-01 00:39:45] 📊 Stage 5/7: fusion.py
+[2025-08-01 00:39:45] 🚀 Running fusion.py: Consciousness Fusion
+[2025-08-01 00:39:46] ✅ fusion.py completed successfully in 1.0s
+[2025-08-01 00:39:46] ✅ All expected outputs generated
+[2025-08-01 00:39:46] ✅ Stage 5 completed successfully
+[2025-08-01 00:39:46] 📊 Stage 6/7: extractor.py
+[2025-08-01 00:39:46] 🚀 Running extractor.py: CLIP Feature Extraction
+[2025-08-01 00:40:01] ✅ extractor.py completed successfully in 15.1s
+[2025-08-01 00:40:01] ✅ All expected outputs generated
+[2025-08-01 00:40:01] ✅ Stage 6 completed successfully
+[2025-08-01 00:40:01] 📊 Stage 7/7: clustering.py
+[2025-08-01 00:40:01] 🚀 Running clustering.py: Pattern Analysis
+[2025-08-01 00:40:02] ❌ clustering.py failed with return code 1
+[2025-08-01 00:40:02] Error output: Traceback (most recent call last):
+  File "/Users/capanema/Projects/mirror-prototype-learning/clustering.py", line 26, in <module>
+    similarity_matrix = pairwise_distances(cluster_attention_vectors, cluster_clip_vectors, metric="cosine")
+  File "/Users/capanema/Projects/mirror-prototype-learning/venv/lib/python3.13/site-packages/sklearn/utils/_param_validation.py", line 216, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/capanema/Projects/mirror-prototype-learning/venv/lib/python3.13/site-packages/sklearn/metrics/pairwise.py", line 2480, in pairwise_distances
+    return _parallel_pairwise(X, Y, func, n_jobs, **kwds)
+  File "/Users/capanema/Projects/mirror-prototype-learning/venv/lib/python3.13/site-packages/sklearn/metrics/pairwise.py", line 1973, in _parallel_pairwise
+    return func(X, Y, **kwds)
+  File "/Users/capanema/Projects/mirror-prototype-learning/venv/lib/python3.13/site-packages/sklearn/utils/_param_validation.py", line 189, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/capanema/Projects/mirror-prototype-learning/venv/lib/python3.13/site-packages/sklearn/metrics/pairwise.py", line 1171, in cosine_distances
+    S = cosine_similarity(X, Y)
+  File "/Users/capanema/Projects/mirror-prototype-learning/venv/lib/python3.13/site-packages/sklearn/utils/_param_validation.py", line 189, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/capanema/Projects/mirror-prototype-learning/venv/lib/python3.13/site-packages/sklearn/metrics/pairwise.py", line 1741, in cosine_similarity
+    X, Y = check_pairwise_arrays(X, Y)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/Users/capanema/Projects/mirror-prototype-learning/venv/lib/python3.13/site-packages/sklearn/metrics/pairwise.py", line 229, in check_pairwise_arrays
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Incompatible dimension for X and Y matrices: X.shape[1] == 128 while Y.shape[1] == 512
+
+[2025-08-01 00:40:02] ❌ Pipeline failed at stage 7: clustering.py
+[2025-08-01 00:40:02] 💾 Results saved to pipeline_results_20250801_003937.json
+[2025-08-01 00:40:02] 💥 Pipeline failed - check logs for details
+[2025-08-01 01:43:40] 🧠 Starting Mirror Prototype Learning Pipeline
+[2025-08-01 01:43:40] 🔍 Checking prerequisites...
+[2025-08-01 01:43:40] ✅ Found 3 video file(s)
+[2025-08-01 01:43:40] ✅ All pipeline scripts found
+[2025-08-01 01:43:40] 🆔 Pipeline Run ID: 20250801_014340
+[2025-08-01 01:43:40] 📊 Stage 1/7: mirror.py
+[2025-08-01 01:43:40] 🚀 Running mirror.py: Perception & Feature Extraction
+[2025-08-01 01:48:40] ❌ mirror.py timed out after 5 minutes
+[2025-08-01 01:48:40] ❌ Pipeline failed at stage 1: mirror.py
+[2025-08-01 01:48:40] 💾 Results saved to pipeline_results_20250801_014340.json
+[2025-08-01 01:48:40] 💥 Pipeline failed - check logs for details
+[2025-08-01 01:49:34] 🧠 Starting Mirror Prototype Learning Pipeline
+[2025-08-01 01:49:34] 🔍 Checking prerequisites...
+[2025-08-01 01:49:34] ✅ Found 1 video file(s)
+[2025-08-01 01:49:34] ✅ All pipeline scripts found
+[2025-08-01 01:49:34] 🆔 Pipeline Run ID: 20250801_014934
+[2025-08-01 01:49:34] 📊 Stage 1/7: mirror.py
+[2025-08-01 01:49:34] 🚀 Running mirror.py: Perception & Feature Extraction
+[2025-08-01 01:49:45] ✅ mirror.py completed successfully in 11.3s
+[2025-08-01 01:49:45] ✅ All expected outputs generated
+[2025-08-01 01:49:45] ✅ Stage 1 completed successfully
+[2025-08-01 01:49:45] 📊 Stage 2/7: encoder.py
+[2025-08-01 01:49:45] 🚀 Running encoder.py: MirrorNet Autoencoder
+[2025-08-01 01:49:47] ✅ encoder.py completed successfully in 2.1s
+[2025-08-01 01:49:47] ✅ All expected outputs generated
+[2025-08-01 01:49:47] ✅ Stage 2 completed successfully
+[2025-08-01 01:49:47] 📊 Stage 3/7: attention.py
+[2025-08-01 01:49:47] 🚀 Running attention.py: Temporal Attention
+[2025-08-01 01:49:48] ✅ attention.py completed successfully in 0.6s
+[2025-08-01 01:49:48] ✅ All expected outputs generated
+[2025-08-01 01:49:48] ✅ Stage 3 completed successfully
+[2025-08-01 01:49:48] 📊 Stage 4/7: self.py
+[2025-08-01 01:49:48] 🚀 Running self.py: Self-Reference Learning
+[2025-08-01 01:49:49] ✅ self.py completed successfully in 1.0s
+[2025-08-01 01:49:49] ✅ All expected outputs generated
+[2025-08-01 01:49:49] ✅ Stage 4 completed successfully
+[2025-08-01 01:49:49] 📊 Stage 5/7: fusion.py
+[2025-08-01 01:49:49] 🚀 Running fusion.py: Consciousness Fusion
+[2025-08-01 01:49:50] ✅ fusion.py completed successfully in 1.0s
+[2025-08-01 01:49:50] ✅ All expected outputs generated
+[2025-08-01 01:49:50] ✅ Stage 5 completed successfully
+[2025-08-01 01:49:50] 📊 Stage 6/7: extractor.py
+[2025-08-01 01:49:50] 🚀 Running extractor.py: CLIP Feature Extraction
+[2025-08-01 01:50:21] ✅ extractor.py completed successfully in 31.1s
+[2025-08-01 01:50:21] ✅ All expected outputs generated
+[2025-08-01 01:50:21] ✅ Stage 6 completed successfully
+[2025-08-01 01:50:21] 📊 Stage 7/7: clustering.py
+[2025-08-01 01:50:21] 🚀 Running clustering.py: Pattern Analysis
+[2025-08-01 01:50:22] ✅ clustering.py completed successfully in 1.0s
+[2025-08-01 01:50:22] ✅ All expected outputs generated
+[2025-08-01 01:50:22] ✅ Stage 7 completed successfully
+[2025-08-01 01:50:22] 💾 Results saved to pipeline_results_20250801_014934.json
+[2025-08-01 01:50:22] 🎉 Pipeline completed successfully!
+[2025-08-01 01:50:22] 📋 Generating pipeline summary...
+[2025-08-01 01:50:22] ✅ Summary saved to pipeline_summary.json
+[2025-08-01 01:50:22] 
+📊 PIPELINE SUMMARY:
+[2025-08-01 01:50:22]   mirror.py:
+[2025-08-01 01:50:22]     ✅ pca_features.npy: [35, 32768] (4.4MB)
+[2025-08-01 01:50:22]     ✅ pca_coords.npy: [35, 2] (0.0MB)
+[2025-08-01 01:50:22]   encoder.py:
+[2025-08-01 01:50:22]     ✅ mirrornet_latents.npy: [5, 128] (0.0MB)
+[2025-08-01 01:50:22]     ✅ mirrornet_reconstructed.npy: [5, 32768] (0.6MB)
+[2025-08-01 01:50:22]   attention.py:
+[2025-08-01 01:50:22]     ✅ mirror_attention_output.npy: [5, 128] (0.0MB)
+[2025-08-01 01:50:22]   self.py:
+[2025-08-01 01:50:22]     ✅ self_reference_vector.npy: [1, 128] (0.0MB)
+[2025-08-01 01:50:22]   fusion.py:
+[2025-08-01 01:50:22]     ✅ fused_consciousness_vectors.npy: [2, 128] (0.0MB)
+[2025-08-01 01:50:22]   extractor.py:
+[2025-08-01 01:50:22]     ✅ clip_features.npy: [35, 512] (0.1MB)
+[2025-08-01 01:50:22]   clustering.py:
+[2025-08-01 01:56:25] 🧠 Starting Mirror Prototype Learning Pipeline
+[2025-08-01 01:56:25] 🔍 Checking prerequisites...
+[2025-08-01 01:56:25] ✅ Found 1 video file(s)
+[2025-08-01 01:56:25] ✅ All pipeline scripts found
+[2025-08-01 01:56:25] 🆔 Pipeline Run ID: 20250801_015625
+[2025-08-01 01:56:25] 📊 Stage 1/7: mirror.py
+[2025-08-01 01:56:25] 🚀 Running mirror.py: Perception & Feature Extraction
+[2025-08-01 01:56:33] ✅ mirror.py completed successfully in 8.2s
+[2025-08-01 01:56:33] ✅ All expected outputs generated
+[2025-08-01 01:56:33] ✅ Stage 1 completed successfully
+[2025-08-01 01:56:33] 📊 Stage 2/7: encoder.py
+[2025-08-01 01:56:33] 🚀 Running encoder.py: MirrorNet Autoencoder
+[2025-08-01 01:56:35] ✅ encoder.py completed successfully in 2.1s
+[2025-08-01 01:56:35] ✅ All expected outputs generated
+[2025-08-01 01:56:35] ✅ Stage 2 completed successfully
+[2025-08-01 01:56:35] 📊 Stage 3/7: attention.py
+[2025-08-01 01:56:35] 🚀 Running attention.py: Temporal Attention
+[2025-08-01 01:56:35] ✅ attention.py completed successfully in 0.6s
+[2025-08-01 01:56:35] ✅ All expected outputs generated
+[2025-08-01 01:56:35] ✅ Stage 3 completed successfully
+[2025-08-01 01:56:35] 📊 Stage 4/7: self.py
+[2025-08-01 01:56:35] 🚀 Running self.py: Self-Reference Learning
+[2025-08-01 01:56:36] ✅ self.py completed successfully in 1.1s
+[2025-08-01 01:56:36] ✅ All expected outputs generated
+[2025-08-01 01:56:36] ✅ Stage 4 completed successfully
+[2025-08-01 01:56:36] 📊 Stage 5/7: fusion.py
+[2025-08-01 01:56:36] 🚀 Running fusion.py: Consciousness Fusion
+[2025-08-01 01:56:37] ✅ fusion.py completed successfully in 1.0s
+[2025-08-01 01:56:37] ✅ All expected outputs generated
+[2025-08-01 01:56:37] ✅ Stage 5 completed successfully
+[2025-08-01 01:56:37] 📊 Stage 6/7: extractor.py
+[2025-08-01 01:56:37] 🚀 Running extractor.py: CLIP Feature Extraction
+[2025-08-01 01:57:02] ✅ extractor.py completed successfully in 24.6s
+[2025-08-01 01:57:02] ✅ All expected outputs generated
+[2025-08-01 01:57:02] ✅ Stage 6 completed successfully
+[2025-08-01 01:57:02] 📊 Stage 7/7: clustering.py
+[2025-08-01 01:57:02] 🚀 Running clustering.py: Pattern Analysis
+[2025-08-01 01:57:03] ✅ clustering.py completed successfully in 1.0s
+[2025-08-01 01:57:03] ✅ All expected outputs generated
+[2025-08-01 01:57:03] ✅ Stage 7 completed successfully
+[2025-08-01 01:57:03] 💾 Results saved to pipeline_results_20250801_015625.json
+[2025-08-01 01:57:03] 🎉 Pipeline completed successfully!
+[2025-08-01 01:57:03] 📋 Generating pipeline summary...
+[2025-08-01 01:57:03] ✅ Summary saved to pipeline_summary.json
+[2025-08-01 01:57:03] 
+📊 PIPELINE SUMMARY:
+[2025-08-01 01:57:03]   mirror.py:
+[2025-08-01 01:57:03]     ✅ pca_features.npy: [27, 32768] (3.4MB)
+[2025-08-01 01:57:03]     ✅ pca_coords.npy: [27, 2] (0.0MB)
+[2025-08-01 01:57:03]   encoder.py:
+[2025-08-01 01:57:03]     ✅ mirrornet_latents.npy: [5, 128] (0.0MB)
+[2025-08-01 01:57:03]     ✅ mirrornet_reconstructed.npy: [5, 32768] (0.6MB)
+[2025-08-01 01:57:03]   attention.py:
+[2025-08-01 01:57:03]     ✅ mirror_attention_output.npy: [5, 128] (0.0MB)
+[2025-08-01 01:57:03]   self.py:
+[2025-08-01 01:57:03]     ✅ self_reference_vector.npy: [1, 128] (0.0MB)
+[2025-08-01 01:57:03]   fusion.py:
+[2025-08-01 01:57:03]     ✅ fused_consciousness_vectors.npy: [2, 128] (0.0MB)
+[2025-08-01 01:57:03]   extractor.py:
+[2025-08-01 01:57:03]     ✅ clip_features.npy: [27, 512] (0.1MB)
+[2025-08-01 01:57:03]   clustering.py:
+[2025-08-01 01:58:22] 🧠 Starting Mirror Prototype Learning Pipeline
+[2025-08-01 01:58:22] 🔍 Checking prerequisites...
+[2025-08-01 01:58:22] ✅ Found 1 video file(s)
+[2025-08-01 01:58:22] ✅ All pipeline scripts found
+[2025-08-01 01:58:22] 🆔 Pipeline Run ID: 20250801_015822
+[2025-08-01 01:58:22] 📊 Stage 1/7: mirror.py
+[2025-08-01 01:58:22] 🚀 Running mirror.py: Perception & Feature Extraction
+[2025-08-01 01:58:31] ✅ mirror.py completed successfully in 8.3s
+[2025-08-01 01:58:31] ✅ All expected outputs generated
+[2025-08-01 01:58:31] ✅ Stage 1 completed successfully
+[2025-08-01 01:58:31] 📊 Stage 2/7: encoder.py
+[2025-08-01 01:58:31] 🚀 Running encoder.py: MirrorNet Autoencoder
+[2025-08-01 01:58:32] ✅ encoder.py completed successfully in 1.9s
+[2025-08-01 01:58:32] ✅ All expected outputs generated
+[2025-08-01 01:58:32] ✅ Stage 2 completed successfully
+[2025-08-01 01:58:32] 📊 Stage 3/7: attention.py
+[2025-08-01 01:58:32] 🚀 Running attention.py: Temporal Attention
+[2025-08-01 01:58:33] ✅ attention.py completed successfully in 0.5s
+[2025-08-01 01:58:33] ✅ All expected outputs generated
+[2025-08-01 01:58:33] ✅ Stage 3 completed successfully
+[2025-08-01 01:58:33] 📊 Stage 4/7: self.py
+[2025-08-01 01:58:33] 🚀 Running self.py: Self-Reference Learning
+[2025-08-01 01:58:34] ✅ self.py completed successfully in 1.0s
+[2025-08-01 01:58:34] ✅ All expected outputs generated
+[2025-08-01 01:58:34] ✅ Stage 4 completed successfully
+[2025-08-01 01:58:34] 📊 Stage 5/7: fusion.py
+[2025-08-01 01:58:34] 🚀 Running fusion.py: Consciousness Fusion
+[2025-08-01 01:58:35] ✅ fusion.py completed successfully in 1.0s
+[2025-08-01 01:58:35] ✅ All expected outputs generated
+[2025-08-01 01:58:35] ✅ Stage 5 completed successfully
+[2025-08-01 01:58:35] 📊 Stage 6/7: extractor.py
+[2025-08-01 01:58:35] 🚀 Running extractor.py: CLIP Feature Extraction
+[2025-08-01 01:59:00] ✅ extractor.py completed successfully in 24.9s
+[2025-08-01 01:59:00] ✅ All expected outputs generated
+[2025-08-01 01:59:00] ✅ Stage 6 completed successfully
+[2025-08-01 01:59:00] 📊 Stage 7/7: clustering.py
+[2025-08-01 01:59:00] 🚀 Running clustering.py: Pattern Analysis
+[2025-08-01 01:59:07] ✅ clustering.py completed successfully in 6.9s
+[2025-08-01 01:59:07] ✅ All expected outputs generated
+[2025-08-01 01:59:07] ✅ Stage 7 completed successfully
+[2025-08-01 01:59:07] 💾 Results saved to pipeline_results_20250801_015822.json
+[2025-08-01 01:59:07] 🎉 Pipeline completed successfully!
+[2025-08-01 01:59:07] 📋 Generating pipeline summary...
+[2025-08-01 01:59:07] ✅ Summary saved to pipeline_summary.json
+[2025-08-01 01:59:07] 
+📊 PIPELINE SUMMARY:
+[2025-08-01 01:59:07]   mirror.py:
+[2025-08-01 01:59:07]     ✅ pca_features.npy: [27, 32768] (3.4MB)
+[2025-08-01 01:59:07]     ✅ pca_coords.npy: [27, 2] (0.0MB)
+[2025-08-01 01:59:07]   encoder.py:
+[2025-08-01 01:59:07]     ✅ mirrornet_latents.npy: [5, 128] (0.0MB)
+[2025-08-01 01:59:07]     ✅ mirrornet_reconstructed.npy: [5, 32768] (0.6MB)
+[2025-08-01 01:59:07]   attention.py:
+[2025-08-01 01:59:07]     ✅ mirror_attention_output.npy: [5, 128] (0.0MB)
+[2025-08-01 01:59:07]   self.py:
+[2025-08-01 01:59:07]     ✅ self_reference_vector.npy: [1, 128] (0.0MB)
+[2025-08-01 01:59:07]   fusion.py:
+[2025-08-01 01:59:07]     ✅ fused_consciousness_vectors.npy: [2, 128] (0.0MB)
+[2025-08-01 01:59:07]   extractor.py:
+[2025-08-01 01:59:07]     ✅ clip_features.npy: [27, 512] (0.1MB)
+[2025-08-01 01:59:07]   clustering.py:
+[2025-08-01 01:59:07]     ⚠️ clustering_results.npy: Error - Object arrays cannot be loaded when allow_pickle=False (0.0MB)
+[2025-08-01 02:00:02] 🧠 Starting Mirror Prototype Learning Pipeline
+[2025-08-01 02:00:02] 🔍 Checking prerequisites...
+[2025-08-01 02:00:02] ✅ Found 1 video file(s)
+[2025-08-01 02:00:02] ✅ All pipeline scripts found
+[2025-08-01 02:00:02] 🆔 Pipeline Run ID: 20250801_020002
+[2025-08-01 02:00:02] 📊 Stage 1/7: mirror.py
+[2025-08-01 02:00:02] 🚀 Running mirror.py: Perception & Feature Extraction
+[2025-08-01 02:00:10] ✅ mirror.py completed successfully in 8.1s
+[2025-08-01 02:00:10] ✅ All expected outputs generated
+[2025-08-01 02:00:10] ✅ Stage 1 completed successfully
+[2025-08-01 02:00:10] 📊 Stage 2/7: encoder.py
+[2025-08-01 02:00:10] 🚀 Running encoder.py: MirrorNet Autoencoder
+[2025-08-01 02:00:11] ✅ encoder.py completed successfully in 1.6s
+[2025-08-01 02:00:11] ✅ All expected outputs generated
+[2025-08-01 02:00:11] ✅ Stage 2 completed successfully
+[2025-08-01 02:00:11] 📊 Stage 3/7: attention.py
+[2025-08-01 02:00:11] 🚀 Running attention.py: Temporal Attention
+[2025-08-01 02:00:12] ✅ attention.py completed successfully in 0.5s
+[2025-08-01 02:00:12] ✅ All expected outputs generated
+[2025-08-01 02:00:12] ✅ Stage 3 completed successfully
+[2025-08-01 02:00:12] 📊 Stage 4/7: self.py
+[2025-08-01 02:00:12] 🚀 Running self.py: Self-Reference Learning
+[2025-08-01 02:00:13] ✅ self.py completed successfully in 1.0s
+[2025-08-01 02:00:13] ✅ All expected outputs generated
+[2025-08-01 02:00:13] ✅ Stage 4 completed successfully
+[2025-08-01 02:00:13] 📊 Stage 5/7: fusion.py
+[2025-08-01 02:00:13] 🚀 Running fusion.py: Consciousness Fusion
+[2025-08-01 02:00:14] ✅ fusion.py completed successfully in 1.0s
+[2025-08-01 02:00:14] ✅ All expected outputs generated
+[2025-08-01 02:00:14] ✅ Stage 5 completed successfully
+[2025-08-01 02:00:14] 📊 Stage 6/7: extractor.py
+[2025-08-01 02:00:14] 🚀 Running extractor.py: CLIP Feature Extraction
+[2025-08-01 02:00:39] ✅ extractor.py completed successfully in 25.0s
+[2025-08-01 02:00:39] ✅ All expected outputs generated
+[2025-08-01 02:00:39] ✅ Stage 6 completed successfully
+[2025-08-01 02:00:39] 📊 Stage 7/7: clustering.py
+[2025-08-01 02:00:39] 🚀 Running clustering.py: Pattern Analysis
+[2025-08-01 02:01:24] ✅ clustering.py completed successfully in 45.0s
+[2025-08-01 02:01:24] ✅ All expected outputs generated
+[2025-08-01 02:01:24] ✅ Stage 7 completed successfully
+[2025-08-01 02:01:24] 💾 Results saved to pipeline_results_20250801_020002.json
+[2025-08-01 02:01:24] 🎉 Pipeline completed successfully!
+[2025-08-01 02:01:24] 📋 Generating pipeline summary...
+[2025-08-01 02:01:24] ✅ Summary saved to pipeline_summary.json
+[2025-08-01 02:01:24] 
+📊 PIPELINE SUMMARY:
+[2025-08-01 02:01:24]   mirror.py:
+[2025-08-01 02:01:24]     ✅ pca_features.npy: [27, 32768] (3.4MB)
+[2025-08-01 02:01:24]     ✅ pca_coords.npy: [27, 2] (0.0MB)
+[2025-08-01 02:01:24]   encoder.py:
+[2025-08-01 02:01:24]     ✅ mirrornet_latents.npy: [5, 128] (0.0MB)
+[2025-08-01 02:01:24]     ✅ mirrornet_reconstructed.npy: [5, 32768] (0.6MB)
+[2025-08-01 02:01:24]   attention.py:
+[2025-08-01 02:01:24]     ✅ mirror_attention_output.npy: [5, 128] (0.0MB)
+[2025-08-01 02:01:24]   self.py:
+[2025-08-01 02:01:24]     ✅ self_reference_vector.npy: [1, 128] (0.0MB)
+[2025-08-01 02:01:24]   fusion.py:
+[2025-08-01 02:01:24]     ✅ fused_consciousness_vectors.npy: [2, 128] (0.0MB)
+[2025-08-01 02:01:24]   extractor.py:
+[2025-08-01 02:01:24]     ✅ clip_features.npy: [27, 512] (0.1MB)
+[2025-08-01 02:01:24]   clustering.py:
+[2025-08-01 02:01:24]     ⚠️ clustering_results.npy: Error - Object arrays cannot be loaded when allow_pickle=False (0.0MB)
+[2025-08-01 02:03:53] 🧠 Starting Mirror Prototype Learning Pipeline
+[2025-08-01 02:03:53] 🔍 Checking prerequisites...
+[2025-08-01 02:03:53] ✅ Found 1 video file(s)
+[2025-08-01 02:03:53] ✅ All pipeline scripts found
+[2025-08-01 02:03:53] 🆔 Pipeline Run ID: 20250801_020353
+[2025-08-01 02:03:53] 📊 Stage 1/7: mirror.py
+[2025-08-01 02:03:53] 🚀 Running mirror.py: Perception & Feature Extraction
+[2025-08-01 02:04:09] ✅ mirror.py completed successfully in 16.7s
+[2025-08-01 02:04:09] ✅ All expected outputs generated
+[2025-08-01 02:04:09] ✅ Stage 1 completed successfully
+[2025-08-01 02:04:09] 📊 Stage 2/7: encoder.py
+[2025-08-01 02:04:09] 🚀 Running encoder.py: MirrorNet Autoencoder
+[2025-08-01 02:04:11] ✅ encoder.py completed successfully in 1.9s
+[2025-08-01 02:04:11] ✅ All expected outputs generated
+[2025-08-01 02:04:11] ✅ Stage 2 completed successfully
+[2025-08-01 02:04:11] 📊 Stage 3/7: attention.py
+[2025-08-01 02:04:11] 🚀 Running attention.py: Temporal Attention
+[2025-08-01 02:04:12] ✅ attention.py completed successfully in 0.5s
+[2025-08-01 02:04:12] ✅ All expected outputs generated
+[2025-08-01 02:04:12] ✅ Stage 3 completed successfully
+[2025-08-01 02:04:12] 📊 Stage 4/7: self.py
+[2025-08-01 02:04:12] 🚀 Running self.py: Self-Reference Learning
+[2025-08-01 02:04:13] ✅ self.py completed successfully in 0.9s
+[2025-08-01 02:04:13] ✅ All expected outputs generated
+[2025-08-01 02:04:13] ✅ Stage 4 completed successfully
+[2025-08-01 02:04:13] 📊 Stage 5/7: fusion.py
+[2025-08-01 02:04:13] 🚀 Running fusion.py: Consciousness Fusion
+[2025-08-01 02:04:14] ✅ fusion.py completed successfully in 1.0s
+[2025-08-01 02:04:14] ✅ All expected outputs generated
+[2025-08-01 02:04:14] ✅ Stage 5 completed successfully
+[2025-08-01 02:04:14] 📊 Stage 6/7: extractor.py
+[2025-08-01 02:04:14] 🚀 Running extractor.py: CLIP Feature Extraction
+[2025-08-01 02:04:54] ✅ extractor.py completed successfully in 40.5s
+[2025-08-01 02:04:54] ✅ All expected outputs generated
+[2025-08-01 02:04:54] ✅ Stage 6 completed successfully
+[2025-08-01 02:04:54] 📊 Stage 7/7: clustering.py
+[2025-08-01 02:04:54] 🚀 Running clustering.py: Pattern Analysis
+[2025-08-01 02:04:55] ✅ clustering.py completed successfully in 1.0s
+[2025-08-01 02:04:55] ✅ All expected outputs generated
+[2025-08-01 02:04:55] ✅ Stage 7 completed successfully
+[2025-08-01 02:04:55] 💾 Results saved to pipeline_results_20250801_020353.json
+[2025-08-01 02:04:55] 🎉 Pipeline completed successfully!
+[2025-08-01 02:04:55] 📋 Generating pipeline summary...
+[2025-08-01 02:04:55] ✅ Summary saved to pipeline_summary.json
+[2025-08-01 02:04:55] 
+📊 PIPELINE SUMMARY:
+[2025-08-01 02:04:55]   mirror.py:
+[2025-08-01 02:04:55]     ✅ pca_features.npy: [47, 32768] (5.9MB)
+[2025-08-01 02:04:55]     ✅ pca_coords.npy: [47, 2] (0.0MB)
+[2025-08-01 02:04:55]   encoder.py:
+[2025-08-01 02:04:55]     ✅ mirrornet_latents.npy: [5, 128] (0.0MB)
+[2025-08-01 02:04:55]     ✅ mirrornet_reconstructed.npy: [5, 32768] (0.6MB)
+[2025-08-01 02:04:55]   attention.py:
+[2025-08-01 02:04:55]     ✅ mirror_attention_output.npy: [5, 128] (0.0MB)
+[2025-08-01 02:04:55]   self.py:
+[2025-08-01 02:04:55]     ✅ self_reference_vector.npy: [1, 128] (0.0MB)
+[2025-08-01 02:04:55]   fusion.py:
+[2025-08-01 02:04:55]     ✅ fused_consciousness_vectors.npy: [2, 128] (0.0MB)
+[2025-08-01 02:04:55]   extractor.py:
+[2025-08-01 02:04:55]     ✅ clip_features.npy: [47, 512] (0.1MB)
+[2025-08-01 02:04:55]   clustering.py:
+[2025-08-01 02:04:55]     ⚠️ clustering_results.npy: Error - Object arrays cannot be loaded when allow_pickle=False (0.0MB)
+[2025-08-01 02:46:36] 🧠 Starting Mirror Prototype Learning Pipeline
+[2025-08-01 02:46:36] 🔍 Checking prerequisites...
+[2025-08-01 02:46:36] ✅ Found 1 video file(s)
+[2025-08-01 02:46:36] ✅ All pipeline scripts found
+[2025-08-01 02:46:36] 🆔 Pipeline Run ID: 20250801_024636
+[2025-08-01 02:46:36] 📊 Stage 1/7: mirror.py
+[2025-08-01 02:46:36] 🚀 Running mirror.py: Perception & Feature Extraction
+[2025-08-01 02:46:43] ✅ mirror.py completed successfully in 6.6s
+[2025-08-01 02:46:43] ✅ All expected outputs generated
+[2025-08-01 02:46:43] ✅ Stage 1 completed successfully
+[2025-08-01 02:46:43] 📊 Stage 2/7: encoder.py
+[2025-08-01 02:46:43] 🚀 Running encoder.py: MirrorNet Autoencoder
+[2025-08-01 02:46:44] ✅ encoder.py completed successfully in 1.6s
+[2025-08-01 02:46:44] ✅ All expected outputs generated
+[2025-08-01 02:46:44] ✅ Stage 2 completed successfully
+[2025-08-01 02:46:44] 📊 Stage 3/7: attention.py
+[2025-08-01 02:46:44] 🚀 Running attention.py: Temporal Attention
+[2025-08-01 02:46:45] ✅ attention.py completed successfully in 0.6s
+[2025-08-01 02:46:45] ✅ All expected outputs generated
+[2025-08-01 02:46:45] ✅ Stage 3 completed successfully
+[2025-08-01 02:46:45] 📊 Stage 4/7: self.py
+[2025-08-01 02:46:45] 🚀 Running self.py: Self-Reference Learning
+[2025-08-01 02:46:46] ✅ self.py completed successfully in 0.9s
+[2025-08-01 02:46:46] ✅ All expected outputs generated
+[2025-08-01 02:46:46] ✅ Stage 4 completed successfully
+[2025-08-01 02:46:46] 📊 Stage 5/7: fusion.py
+[2025-08-01 02:46:46] 🚀 Running fusion.py: Consciousness Fusion
+[2025-08-01 02:46:47] ✅ fusion.py completed successfully in 0.9s
+[2025-08-01 02:46:47] ✅ All expected outputs generated
+[2025-08-01 02:46:47] ✅ Stage 5 completed successfully
+[2025-08-01 02:46:47] 📊 Stage 6/7: extractor.py
+[2025-08-01 02:46:47] 🚀 Running extractor.py: CLIP Feature Extraction
+[2025-08-01 02:47:07] ✅ extractor.py completed successfully in 20.7s
+[2025-08-01 02:47:07] ✅ All expected outputs generated
+[2025-08-01 02:47:07] ✅ Stage 6 completed successfully
+[2025-08-01 02:47:07] 📊 Stage 7/7: clustering.py
+[2025-08-01 02:47:07] 🚀 Running clustering.py: Pattern Analysis
+[2025-08-01 02:47:08] ✅ clustering.py completed successfully in 1.0s
+[2025-08-01 02:47:08] ✅ All expected outputs generated
+[2025-08-01 02:47:08] ✅ Stage 7 completed successfully
+[2025-08-01 02:47:08] 💾 Results saved to pipeline_results_20250801_024636.json
+[2025-08-01 02:47:08] 🎉 Pipeline completed successfully!
+[2025-08-01 02:47:08] 📋 Generating pipeline summary...
+[2025-08-01 02:47:08] ✅ Summary saved to pipeline_summary.json
+[2025-08-01 02:47:08] 
+📊 PIPELINE SUMMARY:
+[2025-08-01 02:47:08]   mirror.py:
+[2025-08-01 02:47:08]     ✅ pca_features.npy: [22, 32768] (2.8MB)
+[2025-08-01 02:47:08]     ✅ pca_coords.npy: [22, 2] (0.0MB)
+[2025-08-01 02:47:08]   encoder.py:
+[2025-08-01 02:47:08]     ✅ mirrornet_latents.npy: [5, 128] (0.0MB)
+[2025-08-01 02:47:08]     ✅ mirrornet_reconstructed.npy: [5, 32768] (0.6MB)
+[2025-08-01 02:47:08]   attention.py:
+[2025-08-01 02:47:08]     ✅ mirror_attention_output.npy: [5, 128] (0.0MB)
+[2025-08-01 02:47:08]   self.py:
+[2025-08-01 02:47:08]     ✅ self_reference_vector.npy: [1, 128] (0.0MB)
+[2025-08-01 02:47:08]   fusion.py:
+[2025-08-01 02:47:08]     ✅ fused_consciousness_vectors.npy: [2, 128] (0.0MB)
+[2025-08-01 02:47:08]   extractor.py:
+[2025-08-01 02:47:08]     ✅ clip_features.npy: [22, 512] (0.0MB)
+[2025-08-01 02:47:08]   clustering.py:
+[2025-08-01 02:47:08]     ⚠️ clustering_results.npy: Error - Object arrays cannot be loaded when allow_pickle=False (0.0MB)
+[2025-08-01 02:54:17] 🧠 Starting Mirror Prototype Learning Pipeline
+[2025-08-01 02:54:17] 🔍 Checking prerequisites...
+[2025-08-01 02:54:17] ✅ Found 1 video file(s)
+[2025-08-01 02:54:17] ✅ All pipeline scripts found
+[2025-08-01 02:54:17] 🆔 Pipeline Run ID: 20250801_025417
+[2025-08-01 02:54:17] 📊 Stage 1/7: mirror.py
+[2025-08-01 02:54:17] 🚀 Running mirror.py: Perception & Feature Extraction
+[2025-08-01 02:54:17] ❌ mirror.py failed with return code 1
+[2025-08-01 02:54:17] Error output: Traceback (most recent call last):
+  File "/Users/capanema/Projects/mirror-prototype-learning/mirror.py", line 1, in <module>
+    import torch
+  File "/Users/capanema/Projects/mirror-prototype-learning/venv/lib/python3.13/site-packages/torch/__init__.py", line 409, in <module>
+    from torch._C import *  # noqa: F403
+    ^^^^^^^^^^^^^^^^^^^^^^
+ImportError: dlopen(/Users/capanema/Projects/mirror-prototype-learning/venv/lib/python3.13/site-packages/torch/_C.cpython-313-darwin.so, 0x0002): Library not loaded: @rpath/libtorch_cpu.dylib
+  Referenced from: <35AA4B87-2EA4-3AA3-B094-AF14FDCF53FB> /Users/capanema/Projects/mirror-prototype-learning/venv/lib/python3.13/site-packages/torch/lib/libtorch_python.dylib
+  Reason: tried: '/Users/capanema/Projects/mirror-prototype-learning/venv/lib/python3.13/site-packages/torch/lib/libtorch_cpu.dylib' (no such file), '/Users/runner/work/_temp/anaconda/envs/wheel_py313/lib/libtorch_cpu.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/Users/runner/work/_temp/anaconda/envs/wheel_py313/lib/libtorch_cpu.dylib' (no such file), '/Users/capanema/Projects/mirror-prototype-learning/venv/lib/python3.13/site-packages/torch/lib/libtorch_cpu.dylib' (no such file), '/Users/runner/work/_temp/anaconda/envs/wheel_py313/lib/libtorch_cpu.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/Users/runner/work/_temp/anaconda/envs/wheel_py313/lib/libtorch_cpu.dylib' (no such file), '/Users/capanema/Projects/mirror-prototype-learning/venv/lib/python3.13/site-packages/torch/lib/libtorch_cpu.dylib' (no such file), '/opt/homebrew/lib/libtorch_cpu.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/opt/homebrew/lib/libtorch_cpu.dylib' (no such file), '/opt/homebrew/lib/libtorch_cpu.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/opt/homebrew/lib/libtorch_cpu.dylib' (no such file)
+
+[2025-08-01 02:54:17] ❌ Pipeline failed at stage 1: mirror.py
+[2025-08-01 02:54:17] 💾 Results saved to pipeline_results_20250801_025417.json
+[2025-08-01 02:54:17] 💥 Pipeline failed - check logs for details
+[2025-08-01 02:54:44] 🧠 Starting Mirror Prototype Learning Pipeline
+[2025-08-01 02:54:44] 🔍 Checking prerequisites...
+[2025-08-01 02:54:44] ✅ Found 1 video file(s)
+[2025-08-01 02:54:44] ✅ All pipeline scripts found
+[2025-08-01 02:54:44] 🆔 Pipeline Run ID: 20250801_025444
+[2025-08-01 02:54:44] 📊 Stage 1/7: mirror.py
+[2025-08-01 02:54:44] 🚀 Running mirror.py: Perception & Feature Extraction
+[2025-08-01 02:54:44] ❌ mirror.py failed with return code 1
+[2025-08-01 02:54:44] Error output: Traceback (most recent call last):
+  File "/Users/capanema/Projects/mirror-prototype-learning/mirror.py", line 1, in <module>
+    import torch
+  File "/Users/capanema/Projects/mirror-prototype-learning/venv/lib/python3.13/site-packages/torch/__init__.py", line 409, in <module>
+    from torch._C import *  # noqa: F403
+    ^^^^^^^^^^^^^^^^^^^^^^
+ImportError: dlopen(/Users/capanema/Projects/mirror-prototype-learning/venv/lib/python3.13/site-packages/torch/_C.cpython-313-darwin.so, 0x0002): Library not loaded: @rpath/libtorch_cpu.dylib
+  Referenced from: <35AA4B87-2EA4-3AA3-B094-AF14FDCF53FB> /Users/capanema/Projects/mirror-prototype-learning/venv/lib/python3.13/site-packages/torch/lib/libtorch_python.dylib
+  Reason: tried: '/Users/capanema/Projects/mirror-prototype-learning/venv/lib/python3.13/site-packages/torch/lib/libtorch_cpu.dylib' (no such file), '/Users/runner/work/_temp/anaconda/envs/wheel_py313/lib/libtorch_cpu.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/Users/runner/work/_temp/anaconda/envs/wheel_py313/lib/libtorch_cpu.dylib' (no such file), '/Users/capanema/Projects/mirror-prototype-learning/venv/lib/python3.13/site-packages/torch/lib/libtorch_cpu.dylib' (no such file), '/Users/runner/work/_temp/anaconda/envs/wheel_py313/lib/libtorch_cpu.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/Users/runner/work/_temp/anaconda/envs/wheel_py313/lib/libtorch_cpu.dylib' (no such file), '/Users/capanema/Projects/mirror-prototype-learning/venv/lib/python3.13/site-packages/torch/lib/libtorch_cpu.dylib' (no such file), '/opt/homebrew/lib/libtorch_cpu.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/opt/homebrew/lib/libtorch_cpu.dylib' (no such file), '/opt/homebrew/lib/libtorch_cpu.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/opt/homebrew/lib/libtorch_cpu.dylib' (no such file)
+
+[2025-08-01 02:54:44] ❌ Pipeline failed at stage 1: mirror.py
+[2025-08-01 02:54:44] 💾 Results saved to pipeline_results_20250801_025444.json
+[2025-08-01 02:54:44] 💥 Pipeline failed - check logs for details
+[2025-08-01 02:58:01] 🧠 Starting Mirror Prototype Learning Pipeline
+[2025-08-01 02:58:01] 🔍 Checking prerequisites...
+[2025-08-01 02:58:01] ✅ Found 1 video file(s)
+[2025-08-01 02:58:01] ✅ All pipeline scripts found
+[2025-08-01 02:58:01] 🆔 Pipeline Run ID: 20250801_025801
+[2025-08-01 02:58:01] 📊 Stage 1/7: mirror.py
+[2025-08-01 02:58:01] 🚀 Running mirror.py: Perception & Feature Extraction
+[2025-08-01 02:58:01] ❌ mirror.py failed with return code 1
+[2025-08-01 02:58:01] Error output: Traceback (most recent call last):
+  File "/Users/capanema/Projects/mirror-prototype-learning/mirror.py", line 1, in <module>
+    import torch
+  File "/Users/capanema/Projects/mirror-prototype-learning/venv/lib/python3.13/site-packages/torch/__init__.py", line 409, in <module>
+    from torch._C import *  # noqa: F403
+    ^^^^^^^^^^^^^^^^^^^^^^
+ImportError: dlopen(/Users/capanema/Projects/mirror-prototype-learning/venv/lib/python3.13/site-packages/torch/_C.cpython-313-darwin.so, 0x0002): Library not loaded: @rpath/libtorch_cpu.dylib
+  Referenced from: <35AA4B87-2EA4-3AA3-B094-AF14FDCF53FB> /Users/capanema/Projects/mirror-prototype-learning/venv/lib/python3.13/site-packages/torch/lib/libtorch_python.dylib
+  Reason: tried: '/Users/capanema/Projects/mirror-prototype-learning/venv/lib/python3.13/site-packages/torch/lib/libtorch_cpu.dylib' (no such file), '/Users/runner/work/_temp/anaconda/envs/wheel_py313/lib/libtorch_cpu.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/Users/runner/work/_temp/anaconda/envs/wheel_py313/lib/libtorch_cpu.dylib' (no such file), '/Users/capanema/Projects/mirror-prototype-learning/venv/lib/python3.13/site-packages/torch/lib/libtorch_cpu.dylib' (no such file), '/Users/runner/work/_temp/anaconda/envs/wheel_py313/lib/libtorch_cpu.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/Users/runner/work/_temp/anaconda/envs/wheel_py313/lib/libtorch_cpu.dylib' (no such file), '/Users/capanema/Projects/mirror-prototype-learning/venv/lib/python3.13/site-packages/torch/lib/libtorch_cpu.dylib' (no such file), '/opt/homebrew/lib/libtorch_cpu.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/opt/homebrew/lib/libtorch_cpu.dylib' (no such file), '/opt/homebrew/lib/libtorch_cpu.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/opt/homebrew/lib/libtorch_cpu.dylib' (no such file)
+
+[2025-08-01 02:58:01] ❌ Pipeline failed at stage 1: mirror.py
+[2025-08-01 02:58:01] 💾 Results saved to pipeline_results_20250801_025801.json
+[2025-08-01 02:58:01] 💥 Pipeline failed - check logs for details
+[2025-08-01 03:03:34] 🧠 Starting Mirror Prototype Learning Pipeline
+[2025-08-01 03:03:34] 🔍 Checking prerequisites...
+[2025-08-01 03:03:34] ✅ Found 1 video file(s)
+[2025-08-01 03:03:34] ✅ All pipeline scripts found
+[2025-08-01 03:03:34] 🆔 Pipeline Run ID: 20250801_030334
+[2025-08-01 03:03:34] 📊 Stage 1/7: mirror.py
+[2025-08-01 03:03:34] 🚀 Running mirror.py: Perception & Feature Extraction
+[2025-08-01 03:03:34] ❌ mirror.py failed with return code 1
+[2025-08-01 03:03:34] Error output: Traceback (most recent call last):
+  File "/Users/capanema/Projects/mirror-prototype-learning/mirror.py", line 1, in <module>
+    import torch
+  File "/Users/capanema/Projects/mirror-prototype-learning/venv/lib/python3.13/site-packages/torch/__init__.py", line 409, in <module>
+    from torch._C import *  # noqa: F403
+    ^^^^^^^^^^^^^^^^^^^^^^
+ImportError: dlopen(/Users/capanema/Projects/mirror-prototype-learning/venv/lib/python3.13/site-packages/torch/_C.cpython-313-darwin.so, 0x0002): Library not loaded: @rpath/libtorch_cpu.dylib
+  Referenced from: <35AA4B87-2EA4-3AA3-B094-AF14FDCF53FB> /Users/capanema/Projects/mirror-prototype-learning/venv/lib/python3.13/site-packages/torch/lib/libtorch_python.dylib
+  Reason: tried: '/Users/capanema/Projects/mirror-prototype-learning/venv/lib/python3.13/site-packages/torch/lib/libtorch_cpu.dylib' (no such file), '/Users/runner/work/_temp/anaconda/envs/wheel_py313/lib/libtorch_cpu.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/Users/runner/work/_temp/anaconda/envs/wheel_py313/lib/libtorch_cpu.dylib' (no such file), '/Users/capanema/Projects/mirror-prototype-learning/venv/lib/python3.13/site-packages/torch/lib/libtorch_cpu.dylib' (no such file), '/Users/runner/work/_temp/anaconda/envs/wheel_py313/lib/libtorch_cpu.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/Users/runner/work/_temp/anaconda/envs/wheel_py313/lib/libtorch_cpu.dylib' (no such file), '/Users/capanema/Projects/mirror-prototype-learning/venv/lib/python3.13/site-packages/torch/lib/libtorch_cpu.dylib' (no such file), '/opt/homebrew/lib/libtorch_cpu.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/opt/homebrew/lib/libtorch_cpu.dylib' (no such file), '/opt/homebrew/lib/libtorch_cpu.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/opt/homebrew/lib/libtorch_cpu.dylib' (no such file)
+
+[2025-08-01 03:03:34] ❌ Pipeline failed at stage 1: mirror.py
+[2025-08-01 03:03:34] 💾 Results saved to pipeline_results_20250801_030334.json
+[2025-08-01 03:03:34] 💥 Pipeline failed - check logs for details
+[2025-08-01 03:08:04] 🧠 Starting Mirror Prototype Learning Pipeline
+[2025-08-01 03:08:04] 🔍 Checking prerequisites...
+[2025-08-01 03:08:04] ✅ Found 1 video file(s)
+[2025-08-01 03:08:04] ✅ All pipeline scripts found
+[2025-08-01 03:08:04] 🆔 Pipeline Run ID: 20250801_030804
+[2025-08-01 03:08:04] 📊 Stage 1/7: mirror.py
+[2025-08-01 03:08:04] 🚀 Running mirror.py: Perception & Feature Extraction
+[2025-08-01 03:08:44] ✅ mirror.py completed successfully in 39.7s
+[2025-08-01 03:08:44] ✅ All expected outputs generated
+[2025-08-01 03:08:44] ✅ Stage 1 completed successfully
+[2025-08-01 03:08:44] 📊 Stage 2/7: encoder.py
+[2025-08-01 03:08:44] 🚀 Running encoder.py: MirrorNet Autoencoder
+[2025-08-01 03:08:47] ✅ encoder.py completed successfully in 2.5s
+[2025-08-01 03:08:47] ✅ All expected outputs generated
+[2025-08-01 03:08:47] ✅ Stage 2 completed successfully
+[2025-08-01 03:08:47] 📊 Stage 3/7: attention.py
+[2025-08-01 03:08:47] 🚀 Running attention.py: Temporal Attention
+[2025-08-01 03:08:47] ✅ attention.py completed successfully in 0.5s
+[2025-08-01 03:08:47] ✅ All expected outputs generated
+[2025-08-01 03:08:47] ✅ Stage 3 completed successfully
+[2025-08-01 03:08:47] 📊 Stage 4/7: self.py
+[2025-08-01 03:08:47] 🚀 Running self.py: Self-Reference Learning
+[2025-08-01 03:08:48] ✅ self.py completed successfully in 1.0s
+[2025-08-01 03:08:48] ✅ All expected outputs generated
+[2025-08-01 03:08:48] ✅ Stage 4 completed successfully
+[2025-08-01 03:08:48] 📊 Stage 5/7: fusion.py
+[2025-08-01 03:08:48] 🚀 Running fusion.py: Consciousness Fusion
+[2025-08-01 03:08:49] ✅ fusion.py completed successfully in 1.0s
+[2025-08-01 03:08:49] ✅ All expected outputs generated
+[2025-08-01 03:08:49] ✅ Stage 5 completed successfully
+[2025-08-01 03:08:49] 📊 Stage 6/7: extractor.py
+[2025-08-01 03:08:49] 🚀 Running extractor.py: CLIP Feature Extraction
+[2025-08-01 03:09:49] ✅ extractor.py completed successfully in 59.7s
+[2025-08-01 03:09:49] ✅ All expected outputs generated
+[2025-08-01 03:09:49] ✅ Stage 6 completed successfully
+[2025-08-01 03:09:49] 📊 Stage 7/7: clustering.py
+[2025-08-01 03:09:49] 🚀 Running clustering.py: Pattern Analysis
+[2025-08-01 03:09:52] ✅ clustering.py completed successfully in 3.6s
+[2025-08-01 03:09:52] ✅ All expected outputs generated
+[2025-08-01 03:09:52] ✅ Stage 7 completed successfully
+[2025-08-01 03:09:52] 💾 Results saved to pipeline_results_20250801_030804.json
+[2025-08-01 03:09:52] 🎉 Pipeline completed successfully!
+[2025-08-01 03:09:52] 📋 Generating pipeline summary...
+[2025-08-01 03:09:52] ✅ Summary saved to pipeline_summary.json
+[2025-08-01 03:09:52] 
+📊 PIPELINE SUMMARY:
+[2025-08-01 03:09:52]   mirror.py:
+[2025-08-01 03:09:52]     ✅ pca_features.npy: [69, 32768] (8.6MB)
+[2025-08-01 03:09:52]     ✅ pca_coords.npy: [69, 2] (0.0MB)
+[2025-08-01 03:09:52]   encoder.py:
+[2025-08-01 03:09:52]     ✅ mirrornet_latents.npy: [5, 128] (0.0MB)
+[2025-08-01 03:09:52]     ✅ mirrornet_reconstructed.npy: [5, 32768] (0.6MB)
+[2025-08-01 03:09:52]   attention.py:
+[2025-08-01 03:09:52]     ✅ mirror_attention_output.npy: [5, 128] (0.0MB)
+[2025-08-01 03:09:52]   self.py:
+[2025-08-01 03:09:52]     ✅ self_reference_vector.npy: [1, 128] (0.0MB)
+[2025-08-01 03:09:52]   fusion.py:
+[2025-08-01 03:09:52]     ✅ fused_consciousness_vectors.npy: [2, 128] (0.0MB)
+[2025-08-01 03:09:52]   extractor.py:
+[2025-08-01 03:09:52]     ✅ clip_features.npy: [69, 512] (0.1MB)
+[2025-08-01 03:09:52]   clustering.py:
+[2025-08-01 03:09:52]     ⚠️ clustering_results.npy: Error - Object arrays cannot be loaded when allow_pickle=False (0.0MB)
+[2025-08-01 03:10:49] 🧠 Starting Mirror Prototype Learning Pipeline
+[2025-08-01 03:10:49] 🔍 Checking prerequisites...
+[2025-08-01 03:10:49] ✅ Found 1 video file(s)
+[2025-08-01 03:10:49] ✅ All pipeline scripts found
+[2025-08-01 03:10:49] 🆔 Pipeline Run ID: 20250801_031049
+[2025-08-01 03:10:49] 📊 Stage 1/7: mirror.py
+[2025-08-01 03:10:49] 🚀 Running mirror.py: Perception & Feature Extraction
+[2025-08-01 03:10:55] ✅ mirror.py completed successfully in 6.7s
+[2025-08-01 03:10:55] ✅ All expected outputs generated
+[2025-08-01 03:10:55] ✅ Stage 1 completed successfully
+[2025-08-01 03:10:55] 📊 Stage 2/7: encoder.py
+[2025-08-01 03:10:55] 🚀 Running encoder.py: MirrorNet Autoencoder
+[2025-08-01 03:10:57] ✅ encoder.py completed successfully in 1.7s
+[2025-08-01 03:10:57] ✅ All expected outputs generated
+[2025-08-01 03:10:57] ✅ Stage 2 completed successfully
+[2025-08-01 03:10:57] 📊 Stage 3/7: attention.py
+[2025-08-01 03:10:57] 🚀 Running attention.py: Temporal Attention
+[2025-08-01 03:10:58] ✅ attention.py completed successfully in 0.5s
+[2025-08-01 03:10:58] ✅ All expected outputs generated
+[2025-08-01 03:10:58] ✅ Stage 3 completed successfully
+[2025-08-01 03:10:58] 📊 Stage 4/7: self.py
+[2025-08-01 03:10:58] 🚀 Running self.py: Self-Reference Learning
+[2025-08-01 03:10:59] ✅ self.py completed successfully in 0.9s
+[2025-08-01 03:10:59] ✅ All expected outputs generated
+[2025-08-01 03:10:59] ✅ Stage 4 completed successfully
+[2025-08-01 03:10:59] 📊 Stage 5/7: fusion.py
+[2025-08-01 03:10:59] 🚀 Running fusion.py: Consciousness Fusion
+[2025-08-01 03:11:00] ✅ fusion.py completed successfully in 1.0s
+[2025-08-01 03:11:00] ✅ All expected outputs generated
+[2025-08-01 03:11:00] ✅ Stage 5 completed successfully
+[2025-08-01 03:11:00] 📊 Stage 6/7: extractor.py
+[2025-08-01 03:11:00] 🚀 Running extractor.py: CLIP Feature Extraction
+[2025-08-01 03:11:22] ✅ extractor.py completed successfully in 22.0s
+[2025-08-01 03:11:22] ✅ All expected outputs generated
+[2025-08-01 03:11:22] ✅ Stage 6 completed successfully
+[2025-08-01 03:11:22] 📊 Stage 7/7: clustering.py
+[2025-08-01 03:11:22] 🚀 Running clustering.py: Pattern Analysis
+[2025-08-01 03:11:23] ✅ clustering.py completed successfully in 1.0s
+[2025-08-01 03:11:23] ✅ All expected outputs generated
+[2025-08-01 03:11:23] ✅ Stage 7 completed successfully
+[2025-08-01 03:11:23] 💾 Results saved to pipeline_results_20250801_031049.json
+[2025-08-01 03:11:23] 🎉 Pipeline completed successfully!
+[2025-08-01 03:11:23] 📋 Generating pipeline summary...
+[2025-08-01 03:11:23] ✅ Summary saved to pipeline_summary.json
+[2025-08-01 03:11:23] 
+📊 PIPELINE SUMMARY:
+[2025-08-01 03:11:23]   mirror.py:
+[2025-08-01 03:11:23]     ✅ pca_features.npy: [24, 32768] (3.0MB)
+[2025-08-01 03:11:23]     ✅ pca_coords.npy: [24, 2] (0.0MB)
+[2025-08-01 03:11:23]   encoder.py:
+[2025-08-01 03:11:23]     ✅ mirrornet_latents.npy: [5, 128] (0.0MB)
+[2025-08-01 03:11:23]     ✅ mirrornet_reconstructed.npy: [5, 32768] (0.6MB)
+[2025-08-01 03:11:23]   attention.py:
+[2025-08-01 03:11:23]     ✅ mirror_attention_output.npy: [5, 128] (0.0MB)
+[2025-08-01 03:11:23]   self.py:
+[2025-08-01 03:11:23]     ✅ self_reference_vector.npy: [1, 128] (0.0MB)
+[2025-08-01 03:11:23]   fusion.py:
+[2025-08-01 03:11:23]     ✅ fused_consciousness_vectors.npy: [2, 128] (0.0MB)
+[2025-08-01 03:11:23]   extractor.py:
+[2025-08-01 03:11:23]     ✅ clip_features.npy: [24, 512] (0.0MB)
+[2025-08-01 03:11:23]   clustering.py:
+[2025-08-01 03:11:23]     ⚠️ clustering_results.npy: Error - Object arrays cannot be loaded when allow_pickle=False (0.0MB)
+[2025-08-01 05:04:15] 🧠 Starting Mirror Prototype Learning Pipeline
+[2025-08-01 05:04:15] 🔍 Checking prerequisites...
+[2025-08-01 05:04:15] ✅ Found 1 video file(s)
+[2025-08-01 05:04:15] ✅ All pipeline scripts found
+[2025-08-01 05:04:15] 🆔 Pipeline Run ID: 20250801_050415
+[2025-08-01 05:04:15] 📊 Stage 1/7: mirror.py
+[2025-08-01 05:04:15] 🚀 Running mirror.py: Perception & Feature Extraction
+[2025-08-01 05:04:23] ✅ mirror.py completed successfully in 7.7s
+[2025-08-01 05:04:23] ✅ All expected outputs generated
+[2025-08-01 05:04:23] ✅ Stage 1 completed successfully
+[2025-08-01 05:04:23] 📊 Stage 2/7: encoder.py
+[2025-08-01 05:04:23] 🚀 Running encoder.py: MirrorNet Autoencoder
+[2025-08-01 05:04:24] ✅ encoder.py completed successfully in 1.6s
+[2025-08-01 05:04:24] ✅ All expected outputs generated
+[2025-08-01 05:04:24] ✅ Stage 2 completed successfully
+[2025-08-01 05:04:24] 📊 Stage 3/7: attention.py
+[2025-08-01 05:04:24] 🚀 Running attention.py: Temporal Attention
+[2025-08-01 05:04:25] ✅ attention.py completed successfully in 0.5s
+[2025-08-01 05:04:25] ✅ All expected outputs generated
+[2025-08-01 05:04:25] ✅ Stage 3 completed successfully
+[2025-08-01 05:04:25] 📊 Stage 4/7: self.py
+[2025-08-01 05:04:25] 🚀 Running self.py: Self-Reference Learning
+[2025-08-01 05:04:26] ✅ self.py completed successfully in 0.9s
+[2025-08-01 05:04:26] ✅ All expected outputs generated
+[2025-08-01 05:04:26] ✅ Stage 4 completed successfully
+[2025-08-01 05:04:26] 📊 Stage 5/7: fusion.py
+[2025-08-01 05:04:26] 🚀 Running fusion.py: Consciousness Fusion
+[2025-08-01 05:04:27] ✅ fusion.py completed successfully in 0.9s
+[2025-08-01 05:04:27] ✅ All expected outputs generated
+[2025-08-01 05:04:27] ✅ Stage 5 completed successfully
+[2025-08-01 05:04:27] 📊 Stage 6/7: extractor.py
+[2025-08-01 05:04:27] 🚀 Running extractor.py: CLIP Feature Extraction
+[2025-08-01 05:04:51] ✅ extractor.py completed successfully in 24.4s
+[2025-08-01 05:04:51] ✅ All expected outputs generated
+[2025-08-01 05:04:51] ✅ Stage 6 completed successfully
+[2025-08-01 05:04:51] 📊 Stage 7/7: clustering.py
+[2025-08-01 05:04:51] 🚀 Running clustering.py: Pattern Analysis
+[2025-08-01 05:04:52] ✅ clustering.py completed successfully in 1.0s
+[2025-08-01 05:04:52] ✅ All expected outputs generated
+[2025-08-01 05:04:52] ✅ Stage 7 completed successfully
+[2025-08-01 05:04:52] 💾 Results saved to pipeline_results_20250801_050415.json
+[2025-08-01 05:04:52] 🎉 Pipeline completed successfully!
+[2025-08-01 05:04:52] 📋 Generating pipeline summary...
+[2025-08-01 05:04:52] ✅ Summary saved to pipeline_summary.json
+[2025-08-01 05:04:52] 
+📊 PIPELINE SUMMARY:
+[2025-08-01 05:04:52]   mirror.py:
+[2025-08-01 05:04:52]     ✅ pca_features.npy: [27, 32768] (3.4MB)
+[2025-08-01 05:04:52]     ✅ pca_coords.npy: [27, 2] (0.0MB)
+[2025-08-01 05:04:52]   encoder.py:
+[2025-08-01 05:04:52]     ✅ mirrornet_latents.npy: [5, 128] (0.0MB)
+[2025-08-01 05:04:52]     ✅ mirrornet_reconstructed.npy: [5, 32768] (0.6MB)
+[2025-08-01 05:04:52]   attention.py:
+[2025-08-01 05:04:52]     ✅ mirror_attention_output.npy: [5, 128] (0.0MB)
+[2025-08-01 05:04:52]   self.py:
+[2025-08-01 05:04:52]     ✅ self_reference_vector.npy: [1, 128] (0.0MB)
+[2025-08-01 05:04:52]   fusion.py:
+[2025-08-01 05:04:52]     ✅ fused_consciousness_vectors.npy: [2, 128] (0.0MB)
+[2025-08-01 05:04:52]   extractor.py:
+[2025-08-01 05:04:52]     ✅ clip_features.npy: [27, 512] (0.1MB)
+[2025-08-01 05:04:52]   clustering.py:
+[2025-08-01 05:04:52]     ⚠️ clustering_results.npy: Error - Object arrays cannot be loaded when allow_pickle=False (0.0MB)

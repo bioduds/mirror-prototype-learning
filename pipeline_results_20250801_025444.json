@@ -1,0 +1,15 @@
+{
+  "run_id": "20250801_025444",
+  "start_time": "2025-08-01T02:54:44.790937",
+  "stages": {
+    "mirror.py": {
+      "success": false,
+      "duration": 0.0444033145904541,
+      "description": "Perception & Feature Extraction"
+    }
+  },
+  "success": false,
+  "failed_stage": "mirror.py",
+  "end_time": "2025-08-01T02:54:44.835379",
+  "total_duration": 0.0444033145904541
+}

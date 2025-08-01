@@ -2,7 +2,7 @@ NEVER WRITE CODE WITHOUT TLA+ FIRST FULL ANALYSIS, VALIDATION BY TLC AND HUMAN -
 
 ## Project Organization Requirements
 
-### 1. ALWAYS CREATE BRANCH-SPECIFIC FOLDERS
+0. ALWAYS CREATE BRANCH-SPECIFIC FOLDERS
 
 For every feature/branch, create a dedicated folder structure in the `plans` directory:
 
@@ -21,7 +21,7 @@ plans/
 └── tla.md                                 # This guide (root level)
 ```
 
-### 2. FOLDER NAMING CONVENTION
+FOLDER NAMING CONVENTION
 
 **Format**: `feature-[INTEGER_ID]-[FEATURE_NAME]`
 
@@ -32,7 +32,6 @@ Where:
 - `INTEGER_ID`: The numeric identifier from the git branch
 - `FEATURE_NAME`: Descriptive name using kebab-case
 
-### 3. WORKFLOW STEPS
 
 1. **Create Feature Branch**: `git checkout -b feature/[INTEGER_ID]/[feature-name]`
 
@@ -45,31 +44,25 @@ Where:
    mkdir tla
    ```
 
-3. **ALWAYS WRITE THE TLA+ PLAN** in the feature folder BEFORE beginning coding, THEN FOLLOW IT PRECISELY.
+3. Create a "logic" folder where you will create a full predicate logic circuit intended to be used as a TLA+ specification. Use Horn clauses to represent the logic that will be written in the `tla` folder thereafter following the full logic circuit that fully describes the feature.
 
-4. **VALIDATE TLA+ BEFORE BEGINNING**. Example:
+4. **ALWAYS WRITE THE TLA+ PLAN** in the feature folder BEFORE beginning coding, THEN FOLLOW IT PRECISELY.
+
+5. **VALIDATE TLA+ BEFORE BEGINNING**. Example:
 
    ```bash
    cd /Users/capanema/Work/title/Monorepo/plans/feature-[INTEGER_ID]-[feature-name]/tla
    java -jar ../tla/tla2tools.jar -workers auto -config [FeatureName].cfg -coverage 1 [FeatureName].tla
    ```
 
-5. Once TLC model checker is validated, clarify with user by translating the validated model into natural language if it is correct.
+6. Once TLC model checker is validated, clarify with user by translating the validated model into natural language if it is correct.
 
-6. Proceed with code implementation.
+7. Proceed with code implementation.
 
-6.1. Very important is that the code we produce is flake8 and MyPy compliant.
-6.2. All the tests we write must reflect the TLA+ validated features so that the code follows what has been validated and not only what has been implemented.
+7.1. Very important is that the code we produce is flake8 and MyPy compliant.
+7.2. All the tests we write must reflect the TLA+ validated features so that the code follows what has been validated and not only what has been implemented.
 
-7. Write full coverage tests for the code to be executed so that we can assure the solution produced follows the TLA+ validations. DO NOT WRITE TESTS THAT VALIDATE THE IMPLMENTED CODE, WRITE TESTS THAT ENSURE THE IMPLEMENTED CODE FOLLOWS THE TLA+ VALIDATIONS.
-
-   - Use `pytest` for writing tests.
-   - Ensure all tests are in the `tests/` directory.
-   - Use `pydantic_ai` to create agents that can reason about the data and make decisions based on the TLA+ specifications.
-   - Test the agents with the same TLA+ specifications to ensure they can reason correctly about the system.
-   - Ensure compliance with the TLA+ specifications by running the agents against the TLA+ model checker.
-
-8. After that write unit tests that ensure implemented code works correctly without errors.
+8. Write full coverage tests for the code to be executed so that we can assure the solution produced follows the TLA+ validations. DO NOT WRITE TESTS THAT VALIDATE THE IMPLMENTED CODE, WRITE TESTS THAT ENSURE THE IMPLEMENTED CODE FOLLOWS THE TLA+ VALIDATIONS.
 
    - Use `pytest` for writing tests.
    - Ensure all tests are in the `tests/` directory.
@@ -77,25 +70,256 @@ Where:
    - Test the agents with the same TLA+ specifications to ensure they can reason correctly about the system.
    - Ensure compliance with the TLA+ specifications by running the agents against the TLA+ model checker.
 
-9. Once the unit tests pass with higher than at least 80% coverage, write and test integration tests to ensure the system works as expected.
+9. After that write unit tests that ensure implemented code works correctly without errors.
 
    - Use `pytest` for writing tests.
    - Ensure all tests are in the `tests/` directory.
    - Use `pydantic_ai` to create agents that can reason about the data and make decisions based on the TLA+ specifications.
    - Test the agents with the same TLA+ specifications to ensure they can reason correctly about the system.
    - Ensure compliance with the TLA+ specifications by running the agents against the TLA+ model checker.
-   - Ensure the integration tests pass with higher than at least 80% coverage.
 
-10. DEFINITION OF DONE: Once all is done and pass tests we can say it is a success. Do a full report
+10. Once the unit tests pass with higher than at least 80% coverage, write and test integration tests to ensure the system works as expected.
 
-   - Write a `tla-validation-summary.md` file in the feature folder summarizing the TLA+ validation results.
-   - Write a `tla-validation-final.md` file in the feature folder summarizing the final validation results.
-   - Write a `README.md` file in the feature folder explaining how to run the TLA+ model checker and how to run the tests.
-   - Write a `CHANGELOG.md` file in the feature folder summarizing the changes made in this feature.
+- Use `pytest` for writing tests.
+- Ensure all tests are in the `tests/` directory.
+- Use `pydantic_ai` to create agents that can reason about the data and make decisions based on the TLA+ specifications.
+- Test the agents with the same TLA+ specifications to ensure they can reason correctly about the system.
+- Ensure compliance with the TLA+ specifications by running the agents against the TLA+ model checker.
+- Ensure the integration tests pass with higher than at least 80% coverage.
 
-APPENDIX: TLA+ Complete Guide
+11. DEFINITION OF DONE: Once all is done and pass tests we can say it is a success. Do a full report
 
-# TLA+ Complete Guide
+- Write a `tla-validation-summary.md` file in the feature folder summarizing the TLA+ validation results.
+- Write a `tla-validation-final.md` file in the feature folder summarizing the final validation results.
+- Write a `README.md` file in the feature folder explaining how to run the TLA+ model checker and how to run the tests.
+- Write a `CHANGELOG.md` file in the feature folder summarizing the changes made in this feature.
+
+## APPENDIX 1: HOW TO WRITE PLANS IN PREDICATE LOGIC
+
+# 📘 Predicate Logic — Full Explanation
+
+## 1. Overview
+
+**Predicate Logic**, also known as **First-Order Logic (FOL)**, is a formal system used to express facts, rules, and relationships in a structured and interpretable way. It is built on the foundation of **predicates**, **terms**, **variables**, **constants**, and **logical connectives**. Predicate logic is more expressive than propositional logic, enabling reasoning about the internal structure of statements and the objects they refer to.
+
+It serves as the backbone for rule-based reasoning systems, expert systems, and symbolic inference engines.
+
+---
+
+## 2. Core Components
+
+### 🔹 Predicates
+
+A **predicate** represents a property of an object or a relationship between multiple objects.
+
+- **Syntax**: `Predicate(arg1, arg2, ..., argN)`
+- **Examples**:
+  - `is_mammal(dog)`
+  - `parent(alice, bob)`
+  - `greater_than(7, 3)`
+
+Predicates begin with lowercase letters and express declarative statements about the world.
+
+### 🔹 Terms
+
+A **term** is a building block of logical statements and can be:
+
+- A **constant**: a specific object (e.g., `alice`, `3`)
+- A **variable**: a placeholder (e.g., `X`, `Y`)
+- A **compound term**: another predicate or function result
+
+### 🔹 Constants
+
+Constants refer to specific, named objects or entities. They are fixed and do not vary.
+
+- Examples: `earth`, `sun`, `42`, `john_doe`
+
+### 🔹 Variables
+
+Variables are generic placeholders for any object in the domain.
+
+- Examples: `X`, `Y`, `Person`, `Animal`
+- Variables are **universally** or **existentially** quantified (see Quantifiers below).
+
+### 🔹 Functions
+
+Functions are terms that return other terms and may be nested.
+
+- Example: `mother_of(father_of(bob))`
+
+---
+
+## 3. Logical Structures
+
+### 🔹 Atoms
+
+An **atom** is a predicate applied to the right number of terms.
+
+- Example: `likes(alice, chocolate)`
+
+### 🔹 Literals
+
+A **literal** is an atom or its negation.
+
+- Examples:
+  - Positive literal: `hungry(dog)`
+  - Negative literal: `¬hungry(dog)` or `not hungry(dog)`
+
+---
+
+## 4. Logical Connectives
+
+Used to build complex expressions from atomic predicates:
+
+| Connective | Symbol     | Meaning                 |
+|------------|------------|-------------------------|
+| Negation   | ¬ or `not` | Logical NOT             |
+| Conjunction | ∧ or `and` | Logical AND             |
+| Disjunction | ∨ or `or`  | Logical OR              |
+| Implication | → or `:-`  | IF ... THEN (rule form) |
+| Biconditional | ↔ or `<->` | Logical equivalence     |
+
+---
+
+## 5. Quantifiers
+
+Quantifiers specify the scope of variables:
+
+- **Universal Quantifier** (∀): means the statement applies to **all** instances.
+  - Example: `∀X. human(X) → mortal(X)` → "All humans are mortal"
+
+- **Existential Quantifier** (∃): means the statement applies to **at least one** instance.
+  - Example: `∃X. loves(john, X)` → "There exists someone John loves"
+
+In practical systems, rules use **implicitly universal quantification** over free variables.
+
+---
+
+## 6. Rules and Inference
+
+A **rule** expresses a conditional relationship: *if the body holds, then the head is true*.
+
+- **Syntax**:  
+  `Head :- Body1, Body2, ..., BodyN.`  
+  Meaning: "Head is true if all Body conditions are true"
+
+- **Example**:  
+  `grandparent(X, Z) :- parent(X, Y), parent(Y, Z).`  
+  → "X is a grandparent of Z if X is a parent of Y and Y is a parent of Z."
+
+The left-hand side is called the **head**, the right-hand side is the **body** (conjunction of conditions).
+
+---
+
+## 7. Facts
+
+Facts are unconditional atomic statements declared as true.
+
+- Syntax: `predicate(constant1, constant2, ..., constantN).`
+- Example:
+  - `parent(mary, john).`
+  - `animal(dog).`
+
+They form the **knowledge base** upon which inference is performed.
+
+---
+
+## 8. Queries
+
+Queries ask whether a certain statement can be logically inferred from the facts and rules.
+
+- Syntax: `?- predicate(arguments).`
+- Example:
+  - `?- parent(mary, john).` → True
+  - `?- grandparent(mary, Z).` → Returns all Z such that `grandparent(mary, Z)` holds
+
+---
+
+## 9. Unification
+
+**Unification** is the process of matching two predicates by finding variable substitutions that make them identical.
+
+- Example:
+  - Query: `?- parent(mary, X).`
+  - Fact: `parent(mary, john).`
+  - Result: `X = john`
+
+---
+
+## 10. Resolution and Inference Engine
+
+A logic engine deduces new facts by applying **resolution**: chaining rules and facts to infer conclusions.
+
+- Uses **backward chaining** (goal-driven): starts from a query and looks for supporting facts/rules
+- Or **forward chaining** (data-driven): starts from facts and applies rules to derive new facts
+
+---
+
+## 11. Negation-as-Failure
+
+If a predicate cannot be proven to be true from the facts and rules, it is assumed false. This is known as **negation as failure**, a form of **non-monotonic reasoning**.
+
+- Example:
+
+  ```prolog
+  not_believed(X) :- not believes(X).
+  ```
+
+This is useful in practical systems with incomplete knowledge.
+
+---
+
+## 12. Example Knowledge Base
+
+```prolog
+% Facts
+parent(john, mary).
+parent(mary, alice).
+parent(mary, bob).
+
+% Rules
+grandparent(X, Z) :- parent(X, Y), parent(Y, Z).
+sibling(X, Y) :- parent(Z, X), parent(Z, Y), X \= Y.
+
+% Query
+?- grandparent(john, alice).  % True
+?- sibling(alice, bob).       % True
+```
+
+---
+
+## 13. Best Practices
+
+- Use **short, meaningful predicate names** that reflect relationships
+- Prefer **lowercase for constants**, **uppercase for variables**
+- Avoid deep nesting unless necessary
+- Break complex logic into **multiple simple rules**
+
+---
+
+## 14. Use Case in Instruction Interpretation
+
+When interpreting natural language instructions, sentences are transformed into:
+
+- **Facts**: Declarative knowledge
+- **Rules**: Generalizations or conditionals
+- **Queries**: Intentions or goals
+
+For example:
+
+- Instruction: “John is Alice’s father.”  
+  → `parent(john, alice).`
+
+- Instruction: “If someone is a parent of someone who is a parent, then they are a grandparent.”  
+  → `grandparent(X, Z) :- parent(X, Y), parent(Y, Z).`
+
+---
+
+This system forms the foundation for any reasoning agent that must interpret, act upon, or respond to human logic-like instructions.
+
+## APPENDIX 2: TLA+ Complete Guide
+
+### TLA+ Complete Guide
 
 *A hands-on, end-to-end manual for engineers who want to adopt **TLA+** as a standard pre-coding step. Written for day-to-day use, it moves from first principles to advanced patterns and integrates seamlessly with modern software-delivery pipelines.*
 

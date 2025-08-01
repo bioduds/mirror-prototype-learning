@@ -1,0 +1,13 @@
+{
+  "status": "completed",
+  "youtube_url": "https://www.youtube.com/shorts/3O_Y7Qj-Q4k",
+  "current_epoch": 0,
+  "total_epochs": 10,
+  "consciousness_level": 0.0,
+  "mirror_depth": 4,
+  "threshold": 0.6,
+  "training_steps": 0,
+  "videos_processed": 1,
+  "download_stage": "download_completed",
+  "old_videos_cleared": 0
+}

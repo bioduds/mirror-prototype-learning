@@ -1,0 +1,44 @@
+{
+  "run_id": "20250801_015625",
+  "start_time": "2025-08-01T01:56:25.085830",
+  "stages": {
+    "mirror.py": {
+      "success": true,
+      "duration": 8.176283121109009,
+      "description": "Perception & Feature Extraction"
+    },
+    "encoder.py": {
+      "success": true,
+      "duration": 2.0636439323425293,
+      "description": "MirrorNet Autoencoder"
+    },
+    "attention.py": {
+      "success": true,
+      "duration": 0.5509531497955322,
+      "description": "Temporal Attention"
+    },
+    "self.py": {
+      "success": true,
+      "duration": 1.0896351337432861,
+      "description": "Self-Reference Learning"
+    },
+    "fusion.py": {
+      "success": true,
+      "duration": 0.9695618152618408,
+      "description": "Consciousness Fusion"
+    },
+    "extractor.py": {
+      "success": true,
+      "duration": 24.562917232513428,
+      "description": "CLIP Feature Extraction"
+    },
+    "clustering.py": {
+      "success": true,
+      "duration": 0.9985010623931885,
+      "description": "Pattern Analysis"
+    }
+  },
+  "success": true,
+  "end_time": "2025-08-01T01:57:03.497632",
+  "total_duration": 38.41149544715881
+}
